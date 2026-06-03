@@ -1,0 +1,907 @@
+{
+ "AI": {
+  "AI-01": {
+   "nazwa": "Dokumentacja medyczna indywidualna wewnętrzna (historia choroby)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DM.SDM / Oddziały",
+   "systemy": "HIS: Ruch Chorych, ZDM/EDM"
+  },
+  "AI-02": {
+   "nazwa": "Karta zleceń lekarskich",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "Oddziały",
+   "systemy": "HIS: Zlecenia Medyczne"
+  },
+  "AI-03": {
+   "nazwa": "Karta indywidualnej opieki pielęgniarskiej",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DM.PP",
+   "systemy": "HIS: Ruch Chorych"
+  },
+  "AI-04": {
+   "nazwa": "Karta obserwacji / gorączkowa",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "Oddziały",
+   "systemy": "HIS: Ruch Chorych"
+  },
+  "AI-05": {
+   "nazwa": "Dokumentacja indywidualna zewnętrzna (karta informacyjna, epikryza, zaświadczenia)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DM.SDM / Oddziały",
+   "systemy": "HIS: ZDM/EDM, P1"
+  },
+  "AI-06": {
+   "nazwa": "Skierowania (przyjęcia, do pracowni, e-skierowanie)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Rejestracja / Oddziały",
+   "systemy": "HIS: Rejestracja, P1"
+  },
+  "AI-07": {
+   "nazwa": "Recepty / e-recepty i dane o farmakoterapii",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "Oddziały / Apteka",
+   "systemy": "HIS: Apteczka Oddz., P1"
+  },
+  "AI-08": {
+   "nazwa": "Księga główna przyjęć i wypisów",
+   "kat": "Med. dokumentacja zbiorcza",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DM.SDM",
+   "systemy": "HIS: Ruch Chorych"
+  },
+  "AI-09": {
+   "nazwa": "Księgi oddziałowe / raportów pielęgniarskich",
+   "kat": "Med. dokumentacja zbiorcza",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddziały / DM.PP",
+   "systemy": "HIS: Ruch Chorych"
+  },
+  "AI-10": {
+   "nazwa": "Księgi pracowni / zabiegów (diagnostyka)",
+   "kat": "Med. dokumentacja zbiorcza",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Pracownie",
+   "systemy": "HIS: Zlecenia / Pracownia"
+  },
+  "AI-11": {
+   "nazwa": "Dokumentacja porad ambulatoryjnych / rejestr wizyt AOS-POZ",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Poradnie",
+   "systemy": "HIS: Przychodnia (Gabinet)"
+  },
+  "AI-12": {
+   "nazwa": "Wyniki badań laboratoryjnych",
+   "kat": "Med. wyniki",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "Laboratorium zewn. / Oddziały",
+   "systemy": "LIS (zewn.) / HIS: Zlecenia"
+  },
+  "AI-13": {
+   "nazwa": "Wyniki i obrazy diagnostyki obrazowej (RTG/TK/USG)",
+   "kat": "Med. wyniki",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "Pracownie diagn.",
+   "systemy": "RIS/PACS"
+  },
+  "AI-14": {
+   "nazwa": "Wyniki badań czynnościowych / endoskopowych / polisomnografii",
+   "kat": "Med. wyniki",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Pracownie diagn.",
+   "systemy": "HIS: Zlecenia / Pracownia"
+  },
+  "AI-15": {
+   "nazwa": "Zgody pacjenta (świadoma zgoda, zgody RODO)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddziały / Poradnie",
+   "systemy": "HIS: ZDM"
+  },
+  "AI-16": {
+   "nazwa": "Plan rehabilitacji indywidualnej (PRI) / plan terapii",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddz./Ośrodki rehab.",
+   "systemy": "HIS: Rehabilitacja"
+  },
+  "AI-17": {
+   "nazwa": "Rejestr zakażeń szpitalnych i drobnoustrojów alarmowych",
+   "kat": "Med. epidemiologia",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DM.DHiE",
+   "systemy": "HIS: Zakażenia"
+  },
+  "AI-18": {
+   "nazwa": "Listy oczekujących (kolejki)",
+   "kat": "Med./rozliczenia",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DM.DRZ / Rejestracja",
+   "systemy": "HIS: Kolejki"
+  },
+  "AI-19": {
+   "nazwa": "Dokumentacja transportu medycznego",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "Ś",
+   "I": "Ś",
+   "D": "Ś",
+   "wlasciciel": "Zespół Transportu",
+   "systemy": "HIS / dok. zlecenia"
+  },
+  "AI-20": {
+   "nazwa": "Dokumentacja zgonu (karta zgonu, protokoły)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddziały / IP",
+   "systemy": "HIS: Ruch Chorych"
+  },
+  "AI-21": {
+   "nazwa": "Dane identyfikacyjne i kontaktowe pacjenta",
+   "kat": "Dane osobowe",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DM.SDM / Rejestracja",
+   "systemy": "HIS: Ruch Chorych / Przychodnia"
+  },
+  "AI-22": {
+   "nazwa": "Dane o uprawnieniach do świadczeń (eWUŚ)",
+   "kat": "Dane osobowe",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DM.DRZ",
+   "systemy": "HIS + eWUŚ"
+  },
+  "AI-23": {
+   "nazwa": "Akta osobowe pracowników",
+   "kat": "Dane osobowe",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "K.DPP",
+   "systemy": "ERP: Kadry-Płace"
+  },
+  "AI-24": {
+   "nazwa": "Dane płacowe i wynagrodzeń",
+   "kat": "Dane osobowe",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "K.DPP",
+   "systemy": "ERP: Płace"
+  },
+  "AI-25": {
+   "nazwa": "Dane medycyny pracy pracowników",
+   "kat": "Dane osobowe",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "N",
+   "wlasciciel": "K.DPP",
+   "systemy": "ERP / dok. zewn."
+  },
+  "AI-26": {
+   "nazwa": "Dane kontrahentów i dostawców",
+   "kat": "Dane osobowe",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "Ś",
+   "D": "Ś",
+   "wlasciciel": "DZP / K.DFK",
+   "systemy": "ERP: Rejestr Zakupów"
+  },
+  "AI-27": {
+   "nazwa": "Dane rozliczeniowe NFZ (świadczenia, JGP, komunikaty)",
+   "kat": "Rozliczenia",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DM.DRZ",
+   "systemy": "HIS: Rozliczenia"
+  },
+  "AI-28": {
+   "nazwa": "Umowa z NFZ i aneksy",
+   "kat": "Rozliczenia / prawne",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Zarząd / DM.DRZ",
+   "systemy": "ERP / repozytorium umów"
+  },
+  "AI-29": {
+   "nazwa": "Sprawozdawczość statystyczna (MZ-29, MZ-11, karty stat.)",
+   "kat": "Rozliczenia / statystyka",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "N",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DM.DRZ",
+   "systemy": "HIS: Statystyka"
+  },
+  "AI-30": {
+   "nazwa": "Dane finansowo-księgowe (księgi, faktury)",
+   "kat": "Finanse",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "K.DFK",
+   "systemy": "ERP: FK / Rejestr Sprzedaży"
+  },
+  "AI-31": {
+   "nazwa": "Rachunek kosztów świadczeń",
+   "kat": "Finanse",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "N",
+   "wlasciciel": "K.DFK",
+   "systemy": "ERP: Koszty"
+  },
+  "AI-32": {
+   "nazwa": "Dokumentacja systemów zarządzania (ISO 9001/14001)",
+   "kat": "Zarządcze / zgodność",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "N",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "PZSZ",
+   "systemy": "Repozytorium dokumentów"
+  },
+  "AI-33": {
+   "nazwa": "Dokumentacja akredytacyjna CMJ",
+   "kat": "Zarządcze / zgodność",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "PA",
+   "systemy": "Repozytorium dokumentów"
+  },
+  "AI-34": {
+   "nazwa": "Dokumentacja SZBI (polityki, analiza ryzyka, SoA)",
+   "kat": "Bezpieczeństwo",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "PBI",
+   "systemy": "Repozytorium SZBI"
+  },
+  "AI-35": {
+   "nazwa": "Rejestry RODO (czynności, naruszenia) i DPIA",
+   "kat": "Bezpieczeństwo / RODO",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "IOD",
+   "systemy": "Rejestr RODO"
+  },
+  "AI-36": {
+   "nazwa": "Rejestr incydentów cyber / dokumentacja KSC",
+   "kat": "Bezpieczeństwo",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "PBI / DI.DI",
+   "systemy": "System zgłoszeń / SIEM"
+  },
+  "AI-37": {
+   "nazwa": "Dokumentacja korporacyjna (uchwały ZW/RN/Zarządu, KRS)",
+   "kat": "Korporacyjne",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "K.DOP / Zarząd",
+   "systemy": "Repozytorium / KRS"
+  },
+  "AI-38": {
+   "nazwa": "Umowy z dostawcami (CLM)",
+   "kat": "Prawne",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DZP / RP",
+   "systemy": "ERP / repozytorium umów"
+  },
+  "AI-39": {
+   "nazwa": "Informacje niejawne (jeśli prowadzone)",
+   "kat": "Niejawne",
+   "forma": "Papier/elektr.",
+   "RODO": "Niejawne",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "PIN",
+   "systemy": "Kancelaria tajna"
+  },
+  "AI-40": {
+   "nazwa": "Dokumentacja BHP i powypadkowa",
+   "kat": "BHP",
+   "forma": "Elektr./papier",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "W",
+   "D": "N",
+   "wlasciciel": "BHP",
+   "systemy": "Rejestry BHP"
+  },
+  "AI-41": {
+   "nazwa": "Dokumentacja P-POŻ (plany ewakuacji, IBP)",
+   "kat": "Bezpieczeństwo obiektów",
+   "forma": "Elektr./papier",
+   "RODO": "Brak DO",
+   "P": "Ś",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "P-POŻ",
+   "systemy": "Repozytorium / dok. tech."
+  },
+  "AI-42": {
+   "nazwa": "Dokumentacja obronna (OC / MOB)",
+   "kat": "Obronne",
+   "forma": "Papier/elektr.",
+   "RODO": "Niejawne",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "OBR",
+   "systemy": "Kancelaria / repozytorium"
+  },
+  "AI-43": {
+   "nazwa": "Ewidencja odpadów medycznych (BDO/KEO)",
+   "kat": "Środowisko",
+   "forma": "Elektr.",
+   "RODO": "Brak DO",
+   "P": "N",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DI.DT",
+   "systemy": "BDO"
+  },
+  "AI-44": {
+   "nazwa": "Dokumentacja techniczna obiektów (książka obiektu, przeglądy)",
+   "kat": "Infrastruktura",
+   "forma": "Elektr./papier",
+   "RODO": "Brak DO",
+   "P": "N",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DI.DT",
+   "systemy": "Dok. techniczna"
+  },
+  "AI-45": {
+   "nazwa": "Ewidencja / paszporty aparatury medycznej (wyroby med.)",
+   "kat": "Infrastruktura",
+   "forma": "Elektr.",
+   "RODO": "Brak DO",
+   "P": "N",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DI.DT",
+   "systemy": "Ewidencja sprzętu"
+  },
+  "AI-46": {
+   "nazwa": "Skargi, wnioski, sprawy praw pacjenta",
+   "kat": "Prawa pacjenta",
+   "forma": "Elektr./papier",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "PPP",
+   "systemy": "Rejestr skarg"
+  },
+  "AI-47": {
+   "nazwa": "Dokumentacja dostępności (deklaracja, audyt WCAG)",
+   "kat": "Dostępność",
+   "forma": "Elektr.",
+   "RODO": "Brak DO",
+   "P": "N",
+   "I": "Ś",
+   "D": "Ś",
+   "wlasciciel": "PD",
+   "systemy": "WWW/BIP"
+  },
+  "AI-48": {
+   "nazwa": "Dane konfiguracyjne systemów HIS/ERP",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DI.DI",
+   "systemy": "HIS / ERP"
+  },
+  "AI-49": {
+   "nazwa": "Konta i uprawnienia użytkowników (IAM)",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DI.DI / ABS",
+   "systemy": "AD / HIS"
+  },
+  "AI-50": {
+   "nazwa": "Kopie zapasowe",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DI.DI",
+   "systemy": "System backup"
+  },
+  "AI-51": {
+   "nazwa": "Logi systemowe i bezpieczeństwa",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DI.DI / ABS",
+   "systemy": "SIEM / logi"
+  },
+  "AI-52": {
+   "nazwa": "Dane uwierzytelniające (hasła, klucze, certyfikaty)",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "W",
+   "wlasciciel": "DI.DI / ABS",
+   "systemy": "PKI / sejf haseł"
+  },
+  "AI-53": {
+   "nazwa": "Treści generowane przez AI (wstępne opisy lekarskie)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddziały / Lekarze",
+   "systemy": "HIS + platforma AI"
+  },
+  "AI-54": {
+   "nazwa": "Badania obrazowe i wyniki analiz AI przekazywane do PUI",
+   "kat": "Med. wyniki",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (pseudonim. przy wysyłce)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Pracownie diagn.",
+   "systemy": "RIS/PACS + integracja PUI"
+  },
+  "AI-55": {
+   "nazwa": "Powiadomienia i potwierdzenia pacjenta (e-powiadomienia)",
+   "kat": "Dane osobowe / operacyjne",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe (kontekst zdrowotny)",
+   "P": "Ś",
+   "I": "Ś",
+   "D": "Ś",
+   "wlasciciel": "Rejestracja",
+   "systemy": "System powiadomień"
+  },
+  "AI-56": {
+   "nazwa": "Dane z interakcji głosowych pacjenta (voicebot)",
+   "kat": "Dane osobowe",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe / art.9 (kontekst)",
+   "P": "Ś",
+   "I": "Ś",
+   "D": "N",
+   "wlasciciel": "Rejestracja / DI.DI",
+   "systemy": "Platforma AI (voicebot)"
+  },
+  "AI-57": {
+   "nazwa": "Rozszerzona EDM - dokumenty ustawowe (onkolog., kardiolog., histopat., cytolog., patient summary, med. pracy)",
+   "kat": "Med. dokumentacja",
+   "forma": "Elektr.",
+   "RODO": "Art.9 (zdrowie)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "Oddziały / Poradnie",
+   "systemy": "HIS (EDM) + P1"
+  },
+  "AI-58": {
+   "nazwa": "Dane pseudonimizowane/zanonimizowane do AI i wtórnego wykorzystania (EHDS, DGA)",
+   "kat": "Med. / wtórne wykorzystanie",
+   "forma": "Elektr.",
+   "RODO": "Pseudonimizowane",
+   "P": "W",
+   "I": "W",
+   "D": "N",
+   "wlasciciel": "IOD / DI.DI",
+   "systemy": "Repozytorium + PUI"
+  },
+  "AI-59": {
+   "nazwa": "Dane zarządcze i zasobowe (portal zarządczy)",
+   "kat": "Zarządcze",
+   "forma": "Elektr.",
+   "RODO": "Zwykłe",
+   "P": "Ś",
+   "I": "Ś",
+   "D": "Ś",
+   "wlasciciel": "Zarząd / K",
+   "systemy": "Portal zasobowo-zarządczy"
+  },
+  "AI-60": {
+   "nazwa": "Modele, konfiguracje i logi systemów AI (lokalne)",
+   "kat": "IT / techniczne",
+   "forma": "Elektr.",
+   "RODO": "Poufne (wewn.)",
+   "P": "W",
+   "I": "W",
+   "D": "Ś",
+   "wlasciciel": "DI.DI",
+   "systemy": "Platforma AI / klaster AI"
+  },
+  "AI-61": {
+   "nazwa": "Dane podpisu elektronicznego i certyfikatów kwalifikowanych",
+   "kat": "Dane uwierzytelniające / techniczne",
+   "forma": "Elektroniczna",
+   "RODO": "Zwykłe",
+   "P": null,
+   "I": null,
+   "D": null,
+   "wlasciciel": "DI.DI / ABS",
+   "systemy": "AW-S21"
+  }
+ },
+ "AW": {
+  "AW-S01": {
+   "nazwa": "HIS - szpitalny system informatyczny (pakiet medyczny)",
+   "typ": "Oprogramowanie",
+   "opis": "Ruch Chorych, Izba Przyjęć, Zlecenia, Apteka/Apteczka, Przychodnia, Statystyka, Zakażenia, Rehabilitacja, ZDM/EDM"
+  },
+  "AW-S02": {
+   "nazwa": "ERP - system administracyjno-zarządczy",
+   "typ": "Oprogramowanie",
+   "opis": "FK, Rejestr Sprzedaży/Zakupów, Koszty, Kadry-Płace, Magazyn, Środki Trwałe, Portal Pracowniczy"
+  },
+  "AW-S03": {
+   "nazwa": "RIS/PACS - system diagnostyki obrazowej",
+   "typ": "Oprogramowanie",
+   "opis": "Diagnostyka obrazowa - zlecenia, opisy, obrazy ; obejmuje przeglądarkę DICOM i dystrybucję obrazów"
+  },
+  "AW-S04": {
+   "nazwa": "LIS - system laboratoryjny (usługa zewnętrzna)",
+   "typ": "Oprogramowanie",
+   "opis": "System laboratoryjny po stronie usługi zewnętrznej; interfejs do HIS"
+  },
+  "AW-S05": {
+   "nazwa": "Integracja z platformą P1 / komponent EDM",
+   "typ": "Oprogramowanie",
+   "opis": "e-recepta, e-skierowanie, EDM, IKP, zdarzenia medyczne (HL7 CDA)"
+  },
+  "AW-S06": {
+   "nazwa": "Systemy biurowe, poczta, portal pracowniczy",
+   "typ": "Oprogramowanie",
+   "opis": "Praca biurowa, komunikacja, samoobsługa pracownika"
+  },
+  "AW-S07": {
+   "nazwa": "Strona WWW i BIP",
+   "typ": "Oprogramowanie",
+   "opis": "Komunikacja zewnętrzna, dostępność cyfrowa"
+  },
+  "AW-H01": {
+   "nazwa": "Serwery i macierze (serwerownia)",
+   "typ": "Sprzęt",
+   "opis": "Środowisko działania HIS/ERP, repozytorium EDM, kopie"
+  },
+  "AW-H02": {
+   "nazwa": "Stacje robocze / terminale",
+   "typ": "Sprzęt",
+   "opis": "Dostęp personelu do systemów"
+  },
+  "AW-H03": {
+   "nazwa": "Urządzenia medyczne z interfejsem IT",
+   "typ": "Sprzęt",
+   "opis": "RTG, TK, USG, aparatura diagnostyczna/terapeutyczna"
+  },
+  "AW-H04": {
+   "nazwa": "Urządzenia mobilne",
+   "typ": "Sprzęt",
+   "opis": "Praca mobilna, rehabilitacja domowa"
+  },
+  "AW-H05": {
+   "nazwa": "Nośniki danych i kopie",
+   "typ": "Sprzęt",
+   "opis": "Przenośne nośniki, taśmy/dyski kopii"
+  },
+  "AW-N01": {
+   "nazwa": "Sieć LAN/WAN i urządzenia sieciowe",
+   "typ": "Sieć",
+   "opis": "Łączność wewnętrzna między lokalizacjami i systemami"
+  },
+  "AW-N02": {
+   "nazwa": "Łącza internetowe i dostęp zdalny (VPN)",
+   "typ": "Sieć",
+   "opis": "Dostęp do P1, NFZ, PUI (usługi centralne), serwis zdalny"
+  },
+  "AW-N03": {
+   "nazwa": "Telefonia i łączność",
+   "typ": "Sieć",
+   "opis": "Komunikacja głosowa, rejestracja telefoniczna"
+  },
+  "AW-P01": {
+   "nazwa": "Personel medyczny",
+   "typ": "Personel",
+   "opis": "Lekarze, pielęgniarki, fizjoterapeuci, farmaceuci, diagności"
+  },
+  "AW-P02": {
+   "nazwa": "Personel administracyjny i pomocniczy",
+   "typ": "Personel",
+   "opis": "Rejestracja, rozliczenia, finanse, kadry, technika"
+  },
+  "AW-P03": {
+   "nazwa": "Personel IT i bezpieczeństwa",
+   "typ": "Personel",
+   "opis": "DI (Informatyka), ABS, IOD, PBI"
+  },
+  "AW-L01": {
+   "nazwa": "Lokalizacja Kup (szpital, serwerownia, archiwum)",
+   "typ": "Lokalizacja",
+   "opis": "Główna lokalizacja kliniczna i IT"
+  },
+  "AW-L02": {
+   "nazwa": "Lokalizacja Pokój (szpital rehabilitacyjny)",
+   "typ": "Lokalizacja",
+   "opis": "Rehabilitacja stacjonarna i ambulatoryjna"
+  },
+  "AW-L03": {
+   "nazwa": "Lokalizacja Chróścice (poradnia rodzinna)",
+   "typ": "Lokalizacja",
+   "opis": "POZ i medycyna szkolna"
+  },
+  "AW-O01": {
+   "nazwa": "Dostawca - laboratorium zewnętrzne (7100)",
+   "typ": "Struktura organizacji",
+   "opis": "Usługa diagnostyki laboratoryjnej"
+  },
+  "AW-O02": {
+   "nazwa": "Dostawca IT - autoryzowany serwis HIS/ERP",
+   "typ": "Struktura organizacji",
+   "opis": "Utrzymanie i rozwój HIS/ERP oraz modułów dziedzinowych"
+  },
+  "AW-O03": {
+   "nazwa": "Podmioty przetwarzające (IOD zewn., inni przetwarzający)",
+   "typ": "Struktura organizacji",
+   "opis": "Powierzenie przetwarzania danych"
+  },
+  "AW-O04": {
+   "nazwa": "Dostawcy usług (transport, catering, pralnia, sprzątanie)",
+   "typ": "Struktura organizacji",
+   "opis": "Usługi przekrojowe wspierające szpital"
+  },
+  "AW-S08": {
+   "nazwa": "Serwer integracyjny (szyna HL7)",
+   "typ": "Oprogramowanie",
+   "opis": "Wymiana danych między systemami dziedzinowymi i z P1 (HL7)"
+  },
+  "AW-S09": {
+   "nazwa": "Lokalne repozytorium danych medycznych / EDM",
+   "typ": "Oprogramowanie",
+   "opis": "Gromadzenie i udostępnianie EDM; baza pod wymianę i AI"
+  },
+  "AW-S10": {
+   "nazwa": "Platforma AI dokumentacyjna (opisy, chatbot, voicebot)",
+   "typ": "Oprogramowanie",
+   "opis": "Automatyzacja dokumentacji i obsługi pacjenta (modele językowe) ; w tym transkrypcja mowy i strukturyzacja opisów radiologicznych"
+  },
+  "AW-S11": {
+   "nazwa": "Integracja z platformą AI diagnostyki obrazowej (PUI)",
+   "typ": "Oprogramowanie",
+   "opis": "Pseudonimizacja i wysyłka obrazów, odbiór wstępnego opisu AI"
+  },
+  "AW-S12": {
+   "nazwa": "System uwierzytelniania wieloskładnikowego (MFA/2FA)",
+   "typ": "Oprogramowanie",
+   "opis": "Silne uwierzytelnianie dostępu do systemów"
+  },
+  "AW-S13": {
+   "nazwa": "System powiadomień pacjenta (e-powiadomienia/potwierdzenia)",
+   "typ": "Oprogramowanie",
+   "opis": "Powiadomienia i potwierdzenia wizyt"
+  },
+  "AW-S14": {
+   "nazwa": "Moduł obsługi punktów pobrań",
+   "typ": "Oprogramowanie",
+   "opis": "Obsługa pobrań materiału do badań w punktach pobrań"
+  },
+  "AW-S15": {
+   "nazwa": "Portal zasobowo-zarządczy",
+   "typ": "Oprogramowanie",
+   "opis": "Pulpity, widgety i raporty zarządcze"
+  },
+  "AW-S16": {
+   "nazwa": "System monitorowania środowiska IT/HIS",
+   "typ": "Oprogramowanie",
+   "opis": "Monitoring infrastruktury, baz i aplikacji; alerty 24/7"
+  },
+  "AW-S17": {
+   "nazwa": "UTM / NGFW (zapora nowej generacji, HA)",
+   "typ": "Oprogramowanie/Sprzęt",
+   "opis": "Ochrona styku sieci, segmentacja, dostęp zdalny"
+  },
+  "AW-S18": {
+   "nazwa": "System EDR/XDR (ochrona stacji i serwerów)",
+   "typ": "Oprogramowanie",
+   "opis": "Wykrywanie i reagowanie na stacjach/serwerach, szyfrowanie"
+  },
+  "AW-S19": {
+   "nazwa": "System kontroli dostępu do sieci (NAC)",
+   "typ": "Oprogramowanie",
+   "opis": "Kontrola dopuszczenia urządzeń do sieci"
+  },
+  "AW-S20": {
+   "nazwa": "System kopii zapasowych i odtwarzania (z odmiejscowieniem)",
+   "typ": "Oprogramowanie",
+   "opis": "Kopie 3-2-1, środowisko odtworzeniowe, kopie odmiejscowione"
+  },
+  "AW-H06": {
+   "nazwa": "Klaster serwerów AI (3 węzły)",
+   "typ": "Sprzęt",
+   "opis": "Lokalna moc obliczeniowa dla narzędzi AI"
+  },
+  "AW-H07": {
+   "nazwa": "Urządzenia / skanery do digitalizacji dokumentacji",
+   "typ": "Sprzęt",
+   "opis": "Skanowanie dokumentacji papierowej do EDM ; + oprogramowanie do masowego skanowania/digitalizacji dokumentacji"
+  },
+  "AW-H08": {
+   "nazwa": "Biblioteka taśmowa (odmiejscowienie kopii)",
+   "typ": "Sprzęt",
+   "opis": "Kopie offline / odmiejscowione"
+  },
+  "AW-O05": {
+   "nazwa": "Usługa operacyjnego monitorowania bezpieczeństwa 24/7 (zewn.)",
+   "typ": "Struktura organizacji",
+   "opis": "Ciągły monitoring i obsługa alertów bezpieczeństwa (SOC)"
+  },
+  "AW-O06": {
+   "nazwa": "Operator centralny e-zdrowia (PUI / repozytorium centralne)",
+   "typ": "Struktura organizacji",
+   "opis": "Usługi AI diagnostyki obrazowej, centralne repozytorium"
+  },
+  "AW-S21": {
+   "nazwa": "Platforma podpisu elektronicznego/kwalifikowanego i zarządzania certyfikatami",
+   "typ": "Oprogramowanie",
+   "opis": "Składanie i weryfikacja podpisu/pieczęci kwalifikowanej dla EDM i dokumentów; zarządzanie certyfikatami użytkowników; znaczniki czasu."
+  },
+  "AW-S22": {
+   "nazwa": "Repozytorium wieloźródłowe danych medycznych (VNA, DICOM/non-DICOM)",
+   "typ": "Oprogramowanie",
+   "opis": "Archiwizacja i udostępnianie danych z wielu modalności (obrazy, EKG, dane lab.) z jednego interfejsu."
+  },
+  "AW-S23": {
+   "nazwa": "Indeks pacjenta (MPI - Master Patient Index)",
+   "typ": "Oprogramowanie",
+   "opis": "Łączenie rekordów pacjenta z różnych pracowni/systemów w jeden spójny identyfikator."
+  }
+ }
+}

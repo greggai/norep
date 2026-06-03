@@ -1,0 +1,11 @@
+# Artefakty pośrednie / robocze
+.work/
+__pycache__/
+*.pyc
+
+# Luźne diagramy (203×3 plików) są spakowane w dostarczanym ZIP-ie i w pełni
+# odtwarzalne: `python pipeline/build_pkg.py && python pipeline/make_docs.py`.
+# W repo trzymamy tylko indeks (out/00_INDEKS) + gotowy ZIP.
+out/1_Zarzadczy_Z/
+out/2_Glowny_G/
+out/3_Wspierajacy_W/
