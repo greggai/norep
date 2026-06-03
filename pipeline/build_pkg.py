@@ -350,15 +350,16 @@ def build_spec(proc):
     pat_key, pat = choose_pattern(proc)
     start_name, start_evt, steps, ends, edges, asset_hosts = pat
 
-    nodes = [{"id":"s","type":"startEvent","name":start_name,"eventType":start_evt}]
+    LANE = "L1"
+    nodes = [{"id":"s","type":"startEvent","name":start_name,"eventType":start_evt,"lane":LANE}]
     for st in steps:
         k, t, nm = st[0], st[1], st[2]
         opts = st[3] if len(st) > 3 else {}
-        nd = {"id":k,"type":t,"name":nm}
+        nd = {"id":k,"type":t,"name":nm,"lane":LANE}
         if opts.get("loop"): nd["loop"] = True
         nodes.append(nd)
     for k, nm, ev in ends:
-        nd = {"id":k,"type":"endEvent","name":nm}
+        nd = {"id":k,"type":"endEvent","name":nm,"lane":LANE}
         if ev: nd["eventType"] = ev
         nodes.append(nd)
 
@@ -380,30 +381,25 @@ def build_spec(proc):
         nodes.append({"id":did,"type":asset_node_type(c),"name":anm})
         associations.append({"source":did,"target":task_keys[i % len(task_keys)]})
 
-    # adnotacje: meta (wlasciciel/komorka/warstwa + watermark) oraz systemy/RODO
+    # Basen = komorka org., tor = rola wlasciciela (jedyne dane o odpowiedzialnosci w rejestrze)
     owner = proc.get("Właściciel (rola)") or "-"; unit = proc.get("Komórka org.") or "-"
-    warstwa = proc.get("Warstwa") or ""; charakter = proc.get("Charakter") or ""
-    status = proc.get("Status modelowania") or ""
-    l3 = proc.get("Model BPMN (L3)")
-    meta = "Właściciel: %s | Komórka: %s | %s / %s | SZKIC L3 z rejestru L2 - do weryfikacji as-is" % (
-        owner, short(unit, 28), warstwa, charakter)
-    nodes.append({"id":"n_meta","type":"textAnnotation","name":meta})  # stopka (bez asocjacji)
 
+    # Stopka produkcyjna: tylko kluczowe, czytelne informacje (systemy + RODO). Bez znacznikow roboczych.
     sysraw = proc.get("Systemy / moduły (kody)")
     med = (proc.get("Dane medyczne (art. 9 RODO)") or "").strip().lower()
     os_ = (proc.get("Dane osobowe (RODO)") or "").strip().lower()
-    rodo = "dane medyczne (art. 9 RODO)" if med == "tak" else ("dane osobowe (RODO)" if os_ == "tak" else "brak danych osobowych")
     parts = []
-    if sysraw: parts.append("Systemy: %s" % short(str(sysraw), 46))
-    parts.append("RODO: %s" % rodo)
-    if not codes: parts.append("Brak zmapowanych aktywów AI w rejestrze")
-    if l3: parts.append("Istnieje model L3: %s" % short(str(l3), 26))
-    ann2 = " | ".join(parts)
-    nodes.append({"id":"n_info","type":"textAnnotation","name":ann2})  # stopka (bez asocjacji)
+    if sysraw: parts.append("Systemy: %s" % short(str(sysraw), 52))
+    if med == "tak": parts.append("RODO: dane medyczne (art. 9)")
+    elif os_ == "tak": parts.append("RODO: dane osobowe")
+    if parts:
+        nodes.append({"id":"n_info","type":"textAnnotation","name":" · ".join(parts)})
 
+    pool = {"id":"P1","name":short(unit, 38),
+            "lanes":[{"id":LANE,"name":short(owner, 38)}]}
     spec = {"id":"Proc_%s" % re.sub(r'[^A-Za-z0-9]','_', kod),
             "name":"%s  %s" % (kod, name),
-            "nodes":nodes, "flows":flows, "associations":associations}
+            "pools":[pool], "nodes":nodes, "flows":flows, "associations":associations}
     return spec, pat_key, codes
 
 # ---------------------------------------------------------------- main
