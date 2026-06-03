@@ -1,108 +1,108 @@
-﻿Typ;Kod;Nazwa;Kategoria/Typ;RODO;P;I;D;Wlasciciel;Systemy
-AI;AI-01;Dokumentacja medyczna indywidualna wewnętrzna (historia choroby);Med. dokumentacja;Art.9 (zdrowie);W;W;W;DM.SDM / Oddziały;HIS: Ruch Chorych, ZDM/EDM
-AI;AI-02;Karta zleceń lekarskich;Med. dokumentacja;Art.9 (zdrowie);W;W;W;Oddziały;HIS: Zlecenia Medyczne
-AI;AI-03;Karta indywidualnej opieki pielęgniarskiej;Med. dokumentacja;Art.9 (zdrowie);Ś;W;W;DM.PP;HIS: Ruch Chorych
-AI;AI-04;Karta obserwacji / gorączkowa;Med. dokumentacja;Art.9 (zdrowie);Ś;W;W;Oddziały;HIS: Ruch Chorych
-AI;AI-05;Dokumentacja indywidualna zewnętrzna (karta informacyjna, epikryza, zaświadczenia);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;DM.SDM / Oddziały;HIS: ZDM/EDM, P1
-AI;AI-06;Skierowania (przyjęcia, do pracowni, e-skierowanie);Med. dokumentacja;Art.9 (zdrowie);Ś;W;Ś;Rejestracja / Oddziały;HIS: Rejestracja, P1
-AI;AI-07;Recepty / e-recepty i dane o farmakoterapii;Med. dokumentacja;Art.9 (zdrowie);W;W;W;Oddziały / Apteka;HIS: Apteczka Oddz., P1
-AI;AI-08;Księga główna przyjęć i wypisów;Med. dokumentacja zbiorcza;Art.9 (zdrowie);W;W;W;DM.SDM;HIS: Ruch Chorych
-AI;AI-09;Księgi oddziałowe / raportów pielęgniarskich;Med. dokumentacja zbiorcza;Art.9 (zdrowie);Ś;W;Ś;Oddziały / DM.PP;HIS: Ruch Chorych
-AI;AI-10;Księgi pracowni / zabiegów (diagnostyka);Med. dokumentacja zbiorcza;Art.9 (zdrowie);Ś;W;Ś;Pracownie;HIS: Zlecenia / Pracownia
-AI;AI-11;Dokumentacja porad ambulatoryjnych / rejestr wizyt AOS-POZ;Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;Poradnie;HIS: Przychodnia (Gabinet)
-AI;AI-12;Wyniki badań laboratoryjnych;Med. wyniki;Art.9 (zdrowie);W;W;W;Laboratorium zewn. / Oddziały;LIS (zewn.) / HIS: Zlecenia
-AI;AI-13;Wyniki i obrazy diagnostyki obrazowej (RTG/TK/USG);Med. wyniki;Art.9 (zdrowie);W;W;W;Pracownie diagn.;RIS/PACS
-AI;AI-14;Wyniki badań czynnościowych / endoskopowych / polisomnografii;Med. wyniki;Art.9 (zdrowie);W;W;Ś;Pracownie diagn.;HIS: Zlecenia / Pracownia
-AI;AI-15;Zgody pacjenta (świadoma zgoda, zgody RODO);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;Oddziały / Poradnie;HIS: ZDM
-AI;AI-16;Plan rehabilitacji indywidualnej (PRI) / plan terapii;Med. dokumentacja;Art.9 (zdrowie);Ś;W;Ś;Oddz./Ośrodki rehab.;HIS: Rehabilitacja
-AI;AI-17;Rejestr zakażeń szpitalnych i drobnoustrojów alarmowych;Med. epidemiologia;Art.9 (zdrowie);W;W;Ś;DM.DHiE;HIS: Zakażenia
-AI;AI-18;Listy oczekujących (kolejki);Med./rozliczenia;Art.9 (zdrowie);Ś;W;Ś;DM.DRZ / Rejestracja;HIS: Kolejki
-AI;AI-19;Dokumentacja transportu medycznego;Med. dokumentacja;Art.9 (zdrowie);Ś;Ś;Ś;Zespół Transportu;HIS / dok. zlecenia
-AI;AI-20;Dokumentacja zgonu (karta zgonu, protokoły);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;Oddziały / IP;HIS: Ruch Chorych
-AI;AI-21;Dane identyfikacyjne i kontaktowe pacjenta;Dane osobowe;Art.9 (zdrowie);W;W;W;DM.SDM / Rejestracja;HIS: Ruch Chorych / Przychodnia
-AI;AI-22;Dane o uprawnieniach do świadczeń (eWUŚ);Dane osobowe;Zwykłe;Ś;W;Ś;DM.DRZ;HIS + eWUŚ
-AI;AI-23;Akta osobowe pracowników;Dane osobowe;Zwykłe;W;W;Ś;K.DPP;ERP: Kadry-Płace
-AI;AI-24;Dane płacowe i wynagrodzeń;Dane osobowe;Zwykłe;W;W;Ś;K.DPP;ERP: Płace
-AI;AI-25;Dane medycyny pracy pracowników;Dane osobowe;Art.9 (zdrowie);W;W;N;K.DPP;ERP / dok. zewn.
-AI;AI-26;Dane kontrahentów i dostawców;Dane osobowe;Zwykłe;Ś;Ś;Ś;DZP / K.DFK;ERP: Rejestr Zakupów
-AI;AI-27;Dane rozliczeniowe NFZ (świadczenia, JGP, komunikaty);Rozliczenia;Art.9 (zdrowie);W;W;W;DM.DRZ;HIS: Rozliczenia
-AI;AI-28;Umowa z NFZ i aneksy;Rozliczenia / prawne;Zwykłe;Ś;W;Ś;Zarząd / DM.DRZ;ERP / repozytorium umów
-AI;AI-29;Sprawozdawczość statystyczna (MZ-29, MZ-11, karty stat.);Rozliczenia / statystyka;Zwykłe;N;W;Ś;DM.DRZ;HIS: Statystyka
-AI;AI-30;Dane finansowo-księgowe (księgi, faktury);Finanse;Zwykłe;Ś;W;Ś;K.DFK;ERP: FK / Rejestr Sprzedaży
-AI;AI-31;Rachunek kosztów świadczeń;Finanse;Zwykłe;Ś;W;N;K.DFK;ERP: Koszty
-AI;AI-32;Dokumentacja systemów zarządzania (ISO 9001/14001);Zarządcze / zgodność;Zwykłe;N;W;Ś;PZSZ;Repozytorium dokumentów
-AI;AI-33;Dokumentacja akredytacyjna CMJ;Zarządcze / zgodność;Zwykłe;Ś;W;Ś;PA;Repozytorium dokumentów
-AI;AI-34;Dokumentacja SZBI (polityki, analiza ryzyka, SoA);Bezpieczeństwo;Poufne (wewn.);W;W;Ś;PBI;Repozytorium SZBI
-AI;AI-35;Rejestry RODO (czynności, naruszenia) i DPIA;Bezpieczeństwo / RODO;Poufne (wewn.);W;W;Ś;IOD;Rejestr RODO
-AI;AI-36;Rejestr incydentów cyber / dokumentacja KSC;Bezpieczeństwo;Poufne (wewn.);W;W;W;PBI / DI.DI;System zgłoszeń / SIEM
-AI;AI-37;Dokumentacja korporacyjna (uchwały ZW/RN/Zarządu, KRS);Korporacyjne;Zwykłe;Ś;W;Ś;K.DOP / Zarząd;Repozytorium / KRS
-AI;AI-38;Umowy z dostawcami (CLM);Prawne;Zwykłe;Ś;W;Ś;DZP / RP;ERP / repozytorium umów
-AI;AI-39;Informacje niejawne (jeśli prowadzone);Niejawne;Niejawne;W;W;Ś;PIN;Kancelaria tajna
-AI;AI-40;Dokumentacja BHP i powypadkowa;BHP;Zwykłe;Ś;W;N;BHP;Rejestry BHP
-AI;AI-41;Dokumentacja P-POŻ (plany ewakuacji, IBP);Bezpieczeństwo obiektów;Brak DO;Ś;W;W;P-POŻ;Repozytorium / dok. tech.
-AI;AI-42;Dokumentacja obronna (OC / MOB);Obronne;Niejawne;W;W;Ś;OBR;Kancelaria / repozytorium
-AI;AI-43;Ewidencja odpadów medycznych (BDO/KEO);Środowisko;Brak DO;N;W;Ś;DI.DT;BDO
-AI;AI-44;Dokumentacja techniczna obiektów (książka obiektu, przeglądy);Infrastruktura;Brak DO;N;W;Ś;DI.DT;Dok. techniczna
-AI;AI-45;Ewidencja / paszporty aparatury medycznej (wyroby med.);Infrastruktura;Brak DO;N;W;Ś;DI.DT;Ewidencja sprzętu
-AI;AI-46;Skargi, wnioski, sprawy praw pacjenta;Prawa pacjenta;Art.9 (zdrowie);W;W;Ś;PPP;Rejestr skarg
-AI;AI-47;Dokumentacja dostępności (deklaracja, audyt WCAG);Dostępność;Brak DO;N;Ś;Ś;PD;WWW/BIP
-AI;AI-48;Dane konfiguracyjne systemów HIS/ERP;IT / techniczne;Poufne (wewn.);W;W;W;DI.DI;HIS / ERP
-AI;AI-49;Konta i uprawnienia użytkowników (IAM);IT / techniczne;Poufne (wewn.);W;W;W;DI.DI / ABS;AD / HIS
-AI;AI-50;Kopie zapasowe;IT / techniczne;Poufne (wewn.);W;W;W;DI.DI;System backup
-AI;AI-51;Logi systemowe i bezpieczeństwa;IT / techniczne;Poufne (wewn.);W;W;Ś;DI.DI / ABS;SIEM / logi
-AI;AI-52;Dane uwierzytelniające (hasła, klucze, certyfikaty);IT / techniczne;Poufne (wewn.);W;W;W;DI.DI / ABS;PKI / sejf haseł
-AI;AI-53;Treści generowane przez AI (wstępne opisy lekarskie);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;Oddziały / Lekarze;HIS + platforma AI
-AI;AI-54;Badania obrazowe i wyniki analiz AI przekazywane do PUI;Med. wyniki;Art.9 (pseudonim. przy wysyłce);W;W;Ś;Pracownie diagn.;RIS/PACS + integracja PUI
-AI;AI-55;Powiadomienia i potwierdzenia pacjenta (e-powiadomienia);Dane osobowe / operacyjne;Zwykłe (kontekst zdrowotny);Ś;Ś;Ś;Rejestracja;System powiadomień
-AI;AI-56;Dane z interakcji głosowych pacjenta (voicebot);Dane osobowe;Zwykłe / art.9 (kontekst);Ś;Ś;N;Rejestracja / DI.DI;Platforma AI (voicebot)
-AI;AI-57;Rozszerzona EDM - dokumenty ustawowe (onkolog., kardiolog., histopat., cytolog., patient summary, med. pracy);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś;Oddziały / Poradnie;HIS (EDM) + P1
-AI;AI-58;Dane pseudonimizowane/zanonimizowane do AI i wtórnego wykorzystania (EHDS, DGA);Med. / wtórne wykorzystanie;Pseudonimizowane;W;W;N;IOD / DI.DI;Repozytorium + PUI
-AI;AI-59;Dane zarządcze i zasobowe (portal zarządczy);Zarządcze;Zwykłe;Ś;Ś;Ś;Zarząd / K;Portal zasobowo-zarządczy
-AI;AI-60;Modele, konfiguracje i logi systemów AI (lokalne);IT / techniczne;Poufne (wewn.);W;W;Ś;DI.DI;Platforma AI / klaster AI
-AI;AI-61;Dane podpisu elektronicznego i certyfikatów kwalifikowanych;Dane uwierzytelniające / techniczne;Zwykłe;;;;DI.DI / ABS;AW-S21
-AW;AW-S01;HIS - szpitalny system informatyczny (pakiet medyczny);Oprogramowanie;;;;;;Ruch Chorych, Izba Przyjęć, Zlecenia, Apteka/Apteczka, Przychodnia, Statystyka, Zakażenia, Rehabilitacja, ZDM/EDM
-AW;AW-S02;ERP - system administracyjno-zarządczy;Oprogramowanie;;;;;;FK, Rejestr Sprzedaży/Zakupów, Koszty, Kadry-Płace, Magazyn, Środki Trwałe, Portal Pracowniczy
-AW;AW-S03;RIS/PACS - system diagnostyki obrazowej;Oprogramowanie;;;;;;"Diagnostyka obrazowa - zlecenia, opisy, obrazy ; obejmuje przeglądarkę DICOM i dystrybucję obrazów"
-AW;AW-S04;LIS - system laboratoryjny (usługa zewnętrzna);Oprogramowanie;;;;;;"System laboratoryjny po stronie usługi zewnętrznej; interfejs do HIS"
-AW;AW-S05;Integracja z platformą P1 / komponent EDM;Oprogramowanie;;;;;;e-recepta, e-skierowanie, EDM, IKP, zdarzenia medyczne (HL7 CDA)
-AW;AW-S06;Systemy biurowe, poczta, portal pracowniczy;Oprogramowanie;;;;;;Praca biurowa, komunikacja, samoobsługa pracownika
-AW;AW-S07;Strona WWW i BIP;Oprogramowanie;;;;;;Komunikacja zewnętrzna, dostępność cyfrowa
-AW;AW-H01;Serwery i macierze (serwerownia);Sprzęt;;;;;;Środowisko działania HIS/ERP, repozytorium EDM, kopie
-AW;AW-H02;Stacje robocze / terminale;Sprzęt;;;;;;Dostęp personelu do systemów
-AW;AW-H03;Urządzenia medyczne z interfejsem IT;Sprzęt;;;;;;RTG, TK, USG, aparatura diagnostyczna/terapeutyczna
-AW;AW-H04;Urządzenia mobilne;Sprzęt;;;;;;Praca mobilna, rehabilitacja domowa
-AW;AW-H05;Nośniki danych i kopie;Sprzęt;;;;;;Przenośne nośniki, taśmy/dyski kopii
-AW;AW-N01;Sieć LAN/WAN i urządzenia sieciowe;Sieć;;;;;;Łączność wewnętrzna między lokalizacjami i systemami
-AW;AW-N02;Łącza internetowe i dostęp zdalny (VPN);Sieć;;;;;;Dostęp do P1, NFZ, PUI (usługi centralne), serwis zdalny
-AW;AW-N03;Telefonia i łączność;Sieć;;;;;;Komunikacja głosowa, rejestracja telefoniczna
-AW;AW-P01;Personel medyczny;Personel;;;;;;Lekarze, pielęgniarki, fizjoterapeuci, farmaceuci, diagności
-AW;AW-P02;Personel administracyjny i pomocniczy;Personel;;;;;;Rejestracja, rozliczenia, finanse, kadry, technika
-AW;AW-P03;Personel IT i bezpieczeństwa;Personel;;;;;;DI (Informatyka), ABS, IOD, PBI
-AW;AW-L01;Lokalizacja Kup (szpital, serwerownia, archiwum);Lokalizacja;;;;;;Główna lokalizacja kliniczna i IT
-AW;AW-L02;Lokalizacja Pokój (szpital rehabilitacyjny);Lokalizacja;;;;;;Rehabilitacja stacjonarna i ambulatoryjna
-AW;AW-L03;Lokalizacja Chróścice (poradnia rodzinna);Lokalizacja;;;;;;POZ i medycyna szkolna
-AW;AW-O01;Dostawca - laboratorium zewnętrzne (7100);Struktura organizacji;;;;;;Usługa diagnostyki laboratoryjnej
-AW;AW-O02;Dostawca IT - autoryzowany serwis HIS/ERP;Struktura organizacji;;;;;;Utrzymanie i rozwój HIS/ERP oraz modułów dziedzinowych
-AW;AW-O03;Podmioty przetwarzające (IOD zewn., inni przetwarzający);Struktura organizacji;;;;;;Powierzenie przetwarzania danych
-AW;AW-O04;Dostawcy usług (transport, catering, pralnia, sprzątanie);Struktura organizacji;;;;;;Usługi przekrojowe wspierające szpital
-AW;AW-S08;Serwer integracyjny (szyna HL7);Oprogramowanie;;;;;;Wymiana danych między systemami dziedzinowymi i z P1 (HL7)
-AW;AW-S09;Lokalne repozytorium danych medycznych / EDM;Oprogramowanie;;;;;;"Gromadzenie i udostępnianie EDM; baza pod wymianę i AI"
-AW;AW-S10;Platforma AI dokumentacyjna (opisy, chatbot, voicebot);Oprogramowanie;;;;;;"Automatyzacja dokumentacji i obsługi pacjenta (modele językowe) ; w tym transkrypcja mowy i strukturyzacja opisów radiologicznych"
-AW;AW-S11;Integracja z platformą AI diagnostyki obrazowej (PUI);Oprogramowanie;;;;;;Pseudonimizacja i wysyłka obrazów, odbiór wstępnego opisu AI
-AW;AW-S12;System uwierzytelniania wieloskładnikowego (MFA/2FA);Oprogramowanie;;;;;;Silne uwierzytelnianie dostępu do systemów
-AW;AW-S13;System powiadomień pacjenta (e-powiadomienia/potwierdzenia);Oprogramowanie;;;;;;Powiadomienia i potwierdzenia wizyt
-AW;AW-S14;Moduł obsługi punktów pobrań;Oprogramowanie;;;;;;Obsługa pobrań materiału do badań w punktach pobrań
-AW;AW-S15;Portal zasobowo-zarządczy;Oprogramowanie;;;;;;Pulpity, widgety i raporty zarządcze
-AW;AW-S16;System monitorowania środowiska IT/HIS;Oprogramowanie;;;;;;"Monitoring infrastruktury, baz i aplikacji; alerty 24/7"
-AW;AW-S17;UTM / NGFW (zapora nowej generacji, HA);Oprogramowanie/Sprzęt;;;;;;Ochrona styku sieci, segmentacja, dostęp zdalny
-AW;AW-S18;System EDR/XDR (ochrona stacji i serwerów);Oprogramowanie;;;;;;Wykrywanie i reagowanie na stacjach/serwerach, szyfrowanie
-AW;AW-S19;System kontroli dostępu do sieci (NAC);Oprogramowanie;;;;;;Kontrola dopuszczenia urządzeń do sieci
-AW;AW-S20;System kopii zapasowych i odtwarzania (z odmiejscowieniem);Oprogramowanie;;;;;;Kopie 3-2-1, środowisko odtworzeniowe, kopie odmiejscowione
-AW;AW-H06;Klaster serwerów AI (3 węzły);Sprzęt;;;;;;Lokalna moc obliczeniowa dla narzędzi AI
-AW;AW-H07;Urządzenia / skanery do digitalizacji dokumentacji;Sprzęt;;;;;;"Skanowanie dokumentacji papierowej do EDM ; + oprogramowanie do masowego skanowania/digitalizacji dokumentacji"
-AW;AW-H08;Biblioteka taśmowa (odmiejscowienie kopii);Sprzęt;;;;;;Kopie offline / odmiejscowione
-AW;AW-O05;Usługa operacyjnego monitorowania bezpieczeństwa 24/7 (zewn.);Struktura organizacji;;;;;;Ciągły monitoring i obsługa alertów bezpieczeństwa (SOC)
-AW;AW-O06;Operator centralny e-zdrowia (PUI / repozytorium centralne);Struktura organizacji;;;;;;Usługi AI diagnostyki obrazowej, centralne repozytorium
-AW;AW-S21;Platforma podpisu elektronicznego/kwalifikowanego i zarządzania certyfikatami;Oprogramowanie;;;;;;"Składanie i weryfikacja podpisu/pieczęci kwalifikowanej dla EDM i dokumentów; zarządzanie certyfikatami użytkowników; znaczniki czasu."
-AW;AW-S22;Repozytorium wieloźródłowe danych medycznych (VNA, DICOM/non-DICOM);Oprogramowanie;;;;;;Archiwizacja i udostępnianie danych z wielu modalności (obrazy, EKG, dane lab.) z jednego interfejsu.
-AW;AW-S23;Indeks pacjenta (MPI - Master Patient Index);Oprogramowanie;;;;;;Łączenie rekordów pacjenta z różnych pracowni/systemów w jeden spójny identyfikator.
+﻿Typ;Kod;Nazwa;Kategoria/Typ;RODO;P;I;D
+AI;AI-01;Dokumentacja medyczna indywidualna wewnętrzna (historia choroby);Med. dokumentacja;Art.9 (zdrowie);W;W;W
+AI;AI-02;Karta zleceń lekarskich;Med. dokumentacja;Art.9 (zdrowie);W;W;W
+AI;AI-03;Karta indywidualnej opieki pielęgniarskiej;Med. dokumentacja;Art.9 (zdrowie);Ś;W;W
+AI;AI-04;Karta obserwacji / gorączkowa;Med. dokumentacja;Art.9 (zdrowie);Ś;W;W
+AI;AI-05;Dokumentacja indywidualna zewnętrzna (karta informacyjna, epikryza, zaświadczenia);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-06;Skierowania (przyjęcia, do pracowni, e-skierowanie);Med. dokumentacja;Art.9 (zdrowie);Ś;W;Ś
+AI;AI-07;Recepty / e-recepty i dane o farmakoterapii;Med. dokumentacja;Art.9 (zdrowie);W;W;W
+AI;AI-08;Księga główna przyjęć i wypisów;Med. dokumentacja zbiorcza;Art.9 (zdrowie);W;W;W
+AI;AI-09;Księgi oddziałowe / raportów pielęgniarskich;Med. dokumentacja zbiorcza;Art.9 (zdrowie);Ś;W;Ś
+AI;AI-10;Księgi pracowni / zabiegów (diagnostyka);Med. dokumentacja zbiorcza;Art.9 (zdrowie);Ś;W;Ś
+AI;AI-11;Dokumentacja porad ambulatoryjnych / rejestr wizyt AOS-POZ;Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-12;Wyniki badań laboratoryjnych;Med. wyniki;Art.9 (zdrowie);W;W;W
+AI;AI-13;Wyniki i obrazy diagnostyki obrazowej (RTG/TK/USG);Med. wyniki;Art.9 (zdrowie);W;W;W
+AI;AI-14;Wyniki badań czynnościowych / endoskopowych / polisomnografii;Med. wyniki;Art.9 (zdrowie);W;W;Ś
+AI;AI-15;Zgody pacjenta (świadoma zgoda, zgody RODO);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-16;Plan rehabilitacji indywidualnej (PRI) / plan terapii;Med. dokumentacja;Art.9 (zdrowie);Ś;W;Ś
+AI;AI-17;Rejestr zakażeń szpitalnych i drobnoustrojów alarmowych;Med. epidemiologia;Art.9 (zdrowie);W;W;Ś
+AI;AI-18;Listy oczekujących (kolejki);Med./rozliczenia;Art.9 (zdrowie);Ś;W;Ś
+AI;AI-19;Dokumentacja transportu medycznego;Med. dokumentacja;Art.9 (zdrowie);Ś;Ś;Ś
+AI;AI-20;Dokumentacja zgonu (karta zgonu, protokoły);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-21;Dane identyfikacyjne i kontaktowe pacjenta;Dane osobowe;Art.9 (zdrowie);W;W;W
+AI;AI-22;Dane o uprawnieniach do świadczeń (eWUŚ);Dane osobowe;Zwykłe;Ś;W;Ś
+AI;AI-23;Akta osobowe pracowników;Dane osobowe;Zwykłe;W;W;Ś
+AI;AI-24;Dane płacowe i wynagrodzeń;Dane osobowe;Zwykłe;W;W;Ś
+AI;AI-25;Dane medycyny pracy pracowników;Dane osobowe;Art.9 (zdrowie);W;W;N
+AI;AI-26;Dane kontrahentów i dostawców;Dane osobowe;Zwykłe;Ś;Ś;Ś
+AI;AI-27;Dane rozliczeniowe NFZ (świadczenia, JGP, komunikaty);Rozliczenia;Art.9 (zdrowie);W;W;W
+AI;AI-28;Umowa z NFZ i aneksy;Rozliczenia / prawne;Zwykłe;Ś;W;Ś
+AI;AI-29;Sprawozdawczość statystyczna (MZ-29, MZ-11, karty stat.);Rozliczenia / statystyka;Zwykłe;N;W;Ś
+AI;AI-30;Dane finansowo-księgowe (księgi, faktury);Finanse;Zwykłe;Ś;W;Ś
+AI;AI-31;Rachunek kosztów świadczeń;Finanse;Zwykłe;Ś;W;N
+AI;AI-32;Dokumentacja systemów zarządzania (ISO 9001/14001);Zarządcze / zgodność;Zwykłe;N;W;Ś
+AI;AI-33;Dokumentacja akredytacyjna CMJ;Zarządcze / zgodność;Zwykłe;Ś;W;Ś
+AI;AI-34;Dokumentacja SZBI (polityki, analiza ryzyka, SoA);Bezpieczeństwo;Poufne (wewn.);W;W;Ś
+AI;AI-35;Rejestry RODO (czynności, naruszenia) i DPIA;Bezpieczeństwo / RODO;Poufne (wewn.);W;W;Ś
+AI;AI-36;Rejestr incydentów cyber / dokumentacja KSC;Bezpieczeństwo;Poufne (wewn.);W;W;W
+AI;AI-37;Dokumentacja korporacyjna (uchwały ZW/RN/Zarządu, KRS);Korporacyjne;Zwykłe;Ś;W;Ś
+AI;AI-38;Umowy z dostawcami (CLM);Prawne;Zwykłe;Ś;W;Ś
+AI;AI-39;Informacje niejawne (jeśli prowadzone);Niejawne;Niejawne;W;W;Ś
+AI;AI-40;Dokumentacja BHP i powypadkowa;BHP;Zwykłe;Ś;W;N
+AI;AI-41;Dokumentacja P-POŻ (plany ewakuacji, IBP);Bezpieczeństwo obiektów;Brak DO;Ś;W;W
+AI;AI-42;Dokumentacja obronna (OC / MOB);Obronne;Niejawne;W;W;Ś
+AI;AI-43;Ewidencja odpadów medycznych (BDO/KEO);Środowisko;Brak DO;N;W;Ś
+AI;AI-44;Dokumentacja techniczna obiektów (książka obiektu, przeglądy);Infrastruktura;Brak DO;N;W;Ś
+AI;AI-45;Ewidencja / paszporty aparatury medycznej (wyroby med.);Infrastruktura;Brak DO;N;W;Ś
+AI;AI-46;Skargi, wnioski, sprawy praw pacjenta;Prawa pacjenta;Art.9 (zdrowie);W;W;Ś
+AI;AI-47;Dokumentacja dostępności (deklaracja, audyt WCAG);Dostępność;Brak DO;N;Ś;Ś
+AI;AI-48;Dane konfiguracyjne systemów HIS/ERP;IT / techniczne;Poufne (wewn.);W;W;W
+AI;AI-49;Konta i uprawnienia użytkowników (IAM);IT / techniczne;Poufne (wewn.);W;W;W
+AI;AI-50;Kopie zapasowe;IT / techniczne;Poufne (wewn.);W;W;W
+AI;AI-51;Logi systemowe i bezpieczeństwa;IT / techniczne;Poufne (wewn.);W;W;Ś
+AI;AI-52;Dane uwierzytelniające (hasła, klucze, certyfikaty);IT / techniczne;Poufne (wewn.);W;W;W
+AI;AI-53;Treści generowane przez AI (wstępne opisy lekarskie);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-54;Badania obrazowe i wyniki analiz AI przekazywane do PUI;Med. wyniki;Art.9 (pseudonim. przy wysyłce);W;W;Ś
+AI;AI-55;Powiadomienia i potwierdzenia pacjenta (e-powiadomienia);Dane osobowe / operacyjne;Zwykłe (kontekst zdrowotny);Ś;Ś;Ś
+AI;AI-56;Dane z interakcji głosowych pacjenta (voicebot);Dane osobowe;Zwykłe / art.9 (kontekst);Ś;Ś;N
+AI;AI-57;Rozszerzona EDM - dokumenty ustawowe (onkolog., kardiolog., histopat., cytolog., patient summary, med. pracy);Med. dokumentacja;Art.9 (zdrowie);W;W;Ś
+AI;AI-58;Dane pseudonimizowane/zanonimizowane do AI i wtórnego wykorzystania (EHDS, DGA);Med. / wtórne wykorzystanie;Pseudonimizowane;W;W;N
+AI;AI-59;Dane zarządcze i zasobowe (portal zarządczy);Zarządcze;Zwykłe;Ś;Ś;Ś
+AI;AI-60;Modele, konfiguracje i logi systemów AI (lokalne);IT / techniczne;Poufne (wewn.);W;W;Ś
+AI;AI-61;Dane podpisu elektronicznego i certyfikatów kwalifikowanych;Dane uwierzytelniające / techniczne;Zwykłe;;;
+AW;AW-S01;HIS - szpitalny system informatyczny (pakiet medyczny);Oprogramowanie;;;;
+AW;AW-S02;ERP - system administracyjno-zarządczy;Oprogramowanie;;;;
+AW;AW-S03;RIS/PACS - system diagnostyki obrazowej;Oprogramowanie;;;;
+AW;AW-S04;LIS - system laboratoryjny (usługa zewnętrzna);Oprogramowanie;;;;
+AW;AW-S05;Integracja z platformą P1 / komponent EDM;Oprogramowanie;;;;
+AW;AW-S06;Systemy biurowe, poczta, portal pracowniczy;Oprogramowanie;;;;
+AW;AW-S07;Strona WWW i BIP;Oprogramowanie;;;;
+AW;AW-H01;Serwery i macierze (serwerownia);Sprzęt;;;;
+AW;AW-H02;Stacje robocze / terminale;Sprzęt;;;;
+AW;AW-H03;Urządzenia medyczne z interfejsem IT;Sprzęt;;;;
+AW;AW-H04;Urządzenia mobilne;Sprzęt;;;;
+AW;AW-H05;Nośniki danych i kopie;Sprzęt;;;;
+AW;AW-N01;Sieć LAN/WAN i urządzenia sieciowe;Sieć;;;;
+AW;AW-N02;Łącza internetowe i dostęp zdalny (VPN);Sieć;;;;
+AW;AW-N03;Telefonia i łączność;Sieć;;;;
+AW;AW-P01;Personel medyczny;Personel;;;;
+AW;AW-P02;Personel administracyjny i pomocniczy;Personel;;;;
+AW;AW-P03;Personel IT i bezpieczeństwa;Personel;;;;
+AW;AW-L01;Lokalizacja Kup (szpital, serwerownia, archiwum);Lokalizacja;;;;
+AW;AW-L02;Lokalizacja Pokój (szpital rehabilitacyjny);Lokalizacja;;;;
+AW;AW-L03;Lokalizacja Chróścice (poradnia rodzinna);Lokalizacja;;;;
+AW;AW-O01;Dostawca - laboratorium zewnętrzne (7100);Struktura organizacji;;;;
+AW;AW-O02;Dostawca IT - autoryzowany serwis HIS/ERP;Struktura organizacji;;;;
+AW;AW-O03;Podmioty przetwarzające (IOD zewn., inni przetwarzający);Struktura organizacji;;;;
+AW;AW-O04;Dostawcy usług (transport, catering, pralnia, sprzątanie);Struktura organizacji;;;;
+AW;AW-S08;Serwer integracyjny (szyna HL7);Oprogramowanie;;;;
+AW;AW-S09;Lokalne repozytorium danych medycznych / EDM;Oprogramowanie;;;;
+AW;AW-S10;Platforma AI dokumentacyjna (opisy, chatbot, voicebot);Oprogramowanie;;;;
+AW;AW-S11;Integracja z platformą AI diagnostyki obrazowej (PUI);Oprogramowanie;;;;
+AW;AW-S12;System uwierzytelniania wieloskładnikowego (MFA/2FA);Oprogramowanie;;;;
+AW;AW-S13;System powiadomień pacjenta (e-powiadomienia/potwierdzenia);Oprogramowanie;;;;
+AW;AW-S14;Moduł obsługi punktów pobrań;Oprogramowanie;;;;
+AW;AW-S15;Portal zasobowo-zarządczy;Oprogramowanie;;;;
+AW;AW-S16;System monitorowania środowiska IT/HIS;Oprogramowanie;;;;
+AW;AW-S17;UTM / NGFW (zapora nowej generacji, HA);Oprogramowanie/Sprzęt;;;;
+AW;AW-S18;System EDR/XDR (ochrona stacji i serwerów);Oprogramowanie;;;;
+AW;AW-S19;System kontroli dostępu do sieci (NAC);Oprogramowanie;;;;
+AW;AW-S20;System kopii zapasowych i odtwarzania (z odmiejscowieniem);Oprogramowanie;;;;
+AW;AW-H06;Klaster serwerów AI (3 węzły);Sprzęt;;;;
+AW;AW-H07;Urządzenia / skanery do digitalizacji dokumentacji;Sprzęt;;;;
+AW;AW-H08;Biblioteka taśmowa (odmiejscowienie kopii);Sprzęt;;;;
+AW;AW-O05;Usługa operacyjnego monitorowania bezpieczeństwa 24/7 (zewn.);Struktura organizacji;;;;
+AW;AW-O06;Operator centralny e-zdrowia (PUI / repozytorium centralne);Struktura organizacji;;;;
+AW;AW-S21;Platforma podpisu elektronicznego/kwalifikowanego i zarządzania certyfikatami;Oprogramowanie;;;;
+AW;AW-S22;Repozytorium wieloźródłowe danych medycznych (VNA, DICOM/non-DICOM);Oprogramowanie;;;;
+AW;AW-S23;Indeks pacjenta (MPI - Master Patient Index);Oprogramowanie;;;;

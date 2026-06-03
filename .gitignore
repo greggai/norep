@@ -15,3 +15,7 @@ out/3_Wspierajacy_W/
 EUROSOC_BPMN_1_Zarzadczy.zip
 EUROSOC_BPMN_2_Glowny.zip
 EUROSOC_BPMN_3_Wspierajacy.zip
+
+# Wszystkie paczki ZIP - duze, odtwarzalne: python pipeline/build_tobe_all.py && make_docs_tobe.py && make_zips/inline
+EUROSOC_*.zip
+out_pilot/

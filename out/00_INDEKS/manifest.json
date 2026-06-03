@@ -1,5 +1,6 @@
 {
- "generated": "2026-06-03T20:57:20",
+ "generated": "2026-06-03T23:16:59",
+ "model": "to-be wielotorowy",
  "liczba_procesow": 203,
  "bledy": [],
  "procesy": [
@@ -8,15 +9,14 @@
    "proces": "Stanowienie strategicznych decyzji właścicielskich",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Zgromadzenie Wspólników"
+   ],
    "wlasciciel": "ZW",
    "komorka": "Zgromadzenie Wspólników",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -30,15 +30,15 @@
    "proces": "Zatwierdzanie sprawozdań finansowych i podziału wyniku",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Rada Nadzorcza",
+    "Zgromadzenie Wspólników"
+   ],
    "wlasciciel": "ZW",
    "komorka": "Zgromadzenie Wspólników",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -52,15 +52,14 @@
    "proces": "Powoływanie i odwoływanie członków Rady Nadzorczej",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zgromadzenie Wspólników",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "ZW",
    "komorka": "Zgromadzenie Wspólników",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -74,15 +73,14 @@
    "proces": "Nadzór nad działalnością Spółki",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Rada Nadzorcza"
+   ],
    "wlasciciel": "RN",
    "komorka": "Rada Nadzorcza",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -96,15 +94,14 @@
    "proces": "Powoływanie i odwoływanie członków Zarządu",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Rada Nadzorcza",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "RN",
    "komorka": "Rada Nadzorcza",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -118,15 +115,14 @@
    "proces": "Opiniowanie sprawozdań i kluczowych decyzji strategicznych",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Rada Nadzorcza"
+   ],
    "wlasciciel": "RN",
    "komorka": "Rada Nadzorcza",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -140,15 +136,15 @@
    "proces": "Zarządzanie strategiczne i operacyjne Spółką",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Dyrektorzy pionów",
+    "Rada Nadzorcza"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -162,15 +158,15 @@
    "proces": "Planowanie strategiczne (strategia, plan rzeczowo-finansowy)",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Dyrektorzy pionów",
+    "Rada Nadzorcza"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -184,15 +180,14 @@
    "proces": "Reprezentacja Spółki na zewnątrz",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Zarząd",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -206,15 +201,14 @@
    "proces": "Sprawozdawczość korporacyjna (KRS, BIP)",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Dział Organizacyjno-Prawny",
+    "Zarząd"
+   ],
    "wlasciciel": "Zarząd / K.DOP",
    "komorka": "Z, K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -228,15 +222,14 @@
    "proces": "Kontrola zarządcza (cele, ryzyka, mechanizmy kontrolne, oświadczenie roczne - ustawa o finansach publicznych)",
    "warstwa": "Zarządczy",
    "grupa": "Z1. Nadzór korporacyjny i strategia",
-   "wzorzec": "Z1",
+   "tory": [
+    "Dyrektorzy pionów",
+    "Zarząd"
+   ],
    "wlasciciel": "Zarząd / Dyrektorzy pionów",
    "komorka": "Z, DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -250,15 +243,15 @@
    "proces": "Utrzymanie Zintegrowanego Systemu Zarządzania (ISO 9001/14001)",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik systemu",
+    "Właściciele procesów",
+    "Zarząd"
+   ],
    "wlasciciel": "PZSZ",
    "komorka": "PZSZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -272,15 +265,15 @@
    "proces": "Planowanie i prowadzenie audytów wewnętrznych ZSZ",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Audytor wewnętrzny",
+    "Audytowana komórka",
+    "Pełnomocnik systemu"
+   ],
    "wlasciciel": "PZSZ",
    "komorka": "PZSZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -294,15 +287,14 @@
    "proces": "Przeglądy zarządzania ZSZ",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik systemu",
+    "Zarząd"
+   ],
    "wlasciciel": "PZSZ / Zarząd",
    "komorka": "PZSZ, Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -316,15 +308,15 @@
    "proces": "Przygotowanie i utrzymanie akredytacji CMJ",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik ds. Akredytacji",
+    "Komórki kliniczne",
+    "Zarząd"
+   ],
    "wlasciciel": "PA",
    "komorka": "PA",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -338,15 +330,15 @@
    "proces": "Wdrażanie standardów akredytacyjnych w komórkach klinicznych",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik ds. Akredytacji",
+    "Komórki kliniczne",
+    "Zarząd"
+   ],
    "wlasciciel": "PA / DM",
    "komorka": "PA, DM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -360,15 +352,15 @@
    "proces": "Zarządzanie SZBI (ISO 27001)",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik systemu",
+    "Właściciele procesów",
+    "Zarząd"
+   ],
    "wlasciciel": "PBI",
    "komorka": "PBI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -382,15 +374,15 @@
    "proces": "Audyty wewnętrzne SZBI",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Audytor wewnętrzny",
+    "Audytowana komórka",
+    "Pełnomocnik systemu"
+   ],
    "wlasciciel": "PBI",
    "komorka": "PBI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -404,15 +396,15 @@
    "proces": "Autoryzacja NFZ (wewnętrzny system zarządzania jakością - ustawa o jakości w opiece zdrowotnej)",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik ds. Jakości",
+    "Komórki kliniczne",
+    "Zarząd"
+   ],
    "wlasciciel": "Pełnomocnik ds. Jakości / DM",
    "komorka": "PZSZ, DM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -426,15 +418,15 @@
    "proces": "Identyfikacja i ocena ryzyk operacyjnych i strategicznych",
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
-   "wzorzec": "Z3",
+   "tory": [
+    "Komórki merytoryczne",
+    "Koordynator ryzyka",
+    "Zarząd"
+   ],
    "wlasciciel": "Zarząd / PZSZ",
    "komorka": "Z, PZSZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -448,15 +440,15 @@
    "proces": "Analiza ryzyk bezpieczeństwa informacji (SZBI)",
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
-   "wzorzec": "Z3",
+   "tory": [
+    "Komórki merytoryczne",
+    "Koordynator ryzyka",
+    "Zarząd"
+   ],
    "wlasciciel": "PBI",
    "komorka": "PBI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -470,15 +462,15 @@
    "proces": "Plan Ciągłości Działania (BCP) i Plan Odtwarzania (DRP)",
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
-   "wzorzec": "Z3",
+   "tory": [
+    "Pełnomocnik ds. SZBI",
+    "Dział Informatyki",
+    "Zarząd"
+   ],
    "wlasciciel": "PBI / DI.DI / OBR",
    "komorka": "PBI, DI.DI, OBR",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -492,15 +484,15 @@
    "proces": "Zarządzanie incydentami i kryzysami (operacyjnie)",
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
-   "wzorzec": "incydent",
+   "tory": [
+    "Zespół reagowania",
+    "Zarząd",
+    "Komórki merytoryczne"
+   ],
    "wlasciciel": "Zarząd / OBR",
    "komorka": "Z, OBR",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "15_INCYDENT",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -514,15 +506,15 @@
    "proces": "Bezpieczeństwo pacjenta - rejestr zdarzeń niepożądanych i system no-fault (ustawa o jakości w opiece zdrowotnej)",
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
-   "wzorzec": "Z3",
+   "tory": [
+    "Personel zgłaszający",
+    "Pełnomocnik ds. Jakości",
+    "Zespół ds. bezpieczeństwa"
+   ],
    "wlasciciel": "Pełnomocnik ds. Jakości / Zespół ds. bezpieczeństwa pacjenta",
    "komorka": "PZSZ, PA, DM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -536,15 +528,15 @@
    "proces": "Nadzór nad przetwarzaniem danych osobowych (RODO)",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Inspektor Ochrony Danych",
+    "Komórki przetwarzające",
+    "Zarząd"
+   ],
    "wlasciciel": "IOD",
    "komorka": "IOD",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -558,15 +550,15 @@
    "proces": "Realizacja praw osób, których dane dotyczą",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Wnioskodawca",
+    "Sekcja Dokumentacji Medycznej",
+    "Inspektor Ochrony Danych"
+   ],
    "wlasciciel": "IOD / DM.SDM",
    "komorka": "IOD, DM.SDM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -580,15 +572,15 @@
    "proces": "Ocena skutków dla ochrony danych (DPIA)",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Komórka przetwarzająca",
+    "Inspektor Ochrony Danych",
+    "Zarząd"
+   ],
    "wlasciciel": "IOD",
    "komorka": "IOD",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -602,15 +594,15 @@
    "proces": "Obsługa naruszeń ochrony danych (notyfikacja UODO)",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Zgłaszający",
+    "Inspektor Ochrony Danych",
+    "Zarząd"
+   ],
    "wlasciciel": "IOD",
    "komorka": "IOD",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -624,15 +616,15 @@
    "proces": "Zarządzanie zgodnością KSC (operator usługi kluczowej)",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Pełnomocnik ds. SZBI",
+    "Dział Informatyki",
+    "Organ KSC (CSIRT)"
+   ],
    "wlasciciel": "PBI / DI.DI",
    "komorka": "PBI, DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -646,15 +638,14 @@
    "proces": "Ochrona informacji niejawnych",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Pełnomocnik ds. OIN",
+    "Komórki organizacyjne"
+   ],
    "wlasciciel": "PIN",
    "komorka": "PIN",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -668,15 +659,15 @@
    "proces": "Zarządzanie prawami pacjenta i obsługa skarg",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Pacjent / Skarżący",
+    "Pełnomocnik ds. Praw Pacjenta",
+    "Komórka merytoryczna"
+   ],
    "wlasciciel": "PPP",
    "komorka": "PPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -690,15 +681,15 @@
    "proces": "Zapewnianie dostępności osobom ze szczególnymi potrzebami",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Pełnomocnik ds. Dostępności",
+    "Komórki organizacyjne",
+    "Zarząd"
+   ],
    "wlasciciel": "PD",
    "komorka": "PD",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -712,15 +703,14 @@
    "proces": "Doradztwo prawne i reprezentacja w postępowaniach",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Komórka wnioskująca",
+    "Radca prawny"
+   ],
    "wlasciciel": "RP",
    "komorka": "RP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -734,15 +724,15 @@
    "proces": "Obsługa zdarzeń medycznych i Funduszu Kompensacyjnego (FKZM) - współpraca z RPP, rejestr zaleceń i wdrożeń",
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
-   "wzorzec": "Z4",
+   "tory": [
+    "Pacjent / RPP",
+    "Pełnomocnik ds. Praw Pacjenta",
+    "Komórki kliniczne"
+   ],
    "wlasciciel": "Pełnomocnik ds. Praw Pacjenta / Radca prawny / DM",
    "komorka": "RP, DM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -756,15 +746,15 @@
    "proces": "Opracowywanie i nadzór nad regulaminem organizacyjnym",
    "warstwa": "Zarządczy",
    "grupa": "Z5. Polityki, regulaminy i zarządzanie zmianą",
-   "wzorzec": "Z5",
+   "tory": [
+    "Komórka inicjująca",
+    "Dział Organizacyjno-Prawny",
+    "Zarząd"
+   ],
    "wlasciciel": "Zarząd / K.DOP",
    "komorka": "Z, K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -778,15 +768,15 @@
    "proces": "Opracowywanie i nadzór nad zarządzeniami i procedurami wewnętrznymi",
    "warstwa": "Zarządczy",
    "grupa": "Z5. Polityki, regulaminy i zarządzanie zmianą",
-   "wzorzec": "Z5",
+   "tory": [
+    "Komórka inicjująca",
+    "Dział Organizacyjno-Prawny",
+    "Zarząd"
+   ],
    "wlasciciel": "K.DOP / PZSZ",
    "komorka": "K.DOP, PZSZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -800,15 +790,15 @@
    "proces": "Zarządzanie zmianą organizacyjną (struktura, etaty, lokalizacje)",
    "warstwa": "Zarządczy",
    "grupa": "Z5. Polityki, regulaminy i zarządzanie zmianą",
-   "wzorzec": "Z5",
+   "tory": [
+    "Zarząd",
+    "Dział Personalno-Płacowy",
+    "Rada Nadzorcza"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -822,15 +812,14 @@
    "proces": "Zarządzanie wiedzą organizacyjną i wnioski z doświadczeń (baza wiedzy, przekazywanie kompetencji, nauka z incydentów)",
    "warstwa": "Zarządczy",
    "grupa": "Z5. Polityki, regulaminy i zarządzanie zmianą organizacyjną",
-   "wzorzec": "incydent",
+   "tory": [
+    "Pracownicy / Eksperci",
+    "Pełnomocnik ds. Jakości"
+   ],
    "wlasciciel": "Pełnomocnik ds. Jakości / DI (Dział Informatyki)",
    "komorka": "PZSZ, DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -844,15 +833,15 @@
    "proces": "Negocjacje i zawieranie umów z NFZ",
    "warstwa": "Zarządczy",
    "grupa": "Z6. Kontrakt NFZ i relacje zewnętrzne",
-   "wzorzec": "Z6",
+   "tory": [
+    "Dział Rozliczeń Świadczeń",
+    "Zarząd",
+    "NFZ (zewn.)"
+   ],
    "wlasciciel": "Zarząd / DM.DRZ",
    "komorka": "Z, DM.DRZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -866,15 +855,15 @@
    "proces": "Współpraca z organami nadzoru (NFZ, MZ, Wojewoda, PIP, UODO, PSSE)",
    "warstwa": "Zarządczy",
    "grupa": "Z6. Kontrakt NFZ i relacje zewnętrzne",
-   "wzorzec": "Z6",
+   "tory": [
+    "Organ (zewn.)",
+    "Zarząd",
+    "Komórki merytoryczne"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -888,15 +877,15 @@
    "proces": "Komunikacja korporacyjna i relacje z mediami",
    "warstwa": "Zarządczy",
    "grupa": "Z6. Kontrakt NFZ i relacje zewnętrzne",
-   "wzorzec": "Z6",
+   "tory": [
+    "Komórka inicjująca",
+    "Zarząd",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "Zarząd",
    "komorka": "Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -910,11 +899,13 @@
    "proces": "Przyjęcie pacjenta w trybie nagłym",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Izba Przyjęć",
-   "wzorzec": "G1",
+   "tory": [
+    "Izba Przyjęć",
+    "Pielęgniarka",
+    "Lekarz IP"
+   ],
    "wlasciciel": "Lekarz / Pielęgniarka IP",
    "komorka": "JO.SZ_KUP.IP (4900)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-21",
     "AI-08",
@@ -922,9 +913,7 @@
     "AI-22",
     "AI-01"
    ],
-   "n_aktywa": 5,
    "systemy": "AW-S01 (Ruch Chorych, Izba Przyjęć) + eWUŚ",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -938,19 +927,18 @@
    "proces": "Triaż medyczny",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Izba Przyjęć",
-   "wzorzec": "G1",
+   "tory": [
+    "Pielęgniarka triażu",
+    "Lekarz IP"
+   ],
    "wlasciciel": "Pielęgniarka triażu",
    "komorka": "JO.SZ_KUP.IP (4900)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-04",
     "AI-21"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Izba Przyjęć)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -964,18 +952,17 @@
    "proces": "Kwalifikacja do hospitalizacji",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Izba Przyjęć",
-   "wzorzec": "G1",
+   "tory": [
+    "Lekarz IP",
+    "Oddział docelowy"
+   ],
    "wlasciciel": "Lekarz IP",
    "komorka": "JO.SZ_KUP.IP (4900)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-15"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Ruch Chorych)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -989,18 +976,18 @@
    "proces": "Przekazanie pacjenta do innego podmiotu",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Izba Przyjęć",
-   "wzorzec": "G1",
+   "tory": [
+    "Lekarz IP",
+    "Zespół Transportu Medycznego",
+    "Podmiot docelowy"
+   ],
    "wlasciciel": "Lekarz IP",
    "komorka": "JO.SZ_KUP.IP (4900)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-06"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 + AW-S05 (P1)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1014,19 +1001,19 @@
    "proces": "Rejestracja przyjęć planowych do rehabilitacji",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Punkt Przyjęć Planowych",
-   "wzorzec": "G1",
+   "tory": [
+    "Punkt Przyjęć Planowych",
+    "Koordynator PPP",
+    "Lekarz rehabilitacji"
+   ],
    "wlasciciel": "Koordynator PPP",
    "komorka": "JO.SZ_POK.PPP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "12_PLANOWE_PRZYJECIE",
    "aktywa_AI": [
     "AI-06",
     "AI-18",
     "AI-21"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Rejestracja, Kolejki)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1040,18 +1027,17 @@
    "proces": "Kwalifikacja do programu rehabilitacji",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Punkt Przyjęć Planowych",
-   "wzorzec": "G1",
+   "tory": [
+    "Lekarz rehabilitacji",
+    "Zespół rehabilitacyjny"
+   ],
    "wlasciciel": "Lekarz rehabilitacji",
    "komorka": "JO.SZ_POK.PPP / 4300",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "12_PLANOWE_PRZYJECIE",
    "aktywa_AI": [
     "AI-01",
     "AI-16"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1065,17 +1051,16 @@
    "proces": "Prowadzenie listy oczekujących (AOTMiT/NFZ)",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Punkt Przyjęć Planowych",
-   "wzorzec": "G1",
+   "tory": [
+    "Koordynator PPP",
+    "Dział Rozliczeń Świadczeń"
+   ],
    "wlasciciel": "Koordynator PPP / DM.DRZ",
    "komorka": "JO.SZ_POK.PPP / DM.DRZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-18"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (Kolejki)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1089,11 +1074,12 @@
    "proces": "Rejestracja pacjenta (osobista/telefoniczna/e-rejestracja)",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Ambulatorium / POZ",
-   "wzorzec": "G1",
+   "tory": [
+    "Rejestracja",
+    "Pacjent"
+   ],
    "wlasciciel": "Rejestratorka",
    "komorka": "Poradnie KUP/POK/CHR",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-21",
@@ -1102,9 +1088,7 @@
     "AI-55",
     "AI-56"
    ],
-   "n_aktywa": 6,
    "systemy": "AW-S01 (Przychodnia) + eWUŚ, AW-S10, AW-S13",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1118,18 +1102,18 @@
    "proces": "Przyjęcie pacjenta POZ (deklaracja, weryfikacja w eWUŚ)",
    "warstwa": "Główny",
    "grupa": "G1. Wejście pacjenta - Ambulatorium / POZ",
-   "wzorzec": "G1",
+   "tory": [
+    "Rejestracja POZ",
+    "Pielęgniarka POZ",
+    "Lekarz POZ"
+   ],
    "wlasciciel": "Lekarz / Pielęgniarka POZ",
    "komorka": "JO.POR_CHR (0010)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-21"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Przychodnia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1143,20 +1127,20 @@
    "proces": "Wykonanie badania obrazowego (warianty: RTG, TK, USG/UKG)",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka obrazowa",
-   "wzorzec": "G2",
+   "tory": [
+    "Lekarz zlecający",
+    "Pracownia diagnostyczna",
+    "Lekarz opisujący"
+   ],
    "wlasciciel": "Technik / Lekarz radiolog",
    "komorka": "JO.POR_KUP.7240",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-06",
     "AI-13",
     "AI-10",
     "AI-54"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S03 (RIS/PACS) + AW-S01 (Zlecenia), AW-S11",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1170,18 +1154,18 @@
    "proces": "Wykonanie badania czynnościowego (warianty: układ krążenia [EKG, próby wysiłkowe, Holter], układ oddechowy [spirometria, bodypletyzmografia], polisomnografia, pH-metria)",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka funkcjonalna",
-   "wzorzec": "G2",
+   "tory": [
+    "Lekarz zlecający",
+    "Pracownia diagnostyczna",
+    "Lekarz opisujący"
+   ],
    "wlasciciel": "Pielęgniarka / Lekarz",
    "komorka": "JO.POR_KUP.7998_KRAZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-14",
     "AI-10"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Zlecenia/Pracownia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1195,19 +1179,19 @@
    "proces": "Wykonanie badania endoskopowego (warianty: górny odcinek GI [gastroskopia], dolny odcinek GI [kolonoskopia], bronchoskopia; sedacja/nadzór anestezjologiczny jako etap)",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka endoskopowa",
-   "wzorzec": "G2",
+   "tory": [
+    "Lekarz zlecający",
+    "Pracownia diagnostyczna",
+    "Lekarz opisujący"
+   ],
    "wlasciciel": "Lekarz endoskopista / Pielęgniarka",
    "komorka": "JO.POR_KUP.7910_G",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-14",
     "AI-15",
     "AI-10"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Zlecenia/Pracownia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1221,18 +1205,18 @@
    "proces": "Zlecanie i odbiór wyników badań laboratoryjnych",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka laboratoryjna",
-   "wzorzec": "G2",
+   "tory": [
+    "Lekarz prowadzący",
+    "Pielęgniarka",
+    "Laboratorium"
+   ],
    "wlasciciel": "Lekarz prowadzący / Pielęgniarka",
    "komorka": "Oddziały, Poradnie / JO.POR_KUP.7100",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-06",
     "AI-12"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S04 (LIS zewn.) + AW-S01 (Zlecenia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1246,17 +1230,17 @@
    "proces": "Zarządzanie umową z laboratorium zewnętrznym",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka laboratoryjna",
-   "wzorzec": "G2",
+   "tory": [
+    "Dział Zamówień Publicznych",
+    "Dyrektor ds. Lecznictwa",
+    "Laboratorium zewn."
+   ],
    "wlasciciel": "DZP / DM",
    "komorka": "DZP, DM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-38"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S02 (ERP)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -1270,18 +1254,18 @@
    "proces": "Kontrola jakości i kalibracja sprzętu diagnostycznego",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka - jakość i bezpieczeństwo",
-   "wzorzec": "G2",
+   "tory": [
+    "Inspektor Ochrony Radiologicznej",
+    "Dział Techniczny",
+    "Pracownia"
+   ],
    "wlasciciel": "Inspektor Ochrony Radiologicznej / DI.DT",
    "komorka": "Pracownie, DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-45",
     "AI-44"
    ],
-   "n_aktywa": 2,
    "systemy": "- (ewidencja sprzętu)",
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -1295,11 +1279,13 @@
    "proces": "Proces diagnostyczno-terapeutyczny pacjenta hospitalizowanego",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Chorób Wewnętrznych",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz prowadzący",
+    "Pielęgniarka",
+    "Diagnostyka"
+   ],
    "wlasciciel": "Lekarz prowadzący",
    "komorka": "JO.SZ_KUP.4000",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
@@ -1308,9 +1294,7 @@
     "AI-13",
     "AI-15"
    ],
-   "n_aktywa": 6,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, Apteczka, ZDM) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1324,19 +1308,18 @@
    "proces": "Kompleksowa Ocena Geriatryczna (CGA)",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Kliniczny Geriatrii",
-   "wzorzec": "G3",
+   "tory": [
+    "Zespół geriatryczny",
+    "Lekarz geriatra"
+   ],
    "wlasciciel": "Lekarz geriatra / Zespół",
    "komorka": "JO.SZ_KUP.4060",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
     "AI-12"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1350,20 +1333,20 @@
    "proces": "Proces diagnostyczno-terapeutyczny w geriatrii",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Kliniczny Geriatrii",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz geriatra",
+    "Pielęgniarka",
+    "Diagnostyka"
+   ],
    "wlasciciel": "Zespół geriatryczny",
    "komorka": "JO.SZ_KUP.4060",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
     "AI-07",
     "AI-12"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, Apteczka) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1377,20 +1360,20 @@
    "proces": "Proces diagnostyczno-terapeutyczny w pulmonologii",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Chorób Płuc",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz pulmonolog",
+    "Pielęgniarka",
+    "Diagnostyka"
+   ],
    "wlasciciel": "Lekarz pulmonolog",
    "komorka": "JO.SZ_KUP.4272",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
     "AI-07",
     "AI-14"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, Apteczka) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1404,20 +1387,20 @@
    "proces": "Proces diagnostyczno-terapeutyczny w pulmonologii dziecięcej",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Chorób Płuc dla Dzieci",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz pediatra-pulmonolog",
+    "Pielęgniarka",
+    "Diagnostyka"
+   ],
    "wlasciciel": "Lekarz pediatra/pulmonolog",
    "komorka": "JO.SZ_KUP.4273",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
     "AI-07",
     "AI-14"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, Apteczka) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1431,20 +1414,20 @@
    "proces": "Proces diagnostyczno-terapeutyczny w reumatologii",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Kliniczny Reumatologii",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz reumatolog",
+    "Pielęgniarka",
+    "Diagnostyka"
+   ],
    "wlasciciel": "Lekarz reumatolog",
    "komorka": "JO.SZ_KUP.4280",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-02",
     "AI-07",
     "AI-12"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01 (Ruch Chorych, Zlecenia, Apteczka) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1458,18 +1441,18 @@
    "proces": "Plan rehabilitacji indywidualnej (PRI) - oddział",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Rehabilitacyjny (KUP)",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz rehabilitacji",
+    "Fizjoterapeuta",
+    "Zespół rehabilitacyjny"
+   ],
    "wlasciciel": "Lekarz rehabilitacji / Fizjoterapeuta",
    "komorka": "JO.SZ_KUP.4300",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16",
     "AI-01"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja, ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1483,18 +1466,18 @@
    "proces": "Plan rehabilitacji indywidualnej (PRI) - oddział kliniczny",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - Oddział Kliniczny Rehabilitacji (POK)",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz rehabilitacji",
+    "Fizjoterapeuta",
+    "Zespół rehabilitacyjny"
+   ],
    "wlasciciel": "Lekarz rehabilitacji / Fizjoterapeuta",
    "komorka": "JO.SZ_POK.4300",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16",
     "AI-01"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja, ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1508,17 +1491,16 @@
    "proces": "Konsultacja specjalistyczna (między-oddziałowa, zewnętrzna)",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - wspólne",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz zlecający",
+    "Lekarz konsultujący"
+   ],
    "wlasciciel": "Lekarz konsultujący",
    "komorka": "Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (Ruch Chorych)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1532,19 +1514,19 @@
    "proces": "Przekazanie pacjenta między oddziałami / do innego podmiotu",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - wspólne",
-   "wzorzec": "G3",
+   "tory": [
+    "Oddział kierujący",
+    "Oddział przyjmujący",
+    "Zespół Transportu Medycznego"
+   ],
    "wlasciciel": "Lekarz prowadzący",
    "komorka": "Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-01",
     "AI-05",
     "AI-09"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Ruch Chorych)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1558,18 +1540,18 @@
    "proces": "Postępowanie ze zgonem pacjenta",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - wspólne",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz",
+    "Pielęgniarka",
+    "Sekcja Dokumentacji Medycznej"
+   ],
    "wlasciciel": "Lekarz / Pielęgniarka",
    "komorka": "Oddziały, IP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-20",
     "AI-01"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Ruch Chorych)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1583,17 +1565,16 @@
    "proces": "Zarządzanie zgodami pacjenta (świadoma zgoda, RODO, pełnomocnictwa, sprzeciwy)",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie szpitalne - wspólne",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz prowadzący",
+    "Sekcja Dokumentacji Medycznej"
+   ],
    "wlasciciel": "Lekarz prowadzący / SDM",
    "komorka": "Oddziały, Poradnie",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-15"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1607,20 +1588,19 @@
    "proces": "Wizyta lekarska w poradni specjalistycznej",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne",
-   "wzorzec": "G3",
+   "tory": [
+    "Rejestracja",
+    "Lekarz specjalista"
+   ],
    "wlasciciel": "Lekarz specjalista",
    "komorka": "JO.POR_KUP.PSP (1100/1272/1273/1280/1300)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-01",
     "AI-06",
     "AI-07"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01 (Przychodnia/Gabinet) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1634,18 +1614,17 @@
    "proces": "Świadczenia w gabinecie diagnostyczno-zabiegowym",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne",
-   "wzorzec": "G3",
+   "tory": [
+    "Pielęgniarka",
+    "Lekarz"
+   ],
    "wlasciciel": "Lekarz / Pielęgniarka zabiegowa",
    "komorka": "9450 (KUP/POK/CHR)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-01"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Przychodnia/Gabinet)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1659,18 +1638,17 @@
    "proces": "Wystawianie e-recept, e-skierowań, e-ZLA, zaświadczeń",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz",
+    "System P1 / ZUS"
+   ],
    "wlasciciel": "Lekarz",
    "komorka": "Poradnie, Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-07",
     "AI-06"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S05 (P1)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1684,18 +1662,17 @@
    "proces": "Wizyta lekarska POZ (ogólna/dziecięca)",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne - POZ",
-   "wzorzec": "G3",
+   "tory": [
+    "Rejestracja POZ",
+    "Lekarz POZ"
+   ],
    "wlasciciel": "Lekarz POZ",
    "komorka": "JO.POR_CHR.0010 (O/D)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-07"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Przychodnia/Gabinet) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1709,18 +1686,17 @@
    "proces": "Świadczenia pielęgniarki POZ",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne - POZ",
-   "wzorzec": "G3",
+   "tory": [
+    "Pielęgniarka POZ",
+    "Lekarz POZ"
+   ],
    "wlasciciel": "Pielęgniarka POZ",
    "komorka": "JO.POR_CHR.0032",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-03",
     "AI-11"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Przychodnia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1734,17 +1710,16 @@
    "proces": "Medycyna szkolna - profilaktyka i opieka",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne - POZ",
-   "wzorzec": "G3",
+   "tory": [
+    "Pielęgniarka medycyny szkolnej",
+    "Lekarz POZ"
+   ],
    "wlasciciel": "Pielęgniarka medycyny szkolnej",
    "komorka": "JO.POR_CHR.0040",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (Przychodnia)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1758,18 +1733,17 @@
    "proces": "Bilanse zdrowia i szczepienia ochronne",
    "warstwa": "Główny",
    "grupa": "G3. Leczenie ambulatoryjne - POZ",
-   "wzorzec": "G3",
+   "tory": [
+    "Pielęgniarka POZ",
+    "Lekarz POZ"
+   ],
    "wlasciciel": "Lekarz POZ / Pielęgniarka",
    "komorka": "JO.POR_CHR.0010",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-11",
     "AI-07"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Przychodnia) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1783,18 +1757,17 @@
    "proces": "Kwalifikacja i prowadzenie rehabilitacji w ośrodku dziennym",
    "warstwa": "Główny",
    "grupa": "G3. Rehabilitacja dzienna",
-   "wzorzec": "G3",
+   "tory": [
+    "Lekarz rehabilitacji",
+    "Fizjoterapeuta"
+   ],
    "wlasciciel": "Lekarz / Fizjoterapeuta",
    "komorka": "JO.POR_KUP.ORD, JO.POR_POK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16",
     "AI-11"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1808,18 +1781,17 @@
    "proces": "Dzienna opieka geriatryczna",
    "warstwa": "Główny",
    "grupa": "G3. Rehabilitacja dzienna",
-   "wzorzec": "G3",
+   "tory": [
+    "Zespół geriatryczny",
+    "Pielęgniarka"
+   ],
    "wlasciciel": "Zespół geriatryczny",
    "komorka": "JO.POR_KUP.2200",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16",
     "AI-11"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1833,17 +1805,16 @@
    "proces": "Realizacja zabiegu rehabilitacji ambulatoryjnej/domowej (warianty: fizykoterapia, kinezyterapia, hydroterapia, krioterapia, masaż leczniczy, balneoterapia, rehabilitacja domowa)",
    "warstwa": "Główny",
    "grupa": "G3. Rehabilitacja ambulatoryjna i domowa",
-   "wzorzec": "G3",
+   "tory": [
+    "Fizjoterapeuta",
+    "Lekarz rehabilitacji"
+   ],
    "wlasciciel": "Fizjoterapeuta",
    "komorka": "ZRL.1312 (KUP/POK)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (Rehabilitacja)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1857,18 +1828,17 @@
    "proces": "Kompleksowa diagnoza funkcjonalna i plan usprawniania",
    "warstwa": "Główny",
    "grupa": "G3. Centrum Diagnozy i Usprawniania Pacjenta",
-   "wzorzec": "G3",
+   "tory": [
+    "Zespół interdyscyplinarny",
+    "Lekarz"
+   ],
    "wlasciciel": "Zespół interdyscyplinarny",
    "komorka": "JO.POR_KUP.9000",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-16",
     "AI-01"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (Rehabilitacja)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1882,19 +1852,19 @@
    "proces": "Wypis pacjenta z oddziału (epikryza, karta wypisu)",
    "warstwa": "Główny",
    "grupa": "G4. Wypis / kontynuacja opieki",
-   "wzorzec": "G4",
+   "tory": [
+    "Lekarz prowadzący",
+    "Pielęgniarka",
+    "Sekcja Dokumentacji Medycznej"
+   ],
    "wlasciciel": "Lekarz prowadzący",
    "komorka": "Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-01",
     "AI-07"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S01 (Ruch Chorych, ZDM) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1908,17 +1878,16 @@
    "proces": "Edukacja pacjenta i opiekunów przy wypisie",
    "warstwa": "Główny",
    "grupa": "G4. Wypis / kontynuacja opieki",
-   "wzorzec": "G4",
+   "tory": [
+    "Pielęgniarka",
+    "Lekarz"
+   ],
    "wlasciciel": "Lekarz / Pielęgniarka / Dietetyk",
    "komorka": "Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S01 (ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1932,18 +1901,18 @@
    "proces": "Przekazanie pacjenta do opieki POZ / AOS / opieki długoterminowej",
    "warstwa": "Główny",
    "grupa": "G4. Wypis / kontynuacja opieki",
-   "wzorzec": "G4",
+   "tory": [
+    "Lekarz prowadzący",
+    "Koordynator opieki",
+    "Podmiot przejmujący"
+   ],
    "wlasciciel": "Lekarz prowadzący",
    "komorka": "Oddziały, Poradnie",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-06"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (ZDM) + P1",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1957,18 +1926,17 @@
    "proces": "Wystawianie wniosków o turnusy/zaopatrzenie w wyroby medyczne",
    "warstwa": "Główny",
    "grupa": "G4. Wypis / kontynuacja opieki",
-   "wzorzec": "G4",
+   "tory": [
+    "Lekarz",
+    "Koordynator"
+   ],
    "wlasciciel": "Lekarz",
    "komorka": "Poradnie, Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-06"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S01 (ZDM)",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -1982,15 +1950,15 @@
    "proces": "Zaopatrzenie w produkty lecznicze i wyroby medyczne",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Kierownik Apteki",
+    "Dostawca (zewn.)",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "Kierownik Apteki",
    "komorka": "JO.SZ_KUP.APT (4922)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2004,15 +1972,14 @@
    "proces": "Prowadzenie receptariusza szpitalnego",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Komitet Terapeutyczny",
+    "Apteka"
+   ],
    "wlasciciel": "Komitet Terapeutyczny / Apteka",
    "komorka": "JO.SZ_KUP.APT (4922)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2026,15 +1993,14 @@
    "proces": "Wydawanie leków na oddziały (zamówienia oddziałowe)",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Oddział",
+    "Apteka"
+   ],
    "wlasciciel": "Apteka",
    "komorka": "JO.SZ_KUP.APT (4922)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2048,15 +2014,14 @@
    "proces": "Sporządzanie leków recepturowych",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Farmaceuta",
+    "Lekarz"
+   ],
    "wlasciciel": "Farmaceuta",
    "komorka": "JO.SZ_KUP.APT (4922)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2070,15 +2035,14 @@
    "proces": "Obsługa środków odurzających i psychotropowych",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Apteka",
+    "Oddział"
+   ],
    "wlasciciel": "Apteka",
    "komorka": "JO.SZ_KUP.APT (4922)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2092,15 +2056,15 @@
    "proces": "Nadzór nad farmakoterapią (opieka farmaceutyczna)",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Farmaceuta kliniczny",
+    "Lekarz",
+    "Pielęgniarka"
+   ],
    "wlasciciel": "Farmaceuta kliniczny",
    "komorka": "Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2114,15 +2078,14 @@
    "proces": "Pharmacovigilance - zgłaszanie NDL",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Personel zgłaszający",
+    "Apteka / Lekarz"
+   ],
    "wlasciciel": "Apteka / Lekarz",
    "komorka": "Apteka, Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2136,15 +2099,15 @@
    "proces": "Dział Farmacji - zaopatrzenie szpitala rehab. w POK",
    "warstwa": "Główny",
    "grupa": "G5. Apteka szpitalna i farmakoterapia",
-   "wzorzec": "G5",
+   "tory": [
+    "Kierownik Działu Farmacji",
+    "Dostawca (zewn.)",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "Kierownik Działu Farmacji",
    "komorka": "JO.SZ_POK.4924",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2158,15 +2121,13 @@
    "proces": "Proces pielęgnowania (rozpoznanie - planowanie - realizacja - ocena)",
    "warstwa": "Główny",
    "grupa": "G6. Pielęgniarstwo",
-   "wzorzec": "G6",
+   "tory": [
+    "Pielęgniarka"
+   ],
    "wlasciciel": "Pielęgniarka",
    "komorka": "Oddziały, Poradnie",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2180,15 +2141,14 @@
    "proces": "Standardy opieki pielęgniarskiej i nadzór jakości",
    "warstwa": "Główny",
    "grupa": "G6. Pielęgniarstwo",
-   "wzorzec": "G6",
+   "tory": [
+    "Przełożona Pielęgniarek",
+    "Pielęgniarki"
+   ],
    "wlasciciel": "Przełożona Pielęgniarek",
    "komorka": "DM.PP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2202,15 +2162,14 @@
    "proces": "Zarządzanie grafikami i normami obsady pielęgniarek",
    "warstwa": "Główny",
    "grupa": "G6. Pielęgniarstwo",
-   "wzorzec": "G6",
+   "tory": [
+    "Przełożona Pielęgniarek",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "Przełożona Pielęgniarek / Oddziałowe",
    "komorka": "DM.PP, DM.PP.PO",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2224,15 +2183,14 @@
    "proces": "Doskonalenie zawodowe i specjalizacje pielęgniarskie",
    "warstwa": "Główny",
    "grupa": "G6. Pielęgniarstwo",
-   "wzorzec": "G6",
+   "tory": [
+    "Przełożona Pielęgniarek",
+    "Pielęgniarka"
+   ],
    "wlasciciel": "Przełożona Pielęgniarek",
    "komorka": "DM.PP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2246,15 +2204,14 @@
    "proces": "Planowanie żywienia pacjentów i diety specjalistyczne",
    "warstwa": "Główny",
    "grupa": "G6. Pielęgniarstwo - dietetyka",
-   "wzorzec": "G6",
+   "tory": [
+    "Dietetyk",
+    "Oddział / Kuchnia"
+   ],
    "wlasciciel": "Dietetyk",
    "komorka": "DM.PP.D",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2268,15 +2225,15 @@
    "proces": "Nadzór nad zakażeniami szpitalnymi",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Pielęgniarka epidemiologiczna",
+    "Oddziały",
+    "Komitet ds. Zakażeń"
+   ],
    "wlasciciel": "Pielęgniarka epidemiologiczna / Zespół Kontroli Zakażeń",
    "komorka": "DM.DHiE / JO.SZ_KUP.DHiE (9200)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2290,15 +2247,14 @@
    "proces": "Rejestr drobnoustrojów alarmowych - monitorowanie",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Laboratorium",
+    "Pielęgniarka epidemiologiczna"
+   ],
    "wlasciciel": "Pielęgniarka epidemiologiczna",
    "komorka": "JO.SZ_KUP.DHiE (9200)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2312,15 +2268,15 @@
    "proces": "Polityka antybiotykowa (stewardship)",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Komitet Antybiotykowy",
+    "Lekarze",
+    "Apteka"
+   ],
    "wlasciciel": "Komitet Antybiotykowy / Lekarz",
    "komorka": "DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2334,15 +2290,14 @@
    "proces": "Dezynfekcja, sterylizacja, dekontaminacja",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Personel sterylizacji",
+    "Dział Techniczny"
+   ],
    "wlasciciel": "Pielęgniarki / DT",
    "komorka": "DM.DHiE, DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2356,15 +2311,15 @@
    "proces": "Postępowanie z odpadami medycznymi",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Personel / DHiE",
+    "Dział Techniczny",
+    "Odbiorca (zewn.)"
+   ],
    "wlasciciel": "DI.DT / DM.DHiE",
    "komorka": "DI.DT, DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2378,15 +2333,14 @@
    "proces": "Monitorowanie i promocja higieny rąk",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Pielęgniarka epidemiologiczna",
+    "Personel"
+   ],
    "wlasciciel": "Pielęgniarka epidemiologiczna",
    "komorka": "DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2400,15 +2354,15 @@
    "proces": "Postępowanie antyepidemiczne (ekspozycje zawodowe, epidemie)",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Pielęgniarka epidemiologiczna",
+    "Lekarz",
+    "Medycyna pracy"
+   ],
    "wlasciciel": "Pielęgniarka epid. / DM.DHiE",
    "komorka": "DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2422,15 +2376,14 @@
    "proces": "Szkolenia personelu w zakresie zakażeń",
    "warstwa": "Główny",
    "grupa": "G7. Higiena, epidemiologia, zakażenia",
-   "wzorzec": "G7",
+   "tory": [
+    "Dział Higieny i Epidemiologii",
+    "Personel"
+   ],
    "wlasciciel": "DM.DHiE",
    "komorka": "DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2444,20 +2397,19 @@
    "proces": "Prowadzenie dokumentacji medycznej (papierowej i EDM)",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "Personel medyczny",
+    "System EDM / P1"
+   ],
    "wlasciciel": "Personel medyczny",
    "komorka": "Wszystkie komórki medyczne",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-53",
     "AI-57",
     "AI-61"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S01, AW-S05, AW-S10, AW-S21",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2471,18 +2423,17 @@
    "proces": "Udostępnianie dokumentacji medycznej (pacjent, organy, podmioty)",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "Wnioskodawca",
+    "Sekcja Dokumentacji Medycznej"
+   ],
    "wlasciciel": "SDM",
    "komorka": "DM.SDM",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "11_UDOSTEPNIENIE_DM",
    "aktywa_AI": [
     "AI-05",
     "AI-57"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S09, AW-S05",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2496,17 +2447,15 @@
    "proces": "Archiwizacja i przechowywanie dokumentacji medycznej",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "Sekcja Dokumentacji Medycznej"
+   ],
    "wlasciciel": "SDM",
    "komorka": "DM.SDM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S09",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2520,17 +2469,16 @@
    "proces": "Brakowanie/niszczenie dokumentacji po okresie przechowywania",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "Sekcja Dokumentacji Medycznej",
+    "Zarząd"
+   ],
    "wlasciciel": "SDM",
    "komorka": "DM.SDM",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S09",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2544,19 +2492,19 @@
    "proces": "Integracja z platformą P1 (EDM, IKP)",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "System EDM",
+    "Dział Informatyki",
+    "Platforma P1"
+   ],
    "wlasciciel": "DI.DI / SDM",
    "komorka": "DI.DI, DM.SDM",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "09_INTAKE_HIS (część)",
    "aktywa_AI": [
     "AI-05",
     "AI-06",
     "AI-07"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S05, AW-S08, AW-S09",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2570,15 +2518,14 @@
    "proces": "Sprawozdawczość bieżąca do NFZ (komunikaty SWIAD, KOLEJKI)",
    "warstwa": "Główny",
    "grupa": "G9. Rozliczenia świadczeń (NFZ) i statystyka",
-   "wzorzec": "G9",
+   "tory": [
+    "Dział Rozliczeń Świadczeń",
+    "NFZ (system)"
+   ],
    "wlasciciel": "DRZ",
    "komorka": "DM.DRZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2592,15 +2539,15 @@
    "proces": "Rozliczanie świadczeń (JGP, ryczałt PSZ, AOS)",
    "warstwa": "Główny",
    "grupa": "G9. Rozliczenia świadczeń (NFZ) i statystyka",
-   "wzorzec": "G9",
+   "tory": [
+    "Dział Rozliczeń Świadczeń",
+    "NFZ",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DRZ",
    "komorka": "DM.DRZ",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "13_ROZLICZENIE_SWIADCZEN",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2614,15 +2561,14 @@
    "proces": "Sprawozdawczość statystyczna (MZ-29, MZ-11, GUS)",
    "warstwa": "Główny",
    "grupa": "G9. Rozliczenia świadczeń (NFZ) i statystyka",
-   "wzorzec": "G9",
+   "tory": [
+    "Dział Rozliczeń Świadczeń",
+    "GUS / MZ"
+   ],
    "wlasciciel": "DRZ",
    "komorka": "DM.DRZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2636,15 +2582,15 @@
    "proces": "Obsługa kontroli NFZ",
    "warstwa": "Główny",
    "grupa": "G9. Rozliczenia świadczeń (NFZ) i statystyka",
-   "wzorzec": "G9",
+   "tory": [
+    "NFZ",
+    "Dział Rozliczeń Świadczeń",
+    "Zarząd"
+   ],
    "wlasciciel": "DRZ / Zarząd",
    "komorka": "DM.DRZ, Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2658,15 +2604,14 @@
    "proces": "Wystawianie faktur za świadczenia komercyjne",
    "warstwa": "Główny",
    "grupa": "G9. Rozliczenia świadczeń (NFZ) i statystyka",
-   "wzorzec": "G9",
+   "tory": [
+    "Dział Rozliczeń Świadczeń",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DRZ / DFK",
    "komorka": "DM.DRZ, K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2680,15 +2625,15 @@
    "proces": "Transport sanitarny pacjentów (planowy i pilny)",
    "warstwa": "Główny",
    "grupa": "G10. Transport medyczny",
-   "wzorzec": "G10",
+   "tory": [
+    "Zlecający",
+    "Dyspozytor",
+    "Zespół Transportu Medycznego"
+   ],
    "wlasciciel": "Zespół Transportu Med.",
    "komorka": "JO.POR_KUP.9250",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2702,15 +2647,15 @@
    "proces": "Transport materiału biologicznego do laboratorium",
    "warstwa": "Główny",
    "grupa": "G10. Transport medyczny",
-   "wzorzec": "G10",
+   "tory": [
+    "Punkt pobrań",
+    "Zespół Transportu Medycznego",
+    "Laboratorium"
+   ],
    "wlasciciel": "Zespół Transportu Med.",
    "komorka": "JO.POR_KUP.9250",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -2724,15 +2669,14 @@
    "proces": "Utrzymanie pojazdów transportu medycznego",
    "warstwa": "Główny",
    "grupa": "G10. Transport medyczny",
-   "wzorzec": "G10",
+   "tory": [
+    "Zespół Transportu Medycznego",
+    "Dział Techniczny"
+   ],
    "wlasciciel": "Zespół Transportu Med. / DI.DT",
    "komorka": "JO.POR_KUP.9250, DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2746,15 +2690,15 @@
    "proces": "Polityka rachunkowości i prowadzenie ksiąg rachunkowych",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Główny Księgowy",
+    "Dział Finansowo-Księgowy",
+    "Zarząd"
+   ],
    "wlasciciel": "Główny Księgowy",
    "komorka": "K / K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2768,15 +2712,15 @@
    "proces": "Budżetowanie i planowanie finansowe (plan rzeczowo-finansowy)",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Komórki / Dyrektorzy",
+    "Główny Księgowy",
+    "Zarząd"
+   ],
    "wlasciciel": "Główny Księgowy / Zarząd",
    "komorka": "K, Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2790,15 +2734,14 @@
    "proces": "Księgowanie przychodów NFZ i komercyjnych",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy",
+    "Dział Rozliczeń Świadczeń"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2812,15 +2755,14 @@
    "proces": "Zarządzanie należnościami i windykacja",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy",
+    "Radca prawny"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2834,15 +2776,14 @@
    "proces": "Zarządzanie zobowiązaniami i płatnościami",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Komórka zamawiająca",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "10_FAKTURA_3WAY",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2856,15 +2797,14 @@
    "proces": "Rachunek kosztów świadczeń (sprawozdawczość AOTMiT)",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy",
+    "Dział Rozliczeń Świadczeń"
+   ],
    "wlasciciel": "DFK / DRZ",
    "komorka": "K.DFK, DM.DRZ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2878,15 +2818,15 @@
    "proces": "Sprawozdania finansowe i podatkowe (US, JPK, GUS)",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy",
+    "Główny Księgowy",
+    "US / GUS"
+   ],
    "wlasciciel": "Główny Księgowy / DFK",
    "komorka": "K, K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2900,15 +2840,14 @@
    "proces": "Inwentaryzacja",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy",
+    "Komisja inwentaryzacyjna"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2922,15 +2861,13 @@
    "proces": "Środki trwałe i wartości niematerialne (ewidencja, amortyzacja)",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2944,15 +2881,13 @@
    "proces": "Obsługa kasy / gotówki",
    "warstwa": "Wspierający",
    "grupa": "W1. Finanse i rachunkowość",
-   "wzorzec": "W1",
+   "tory": [
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DFK",
    "komorka": "K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2966,15 +2901,15 @@
    "proces": "Planowanie zatrudnienia i etatów",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Kierownicy komórek",
+    "Dział Personalno-Płacowy",
+    "Zarząd"
+   ],
    "wlasciciel": "DPP / Zarząd",
    "komorka": "K.DPP, Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -2988,15 +2923,14 @@
    "proces": "Rekrutacja i selekcja",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3010,15 +2944,14 @@
    "proces": "Zatrudnianie - umowy o pracę i kontrakty cywilnoprawne",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Kandydat / Pracownik",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3032,15 +2965,15 @@
    "proces": "Wdrożenie i adaptacja nowego pracownika",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Dział Personalno-Płacowy",
+    "Kierownik komórki",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DPP / kierownicy komórek",
    "komorka": "K.DPP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "01_ONBOARDING",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3054,15 +2987,14 @@
    "proces": "Naliczanie i wypłata wynagrodzeń (płace, ZUS, PIT)",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Dział Personalno-Płacowy",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3076,15 +3008,14 @@
    "proces": "Ewidencja czasu pracy i grafiki",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Kierownicy komórek",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP / kierownicy komórek",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3098,15 +3029,15 @@
    "proces": "Urlopy i nieobecności",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Pracownik",
+    "Przełożony",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3120,15 +3051,15 @@
    "proces": "Świadczenia socjalne (ZFŚS)",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Pracownik",
+    "Komisja Socjalna",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP / Komisja Socjalna",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3142,15 +3073,14 @@
    "proces": "Szkolenia obowiązkowe i podnoszenie kwalifikacji",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Dział Personalno-Płacowy",
+    "Pracownik"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "08_SZKOLENIA",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3164,15 +3094,14 @@
    "proces": "Pracownicze Plany Kapitałowe (PPK)",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Pracownik",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3186,15 +3115,13 @@
    "proces": "Prowadzenie akt osobowych i archiwum kadr",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3208,15 +3135,15 @@
    "proces": "Medycyna pracy (profilaktyczne badania pracowników)",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Pracownik",
+    "Dział Personalno-Płacowy",
+    "Jednostka medycyny pracy"
+   ],
    "wlasciciel": "DPP",
    "komorka": "K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -3230,15 +3157,15 @@
    "proces": "Sprawy dyscyplinarne i rozwiązanie stosunku pracy",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Przełożony / DPP",
+    "Radca prawny",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP / RP",
    "komorka": "K.DPP, RP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "02_OFFBOARDING (część)",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3252,15 +3179,14 @@
    "proces": "Zarządzanie dyżurami i grafikami lekarskimi (obsada lekarska, dyżury medyczne)",
    "warstwa": "Wspierający",
    "grupa": "W2. HR / Kadry-Płace",
-   "wzorzec": "W2",
+   "tory": [
+    "Kierownicy komórek medycznych",
+    "Dział Personalno-Płacowy"
+   ],
    "wlasciciel": "DPP / Kierownicy komórek medycznych / DM",
    "komorka": "K.DPP, Oddziały",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3274,15 +3200,15 @@
    "proces": "Plan postępowań o udzielenie zamówień publicznych",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Zamówień Publicznych",
+    "Kierownik Zamawiającego (Zarząd)"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "03_ZAKUPY_DECYZJA_TRYB",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3296,15 +3222,17 @@
    "proces": "Prowadzenie postępowań PZP (przetargi, tryby konkurencyjne)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Zamówień Publicznych",
+    "Komisja przetargowa",
+    "Radca prawny",
+    "Kierownik Zamawiającego (Zarząd)"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "04_PZP / 05_BK",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3318,15 +3246,15 @@
    "proces": "Udzielanie zamówień podprogowych (wg regulaminu wewnętrznego)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Zamówień Publicznych",
+    "Kierownik Zamawiającego (Zarząd)"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "06_WOLNA_REKA / 07_KONKURS_OFERT",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3340,15 +3268,15 @@
    "proces": "Realizacja zakupów bieżących (zaopatrzenie)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Zamówień Publicznych",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3362,15 +3290,15 @@
    "proces": "Zarządzanie umowami z dostawcami (CLM)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Komórka wnioskująca",
+    "Dział Zamówień Publicznych",
+    "Radca prawny"
+   ],
    "wlasciciel": "DZP / RP",
    "komorka": "DZP, RP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3384,15 +3312,14 @@
    "proces": "Gospodarka magazynowa (jeśli prowadzony magazyn centralny)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Magazyn",
+    "Dział Finansowo-Księgowy"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3406,15 +3333,14 @@
    "proces": "Obsługa platformy eZamówienia (Platforma e-Zamówienia)",
    "warstwa": "Wspierający",
    "grupa": "W3. Zamówienia publiczne i zakupy",
-   "wzorzec": "W3",
+   "tory": [
+    "Dział Zamówień Publicznych",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3428,17 +3354,16 @@
    "proces": "Wsparcie użytkowników i obsługa zgłoszeń IT",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Użytkownik",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-60"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S10",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3452,15 +3377,14 @@
    "proces": "Zarządzanie systemami HIS/RIS/PACS/LIS",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki",
+    "Dostawca / serwis"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -3474,15 +3398,14 @@
    "proces": "Integracja z platformą P1 (EDM, e-recepta, e-skierowanie, e-ZLA)",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki",
+    "Platforma P1"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -3496,15 +3419,15 @@
    "proces": "Zarządzanie tożsamością i dostępem (IAM)",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Wnioskujący / Przełożony",
+    "Dział Informatyki",
+    "Administrator Bezpieczeństwa"
+   ],
    "wlasciciel": "DI / ABS",
    "komorka": "DI.DI, ABS",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "14_UPRAWNIENIA",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": "AW-S12, AW-S19, AW-S21",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3518,15 +3441,13 @@
    "proces": "Tworzenie kopii zapasowych i odtwarzanie danych",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": "AW-S20",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -3540,15 +3461,14 @@
    "proces": "Bezpieczeństwo operacyjne IT (Cyber Operations)",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki",
+    "Administrator Bezpieczeństwa"
+   ],
    "wlasciciel": "DI / ABS",
    "komorka": "DI.DI, ABS",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": "AW-S17, AW-S18",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3562,15 +3482,15 @@
    "proces": "Reagowanie na incydenty cyberbezpieczeństwa (CSIRT)",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "incydent",
+   "tory": [
+    "Dział Informatyki",
+    "Administrator Bezpieczeństwa",
+    "Pełnomocnik ds. SZBI"
+   ],
    "wlasciciel": "DI / ABS / PBI",
    "komorka": "DI.DI, ABS, PBI",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "15_INCYDENT",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3584,15 +3504,13 @@
    "proces": "Zarządzanie infrastrukturą sieciową i serwerami",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": "AW-S19",
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3606,15 +3524,14 @@
    "proces": "Telefonia i łączność",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Użytkownik",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3628,18 +3545,17 @@
    "proces": "Telemedycyna i e-rejestracja",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki",
+    "Pacjent / Użytkownik"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-55",
     "AI-56"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S10, AW-S13",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -3653,15 +3569,15 @@
    "proces": "Zarządzanie zmianą IT i konfiguracją",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Wnioskujący",
+    "Dział Informatyki",
+    "Komitet zmian (CAB)"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3675,15 +3591,14 @@
    "proces": "Utrzymanie strony WWW i BIP",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Komórka merytoryczna",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3697,15 +3612,13 @@
    "proces": "Eksploatacja i utrzymanie obiektów (KUP, POK, CHR)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3719,15 +3632,14 @@
    "proces": "Przeglądy okresowe budynków (prawo budowlane)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Uprawniony specjalista"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3741,15 +3653,14 @@
    "proces": "Utrzymanie i serwis aparatury medycznej (paszporty techniczne)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Serwis (zewn.)"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3763,15 +3674,13 @@
    "proces": "Zarządzanie mediami (energia, woda, gaz, gazy medyczne)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3785,15 +3694,14 @@
    "proces": "Wentylacja, klimatyzacja, czystość powietrza (bloki operacyjne, sale)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Serwis (zewn.)"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3807,15 +3715,14 @@
    "proces": "Usługa pralnicza (jeśli wewnętrzna / zlecana)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Dostawca usługi"
+   ],
    "wlasciciel": "DT / DZP",
    "komorka": "DI.DT, DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3829,15 +3736,14 @@
    "proces": "Sprzątanie i utrzymanie czystości (we współpracy z DHiE)",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Dział Higieny i Epidemiologii"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT, DM.DHiE",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3851,15 +3757,15 @@
    "proces": "Catering / żywienie zbiorowe pacjentów",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dietetyk",
+    "Dostawca cateringu",
+    "Dział Techniczny"
+   ],
    "wlasciciel": "DT / DZP",
    "komorka": "DI.DT, DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3873,15 +3779,14 @@
    "proces": "Gospodarka odpadami komunalnymi i medycznymi",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Odbiorca odpadów (zewn.)"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3895,15 +3800,13 @@
    "proces": "Transport pomocniczy i gospodarka pojazdami niemedycznymi",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3917,15 +3820,14 @@
    "proces": "Ochrona fizyczna obiektów",
    "warstwa": "Wspierający",
    "grupa": "W5. Infrastruktura techniczna i media",
-   "wzorzec": "W5",
+   "tory": [
+    "Dział Techniczny",
+    "Służba ochrony"
+   ],
    "wlasciciel": "DT",
    "komorka": "DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3939,17 +3841,17 @@
    "proces": "Zarządzanie dokumentacją wewnętrzną (regulaminy, zarządzenia, instrukcje)",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Komórka inicjująca",
+    "Dział Organizacyjno-Prawny",
+    "Zarząd"
+   ],
    "wlasciciel": "DOP",
    "komorka": "K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-61"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S21",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3963,15 +3865,14 @@
    "proces": "Obsługa kancelaryjna - korespondencja przychodząca i wychodząca",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Dział Organizacyjno-Prawny",
+    "Komórka merytoryczna"
+   ],
    "wlasciciel": "DOP",
    "komorka": "K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -3985,15 +3886,13 @@
    "proces": "Prowadzenie rejestrów wewnętrznych Spółki",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "DOP",
    "komorka": "K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4007,15 +3906,14 @@
    "proces": "Archiwum zakładowe (dokumenty niemedyczne)",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Komórka przekazująca",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "DOP",
    "komorka": "K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4029,15 +3927,15 @@
    "proces": "Obsługa spraw korporacyjnych (KRS, BIP, walne)",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Dział Organizacyjno-Prawny",
+    "Radca prawny",
+    "Zarząd"
+   ],
    "wlasciciel": "DOP / RP",
    "komorka": "K.DOP, RP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4051,15 +3949,14 @@
    "proces": "Obsługa wniosków o informację publiczną (UDIP)",
    "warstwa": "Wspierający",
    "grupa": "W6. Sprawy organizacyjno-prawne",
-   "wzorzec": "W6",
+   "tory": [
+    "Wnioskodawca",
+    "Dział Organizacyjno-Prawny"
+   ],
    "wlasciciel": "DOP",
    "komorka": "K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4073,15 +3970,14 @@
    "proces": "Ocena ryzyka zawodowego na stanowiskach pracy",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Kierownicy komórek",
+    "Stanowisko BHP"
+   ],
    "wlasciciel": "BHP",
    "komorka": "BHP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4095,15 +3991,15 @@
    "proces": "Postępowania powypadkowe i rejestr wypadków",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Poszkodowany / Kierownik",
+    "Stanowisko BHP",
+    "Zespół powypadkowy"
+   ],
    "wlasciciel": "BHP",
    "komorka": "BHP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -4117,15 +4013,15 @@
    "proces": "Szkolenia BHP (wstępne i okresowe)",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko BHP",
+    "Dział Personalno-Płacowy",
+    "Pracownik"
+   ],
    "wlasciciel": "BHP / DPP",
    "komorka": "BHP, K.DPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4139,15 +4035,15 @@
    "proces": "Środki ochrony indywidualnej - zapewnienie",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Komórka",
+    "Stanowisko BHP",
+    "Dział Zamówień Publicznych"
+   ],
    "wlasciciel": "BHP / DZP",
    "komorka": "BHP, DZP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4161,15 +4057,14 @@
    "proces": "Plany ewakuacji i procedury P-POŻ",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko P-POŻ",
+    "Zarząd"
+   ],
    "wlasciciel": "P-POŻ",
    "komorka": "P-POŻ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4183,15 +4078,14 @@
    "proces": "Przeglądy sprzętu i instalacji P-POŻ",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko P-POŻ",
+    "Dział Techniczny"
+   ],
    "wlasciciel": "P-POŻ / DT",
    "komorka": "P-POŻ, DI.DT",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4205,15 +4099,14 @@
    "proces": "Szkolenia i ćwiczenia P-POŻ",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko P-POŻ",
+    "Personel"
+   ],
    "wlasciciel": "P-POŻ",
    "komorka": "P-POŻ",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4227,15 +4120,14 @@
    "proces": "Sprawy obronne - planowanie OC i MOB",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko ds. Obronnych",
+    "Zarząd"
+   ],
    "wlasciciel": "OBR",
    "komorka": "OBR",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4249,15 +4141,14 @@
    "proces": "Współpraca z organami obronnymi (WSzW, ZW Opolski)",
    "warstwa": "Wspierający",
    "grupa": "W7. BHP, P-POŻ i sprawy obronne",
-   "wzorzec": "W7",
+   "tory": [
+    "Stanowisko ds. Obronnych",
+    "Organ obronny (zewn.)"
+   ],
    "wlasciciel": "OBR",
    "komorka": "OBR",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4271,15 +4162,14 @@
    "proces": "Planowanie i programowanie inwestycji",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Inwestycji i Rozwoju",
+    "Zarząd"
+   ],
    "wlasciciel": "Dyrektor ds. Inw. i Rozwoju",
    "komorka": "DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4293,15 +4183,15 @@
    "proces": "Realizacja projektów inwestycyjnych (CapEx)",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Inwestycji i Rozwoju",
+    "Dział Zamówień Publicznych",
+    "Wykonawca"
+   ],
    "wlasciciel": "Dyrektor ds. Inw. i Rozwoju",
    "komorka": "DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4315,15 +4205,14 @@
    "proces": "Pozyskiwanie środków zewnętrznych (UE, dotacje, MZ)",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Inwestycji i Rozwoju",
+    "Instytucja finansująca"
+   ],
    "wlasciciel": "Dyrektor ds. Inw. i Rozwoju",
    "komorka": "DI",
-   "status_L3": "Zamodelowany (L3)",
-   "model_L3": "05_BK",
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4337,15 +4226,15 @@
    "proces": "Rozliczanie projektów dotacyjnych",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Inwestycji",
+    "Dział Finansowo-Księgowy",
+    "Instytucja finansująca"
+   ],
    "wlasciciel": "DI / DFK",
    "komorka": "DI, K.DFK",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4359,15 +4248,15 @@
    "proces": "Rozwój oferty usług medycznych (nowe świadczenia, oddziały)",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Inwestycji",
+    "Dyrektor ds. Lecznictwa",
+    "Zarząd"
+   ],
    "wlasciciel": "DI / DM / Zarząd",
    "komorka": "DI, DM, Z",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4381,15 +4270,15 @@
    "proces": "Współpraca naukowo-kliniczna (oddziały kliniczne)",
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
-   "wzorzec": "W8",
+   "tory": [
+    "Dyrektor ds. Lecznictwa",
+    "Dyrektor ds. Inwestycji",
+    "Partner naukowy"
+   ],
    "wlasciciel": "DM / DI",
    "komorka": "DM, DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4403,15 +4292,15 @@
    "proces": "Obsługa skarg, wniosków i reklamacji pacjentów",
    "warstwa": "Wspierający",
    "grupa": "W9. Komunikacja i obsługa pacjenta nieklinicznego",
-   "wzorzec": "W9",
+   "tory": [
+    "Pacjent",
+    "Pełnomocnik ds. Praw Pacjenta",
+    "Komórka merytoryczna"
+   ],
    "wlasciciel": "PPP / DOP",
    "komorka": "PPP, K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4425,15 +4314,14 @@
    "proces": "Edukacja w zakresie praw pacjenta",
    "warstwa": "Wspierający",
    "grupa": "W9. Komunikacja i obsługa pacjenta nieklinicznego",
-   "wzorzec": "W9",
+   "tory": [
+    "Pełnomocnik ds. Praw Pacjenta",
+    "Personel / Pacjenci"
+   ],
    "wlasciciel": "PPP",
    "komorka": "PPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4447,15 +4335,14 @@
    "proces": "Audyt i poprawa dostępności (architektoniczna / inf.-komun. / cyfrowa)",
    "warstwa": "Wspierający",
    "grupa": "W9. Komunikacja i obsługa pacjenta nieklinicznego",
-   "wzorzec": "W9",
+   "tory": [
+    "Pełnomocnik ds. Dostępności",
+    "Komórki organizacyjne"
+   ],
    "wlasciciel": "PD",
    "komorka": "PD",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4469,15 +4356,15 @@
    "proces": "Komunikacja zewnętrzna (strona WWW, BIP, media)",
    "warstwa": "Wspierający",
    "grupa": "W9. Komunikacja i obsługa pacjenta nieklinicznego",
-   "wzorzec": "W9",
+   "tory": [
+    "Zarząd",
+    "Dział Organizacyjno-Prawny",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "Zarząd / DI / DOP",
    "komorka": "Z, DI.DI, K.DOP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4491,15 +4378,15 @@
    "proces": "Ankiety satysfakcji pacjenta",
    "warstwa": "Wspierający",
    "grupa": "W9. Komunikacja i obsługa pacjenta nieklinicznego",
-   "wzorzec": "W9",
+   "tory": [
+    "Pełnomocnik ds. Akredytacji",
+    "Pacjenci",
+    "Pełnomocnik ds. Praw Pacjenta"
+   ],
    "wlasciciel": "PA / PPP",
    "komorka": "PA, PPP",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [],
-   "n_aktywa": 0,
    "systemy": null,
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4513,19 +4400,19 @@
    "proces": "Diagnostyka obrazowa ze wspomaganiem AI (analiza w PUI)",
    "warstwa": "Główny",
    "grupa": "G2. Diagnostyka obrazowa",
-   "wzorzec": "G2",
+   "tory": [
+    "Lekarz zlecający",
+    "Pracownia diagnostyczna",
+    "Lekarz opisujący"
+   ],
    "wlasciciel": "Lekarz radiolog / DI.DI",
    "komorka": "Pracownie RTG/TK, DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-13",
     "AI-54",
     "AI-58"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S03, AW-S08, AW-S11, AW-H06, AW-O06, AW-S22, AW-S23",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -4539,18 +4426,17 @@
    "proces": "Monitorowanie bezpieczeństwa i obsługa SOC 24/7",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "SOC (zewn.)",
+    "Administrator Bezpieczeństwa"
+   ],
    "wlasciciel": "ABS / DI.DI",
    "komorka": "DI.DI (+ dostawca SOC)",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-36",
     "AI-51"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S17, AW-S18, AW-S16, AW-O05",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4564,18 +4450,17 @@
    "proces": "Zarządzanie podatnościami i testy bezpieczeństwa",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki",
+    "Administrator Bezpieczeństwa"
+   ],
    "wlasciciel": "ABS / DI.DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-48",
     "AI-51"
    ],
-   "n_aktywa": 2,
    "systemy": "AW-S18, AW-S16",
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4589,17 +4474,15 @@
    "proces": "Monitorowanie środowiska IT i HIS",
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
-   "wzorzec": "W4",
+   "tory": [
+    "Dział Informatyki"
+   ],
    "wlasciciel": "DI.DI",
    "komorka": "DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-51"
    ],
-   "n_aktywa": 1,
    "systemy": "AW-S16, AW-H01, AW-H06",
-   "dane_osobowe": "Nie",
    "dane_medyczne": "Nie",
    "warnings": [],
    "pliki": {
@@ -4613,20 +4496,19 @@
    "proces": "Digitalizacja dokumentacji medycznej (skan -> EDM -> P1)",
    "warstwa": "Główny",
    "grupa": "G8. Dokumentacja medyczna i archiwum",
-   "wzorzec": "G8",
+   "tory": [
+    "Sekcja Dokumentacji Medycznej",
+    "Dział Informatyki"
+   ],
    "wlasciciel": "SDM / DI.DI",
    "komorka": "DM.SDM, DI.DI",
-   "status_L3": "Do modelowania",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-05",
     "AI-57",
     "AI-58",
     "AI-61"
    ],
-   "n_aktywa": 4,
    "systemy": "AW-S09, AW-S05, AW-S08, AW-H07, AW-S21",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
@@ -4640,19 +4522,19 @@
    "proces": "Nadzór nad systemami AI (ISO/IEC 42001)",
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
-   "wzorzec": "Z2",
+   "tory": [
+    "Pełnomocnik ds. ZSZ",
+    "Dział Informatyki",
+    "Zarząd"
+   ],
    "wlasciciel": "Pełnomocnik ds. ZSZ / PBI",
    "komorka": "PZSZ, DI.DI",
-   "status_L3": "Do modelowania (proces planowany)",
-   "model_L3": null,
    "aktywa_AI": [
     "AI-60",
     "AI-53",
     "AI-54"
    ],
-   "n_aktywa": 3,
    "systemy": "AW-S10, AW-H06",
-   "dane_osobowe": "Tak",
    "dane_medyczne": "Tak",
    "warnings": [],
    "pliki": {
