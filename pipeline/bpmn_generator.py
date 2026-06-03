@@ -428,6 +428,10 @@ def layout(spec):
 
     assoc_bottom = geom["height"] - MARGIN_Y
     floating = []
+    # gdy sa baseny/tory - obiekty danych laduja w pasmie POD basenem (nie nachodza na tory)
+    use_lanes_local = len(geom.get("pools", [])) > 0
+    pool_bottom = max((gp["y"] + gp["h"] for gp in geom["pools"]), default=assoc_bottom) if use_lanes_local else None
+    band_x = MARGIN_X
     for n in spec["nodes"]:
         if n["id"] in pos:
             continue
@@ -443,13 +447,21 @@ def layout(spec):
         host = assoc_host.get(n["id"])
         if host and host in pos:
             hx, hy, hw, hh, hcx, hcy = pos[host]
-            # zdarzenia maja etykiete POD soba - daj wiekszy odstep, by nie nachodzic
-            drop = 50 if by_id_all.get(host, {}).get("_kind") == "event" else 30
-            nx, ny = hcx - w / 2.0, hy + hh + drop
             tries = 0
-            while _hits(nx, ny, w, h) and tries < 16:
-                nx += DATA_PITCH
-                tries += 1
+            if use_lanes_local:
+                # pasmo pod basenem: ulozenie lewo->prawo (asocjacja prowadzi w gore do hosta)
+                nx, ny = band_x, pool_bottom + 35
+                while _hits(nx, ny, w, h) and tries < 30:
+                    nx += DATA_PITCH
+                    tries += 1
+                band_x = nx + DATA_PITCH
+            else:
+                # zdarzenia maja etykiete POD soba - daj wiekszy odstep, by nie nachodzic
+                drop = 50 if by_id_all.get(host, {}).get("_kind") == "event" else 30
+                nx, ny = hcx - w / 2.0, hy + hh + drop
+                while _hits(nx, ny, w, h) and tries < 16:
+                    nx += DATA_PITCH
+                    tries += 1
             pos[n["id"]] = (nx, ny, w, h, nx + w / 2.0, ny + h / 2.0)
             occupied.append((nx - 8, ny - 6, nx + max(w, 92) + 8, ny + h + LBL_DROP))
             assoc_bottom = max(assoc_bottom, ny + h + LBL_DROP)
