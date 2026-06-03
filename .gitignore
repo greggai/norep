@@ -9,3 +9,9 @@ __pycache__/
 out/1_Zarzadczy_Z/
 out/2_Glowny_G/
 out/3_Wspierajacy_W/
+
+# Paczki per-warstwa = wygodowe duplikaty pelnego ZIP-a; odtwarzalne: `python pipeline/make_zips.py`.
+# Pelny pakiet (EUROSOC_BPMN_pakiet_procesow_SCM_v1.zip) jest w repo jako glowny deliverable.
+EUROSOC_BPMN_1_Zarzadczy.zip
+EUROSOC_BPMN_2_Glowny.zip
+EUROSOC_BPMN_3_Wspierajacy.zip
