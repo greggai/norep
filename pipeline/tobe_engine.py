@@ -44,14 +44,14 @@ def mk(kod, name, proc, lanes, nodes, flows, data=()):
         if any(n["id"] == did for n in out_nodes):  # nie duplikuj
             continue
         out_nodes.append({"id": did, "type": asset_node_type(c),
-                          "name": "%s: %s" % (c, short(AI.get(c, {}).get("nazwa") or "", 15))})
+                          "name": "%s: %s" % (c, " ".join((AI.get(c, {}).get("nazwa") or "aktyw informacyjny").split()))})
         assoc.append({"source": did, "target": hosts[i % len(hosts)] if hosts else nodes[0][0]})
     # stopka: systemy + RODO (tylko kluczowe)
     sysraw = proc.get("Systemy / moduły (kody)")
     med = (proc.get("Dane medyczne (art. 9 RODO)") or "").strip().lower()
     os_ = (proc.get("Dane osobowe (RODO)") or "").strip().lower()
     parts = []
-    if sysraw: parts.append("Systemy: %s" % short(str(sysraw), 52))
+    if sysraw: parts.append("Systemy: %s" % " ".join(str(sysraw).split()))
     if med == "tak": parts.append("RODO: dane medyczne (art. 9)")
     elif os_ == "tak": parts.append("RODO: dane osobowe")
     if parts: out_nodes.append({"id": "n_info", "type": "textAnnotation", "name": " · ".join(parts)})

@@ -27,6 +27,7 @@ Uzycie z kodu:
 
 import argparse
 import json
+import re
 import sys
 from xml.sax.saxutils import escape
 
@@ -38,14 +39,25 @@ GATE = 50             # bok rombu bramki (przekatna)
 TASK_W, TASK_H = 110, 80
 SUB_W, SUB_H = 140, 90
 DATA_W, DATA_H = 40, 50
-ANNO_W, ANNO_H = 150, 50
+ANNO_W, ANNO_H = 250, 54
 
 COL_W = 170           # odstep miedzy kolumnami (rank)
 ROW_SLOT = 110        # wysokosc slotu wiersza
 MARGIN_X = 70
 MARGIN_Y = 70
-LANE_LABEL_W = 30     # pasek z nazwa toru/basenu
+LANE_LABEL_W = 30     # minimalny pasek z nazwa toru/basenu (rosnie dynamicznie)
 LANE_PAD = 25         # margines wewnatrz toru
+
+
+def _per_chars(avail_h, char_px=5.7, pad=16):
+    """Ile znakow miesci sie w jednej (obroconej o 90 st.) linii etykiety o wysokosci avail_h."""
+    return max(6, int((avail_h - pad) / char_px))
+
+
+def _nlines(name, per):
+    """Liczba linii po zawinieciu nazwy do 'per' znakow (sufit dzielenia)."""
+    n = len((name or "").strip())
+    return max(1, -(-n // per))
 
 # ----------------------------------------------------------------------------
 # PALETA "profesjonalna / nowoczesna".
@@ -321,7 +333,6 @@ def layout(spec):
     geom = {"lanes": [], "pools": [], "width": 0, "height": 0, "label_w": 0}
 
     if use_lanes:
-        label_w = LANE_LABEL_W
         # ile wierszy potrzebuje kazdy tor (max liczba wezlow tego toru w jednej kolumnie)
         lane_rows = {lid: 1 for (_, lid, _) in lanes}
         col_lane_count = {}
@@ -338,9 +349,27 @@ def layout(spec):
         y_cursor = MARGIN_Y
         for (_, lid, _name) in lanes:
             lane_top[lid] = y_cursor
-            h = lane_rows[lid] * ROW_SLOT
-            y_cursor += h
+            y_cursor += lane_rows[lid] * ROW_SLOT
         total_h = y_cursor - MARGIN_Y
+
+        pool_left = MARGIN_X - 40
+        # Dynamiczna szerokosc paskow etykiet: nazwa toru/basenu jest zawijana wzdluz
+        # wysokosci (tekst obrocony o 90 st.); liczba zawinietych linii wyznacza szerokosc
+        # paska. Dzieki temu dlugie nazwy rol nie wychodza poza tor ani na siebie.
+        LINE_PX = 13
+        lane_label_lines = 1
+        for (_, lid, name) in lanes:
+            per = _per_chars(lane_rows[lid] * ROW_SLOT)
+            lane_label_lines = max(lane_label_lines, _wrap(name, per, cap=per).count("\n") + 1)
+        lane_label_w = max(LANE_LABEL_W, 12 + lane_label_lines * LINE_PX)
+        this_pool = next(iter(dict.fromkeys([p for (p, _l, _n) in lanes])), None)
+        pool_name = pool_names.get(this_pool, "")
+        pper = _per_chars(total_h)
+        pool_label_w = max(LANE_LABEL_W, 12 + (_wrap(pool_name, pper, cap=pper).count("\n") + 1) * LINE_PX)
+
+        # kolumny zaczynaja sie ZA paskami etykiet (basen + tor) -> brak nachodzenia na wezly
+        x_origin = pool_left + pool_label_w + lane_label_w + LANE_PAD
+        col_x = [x_origin + r * COL_W for r in range(max_rank + 1)]
 
         # numer wiersza wezla w obrebie (kolumna, tor)
         for r in range(max_rank + 1):
@@ -357,24 +386,24 @@ def layout(spec):
                 cy = lane_top[lid] + idx * ROW_SLOT + ROW_SLOT / 2.0
                 pos[u] = (cx - w / 2.0, cy - h / 2.0, w, h, cx, cy)
 
-        pool_left = MARGIN_X - 40
-        content_right = (col_x[max_rank] if max_rank >= 0 else MARGIN_X) + COL_W
+        content_right = (col_x[max_rank] if max_rank >= 0 else x_origin) + COL_W
         pool_width = content_right - pool_left + 40
         # geometrie torow i basenu (zakladamy jeden basen gdy tory naleza do 1 pool)
+        lane_x = pool_left + pool_label_w
         for (_, lid, name) in lanes:
             geom["lanes"].append({
                 "id": lid, "name": name,
-                "x": pool_left + label_w, "y": lane_top[lid],
-                "w": pool_width - label_w, "h": lane_rows[lid] * ROW_SLOT,
+                "x": lane_x, "y": lane_top[lid],
+                "w": pool_width - pool_label_w, "h": lane_rows[lid] * ROW_SLOT,
             })
         pools_in = list(dict.fromkeys([p for (p, _l, _n) in lanes]))
         for pid in pools_in:
             geom["pools"].append({
                 "id": pid, "name": pool_names.get(pid, ""),
                 "x": pool_left, "y": MARGIN_Y,
-                "w": pool_width, "h": total_h, "label_w": label_w,
+                "w": pool_width, "h": total_h, "label_w": pool_label_w,
             })
-        geom["label_w"] = label_w
+        geom["label_w"] = lane_label_w
         geom["width"] = pool_left + pool_width + MARGIN_X
         geom["height"] = MARGIN_Y + total_h + MARGIN_Y
     else:
@@ -408,8 +437,8 @@ def layout(spec):
                 assoc_host[t] = s
     # Pass 1: zdarzenia brzegowe + wezly danych/adnotacji powiazane asocjacja (pod hostem).
     # Pass 2: wezly bez hosta (adnotacje-stopka) w rzedzie pod CALYM diagramem.
-    DATA_PITCH = 130            # rozstaw poziomy danych - dopasowany do szerokosci etykiet
-    LBL_DROP = 46              # zapas na etykiete obiektu danych (rysowana POD nim)
+    DATA_PITCH = 152            # rozstaw poziomy danych - dopasowany do szerokosci etykiet
+    LBL_DROP = 62              # zapas na etykiete obiektu danych (rysowana POD nim)
 
     # prostokaty zajete przez wezly glownego ukladu (+ zapas na etykiety zdarzen pod nimi)
     occupied = []
@@ -470,7 +499,7 @@ def layout(spec):
             floating.append(n)
     content_bottom = assoc_bottom
     extra_x = MARGIN_X
-    extra_y = assoc_bottom + 40
+    extra_y = assoc_bottom + 52
     for n in floating:
         w, h = _node_size(n)
         pos[n["id"]] = (extra_x, extra_y, w, h, extra_x + w / 2.0, extra_y + h / 2.0)
@@ -718,15 +747,32 @@ def to_bpmn_xml(spec, pos, rank, geom, lanes_info):
 # ----------------------------------------------------------------------------
 # Podglad PNG/SVG (matplotlib)
 # ----------------------------------------------------------------------------
-def _wrap(text, n=14):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        if len(cur) + len(w) + 1 <= n:
-            cur = (cur + " " + w).strip()
+def _wrap(text, n=14, cap=None):
+    """Zawijanie do ~n znakow w linii. Dlugie slowa lamane po '-' i '/' (separator
+    zostaje na koncu czesci, bez wstawiania spacji), a w ostatecznosci ciete twardo.
+    Slowa do 'cap' znakow pozostawiane w calosci (domyslnie n+6 - zapas dla ksztaltow
+    poziomych; dla pionowych etykiet torow podaj cap=n, by linia nie przekroczyla wysokosci)."""
+    cap = (n + 6) if cap is None else cap
+    atoms = []
+    for w in text.split():
+        if len(w) <= cap:
+            atoms.append(w)
         else:
-            if cur:
-                lines.append(cur)
-            cur = w
+            for pt in re.split(r'(?<=[-/])', w):
+                while len(pt) > cap:
+                    atoms.append(pt[:cap]); pt = pt[cap:]
+                if pt:
+                    atoms.append(pt)
+    lines, cur = [], ""
+    for a in atoms:
+        if not cur:
+            cur = a
+        else:
+            sep = "" if cur[-1] in "-/" else " "
+            if len(cur) + len(sep) + len(a) <= n:
+                cur = cur + sep + a
+            else:
+                lines.append(cur); cur = a
     if cur:
         lines.append(cur)
     return "\n".join(lines) if lines else text
@@ -763,16 +809,20 @@ def render_preview(spec, pos, rank, geom, lanes_info, png_path, svg_path):
         lw = gp.get("label_w", LANE_LABEL_W)
         ax.add_patch(Rectangle((gp["x"], gp["y"]), lw, gp["h"],
                                facecolor=PALETTE["lane_strip"], edgecolor=POOL_EDGE, lw=1.4))
-        ax.text(gp["x"] + lw / 2.0, gp["y"] + gp["h"] / 2.0, gp["name"],
-                rotation=90, va="center", ha="center", fontsize=9.5,
+        _pp = _per_chars(gp["h"])
+        ax.text(gp["x"] + lw / 2.0, gp["y"] + gp["h"] / 2.0, _wrap(gp["name"], _pp, cap=_pp),
+                rotation=90, va="center", ha="center", fontsize=9.0, linespacing=0.9,
                 fontweight="bold", color=PALETTE["ink"])
     for gl in geom["lanes"]:
         ax.add_patch(Rectangle((gl["x"], gl["y"]), gl["w"], gl["h"],
                                fill=False, edgecolor=POOL_EDGE, lw=0.9))
         ax.add_patch(Rectangle((gl["x"], gl["y"]), geom["label_w"], gl["h"],
                                facecolor=PALETTE["lane_strip"], edgecolor=POOL_EDGE, lw=0.9))
-        ax.text(gl["x"] + geom["label_w"] / 2.0, gl["y"] + gl["h"] / 2.0, gl["name"],
-                rotation=90, va="center", ha="center", fontsize=8.5, color=PALETTE["ink_soft"])
+        _lp = _per_chars(gl["h"])
+        ax.text(gl["x"] + geom["label_w"] / 2.0, gl["y"] + gl["h"] / 2.0,
+                _wrap(gl["name"], _lp, cap=_lp),
+                rotation=90, va="center", ha="center", fontsize=8.0, linespacing=0.9,
+                color=PALETTE["ink"])
 
     def draw_arrow(wps, style="seq"):
         for i in range(len(wps) - 1):
@@ -899,12 +949,16 @@ def render_preview(spec, pos, rank, geom, lanes_info, png_path, svg_path):
                                       (x + w, y + h), (x, y + h)], closed=True,
                                      fill=True, facecolor=dfill, edgecolor=dedge, lw=1.2))
             if name:
-                ax.text(cx, y + h + 9, _wrap(name, 16), ha="center", va="top",
+                ax.text(cx, y + h + 9, _wrap(name, 18), ha="center", va="top",
                         fontsize=7, color=PALETTE["ink_soft"])
         elif k == "annotation":
-            ax.add_patch(Polygon([(x + 8, y), (x, y), (x, y + h), (x + 8, y + h)],
+            wrapped = _wrap(name, 42)
+            nlines = wrapped.count("\n") + 1
+            bh = max(h, nlines * 12 + 10)            # nawias rosnie z liczba linii
+            by0 = cy - bh / 2.0
+            ax.add_patch(Polygon([(x + 8, by0), (x, by0), (x, by0 + bh), (x + 8, by0 + bh)],
                                  closed=False, fill=False, edgecolor=PALETTE["ink_soft"], lw=1.2))
-            ax.text(x + 12, cy, _wrap(name, 26), ha="left", va="center",
+            ax.text(x + 12, cy, wrapped, ha="left", va="center",
                     fontsize=7.5, color=PALETTE["ink"])
 
     title = spec.get("name", "")
