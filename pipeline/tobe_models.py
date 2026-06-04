@@ -116,15 +116,16 @@ def g_Z2(p):
     k = _k(p)
     if k in ("Z2.02","Z2.07"):  # audyty wewnetrzne
         sysn = "ZSZ (ISO 9001/14001)" if k=="Z2.02" else "SZBI (ISO 27001)"
-        L = ["Audytor wewnętrzny","Audytowana komórka","Pełnomocnik systemu"]
-        n = [("s","startEvent","Plan audytów "+sysn,"Pełnomocnik systemu",{"eventType":"timer"}),
-             ("a1","userTask","Zaplanuj audyt (zakres, kryteria)","Audytor wewnętrzny",{}),
-             ("a2","manualTask","Przeprowadź audyt","Audytor wewnętrzny",{}),
+        pel = "Pełnomocnik ds. SZBI" if k=="Z2.07" else "Pełnomocnik systemu"
+        L = ["Audytorzy wewnętrzni","Audytowana komórka",pel]
+        n = [("s","startEvent","Plan audytów "+sysn,pel,{"eventType":"timer"}),
+             ("a1","userTask","Zaplanuj audyt (zakres, kryteria)","Audytorzy wewnętrzni",{}),
+             ("a2","manualTask","Przeprowadź audyt","Audytorzy wewnętrzni",{}),
              ("a3","userTask","Przedstaw ustalenia","Audytowana komórka",{}),
-             ("g1","exclusiveGateway","Niezgodności?","Audytor wewnętrzny",{}),
+             ("g1","exclusiveGateway","Niezgodności?","Audytorzy wewnętrzni",{}),
              ("a4","userTask","Uzgodnij i wdroż działania korygujące","Audytowana komórka",{}),
-             ("a5","userTask","Sporządź raport z audytu","Audytor wewnętrzny",{}),
-             ("e1","endEvent","Audyt zamknięty","Pełnomocnik systemu",{})]
+             ("a5","userTask","Sporządź raport z audytu","Audytorzy wewnętrzni",{}),
+             ("e1","endEvent","Audyt zamknięty",pel,{})]
         f = C("s","a1","a2","a3","g1")+[("g1","a4","tak",0),("g1","a5","nie",1),("a4","a5",None,0),("a5","e1",None,0)]
         return L,n,f,[("d1","dataObjectReference","Raport z audytu","a5"),("d2","dataObjectReference","Karty niezgodności","a4")]
     if k in ("Z2.03",):  # przeglad zarzadzania
@@ -139,12 +140,13 @@ def g_Z2(p):
         return L,n,f,[("d1","dataObjectReference","Protokół przeglądu zarządzania","a2")]
     if k in ("Z2.01","Z2.06"):  # utrzymanie systemu
         sysn = "ZSZ (ISO 9001/14001)" if k=="Z2.01" else "SZBI (ISO 27001)"
-        L = ["Pełnomocnik systemu","Właściciele procesów","Zarząd"]
-        n = [("s","startEvent","Utrzymanie/rozwój "+sysn,"Pełnomocnik systemu",{"eventType":"timer"}),
-             ("a1","userTask","Aktualizuj dokumentację systemu","Pełnomocnik systemu",{}),
+        pel = "Pełnomocnik ds. SZBI" if k=="Z2.06" else "Pełnomocnik systemu"
+        L = [pel,"Właściciele procesów","Zarząd"]
+        n = [("s","startEvent","Utrzymanie/rozwój "+sysn,pel,{"eventType":"timer"}),
+             ("a1","userTask","Aktualizuj dokumentację systemu",pel,{}),
              ("a2","userTask","Nadzoruj realizację wymagań","Właściciele procesów",{}),
-             ("a3","userTask","Monitoruj cele i wskaźniki","Pełnomocnik systemu",{"loop":True}),
-             ("g1","exclusiveGateway","Cele osiągane?","Pełnomocnik systemu",{}),
+             ("a3","userTask","Monitoruj cele i wskaźniki",pel,{"loop":True}),
+             ("g1","exclusiveGateway","Cele osiągane?",pel,{}),
              ("a4","userTask","Uruchom działania korygujące","Właściciele procesów",{}),
              ("e1","endEvent","System utrzymany","Zarząd",{})]
         f = C("s","a1","a2","a3","g1")+[("g1","e1","tak",1),("g1","a4","nie",0),("a4","a3",None,0)]
@@ -204,15 +206,15 @@ def g_Z3(p):
              ("a4","a5",None,0),("a5","a6",None,0),("a6","e1",None,0)]
         return L,n,f,[("d1","dataStore","Rejestr incydentów","a1")]
     if k == "Z3.03":  # BCP/DRP
-        L = ["Pełnomocnik ds. SZBI","Dział Informatyki","Zarząd"]
-        n = [("s","startEvent","Cykl planów ciągłości","Pełnomocnik ds. SZBI",{"eventType":"timer"}),
-             ("a1","userTask","Wykonaj analizę BIA","Pełnomocnik ds. SZBI",{}),
-             ("a2","userTask","Opracuj plany BCP/DRP","Pełnomocnik ds. SZBI",{}),
+        L = ["Koordynator BC","Dział Informatyki","Zarząd"]
+        n = [("s","startEvent","Cykl planów ciągłości","Koordynator BC",{"eventType":"timer"}),
+             ("a1","userTask","Wykonaj analizę BIA","Koordynator BC",{}),
+             ("a2","userTask","Opracuj plany BCP/DRP","Koordynator BC",{}),
              ("a3","userTask","Zatwierdź plany","Zarząd",{}),
              ("a4","manualTask","Przeprowadź testy i ćwiczenia","Dział Informatyki",{}),
-             ("g1","exclusiveGateway","Testy zaliczone?","Pełnomocnik ds. SZBI",{}),
-             ("a5","userTask","Zaktualizuj plany","Pełnomocnik ds. SZBI",{}),
-             ("e1","endEvent","Plany ciągłości gotowe","Pełnomocnik ds. SZBI",{})]
+             ("g1","exclusiveGateway","Testy zaliczone?","Koordynator BC",{}),
+             ("a5","userTask","Zaktualizuj plany","Koordynator BC",{}),
+             ("e1","endEvent","Plany ciągłości gotowe","Koordynator BC",{})]
         f = C("s","a1","a2","a3","a4","g1")+[("g1","e1","tak",1),("g1","a5","nie",0),("a5","a4",None,0)]
         return L,n,f,[("d1","dataObjectReference","Plan BCP/DRP","a2")]
     if k == "Z3.05":  # zdarzenia niepozadane no-fault
@@ -227,15 +229,18 @@ def g_Z3(p):
         f = C("s","a1","a2","a3","g1")+[("g1","a4","tak",1),("a4","e1",None,0),("g1","e1","nie",0)]
         return L,n,f,[("d1","dataStore","Rejestr zdarzeń niepożądanych","a2")]
     # Z3.01 ryzyka oper./strat., Z3.02 ryzyka SZBI
-    sysn = "operacyjnych i strategicznych" if k=="Z3.01" else "bezpieczeństwa informacji"
-    L = ["Komórki merytoryczne","Koordynator ryzyka","Zarząd"]
-    n = [("s","startEvent","Cykl zarządzania ryzykiem","Koordynator ryzyka",{"eventType":"timer"}),
-         ("a1","userTask","Zidentyfikuj ryzyka "+sysn,"Komórki merytoryczne",{}),
-         ("a2","businessRuleTask","Oceń ryzyka (prawdopod./skutek)","Koordynator ryzyka",{}),
+    szbi = (k == "Z3.02")
+    sysn = "bezpieczeństwa informacji" if szbi else "operacyjnych i strategicznych"
+    wlasc = "Właściciele ryzyka" if szbi else "Komórki merytoryczne"   # wg słownika SZBI
+    koord = "Pełnomocnik ds. SZBI" if szbi else "Koordynator ryzyka"
+    L = [wlasc, koord, "Zarząd"]
+    n = [("s","startEvent","Cykl zarządzania ryzykiem",koord,{"eventType":"timer"}),
+         ("a1","userTask","Zidentyfikuj ryzyka "+sysn,wlasc,{}),
+         ("a2","businessRuleTask","Oceń ryzyka (prawdopod./skutek)",koord,{}),
          ("g1","exclusiveGateway","Ryzyko akceptowalne?","Zarząd",{}),
-         ("a3","userTask","Zaplanuj postępowanie z ryzykiem","Komórki merytoryczne",{}),
-         ("a4","userTask","Monitoruj ryzyka i mierniki","Koordynator ryzyka",{"loop":True}),
-         ("e1","endEvent","Ryzyka pod kontrolą","Koordynator ryzyka",{})]
+         ("a3","userTask","Zaplanuj postępowanie z ryzykiem",wlasc,{}),
+         ("a4","userTask","Monitoruj ryzyka i mierniki",koord,{"loop":True}),
+         ("e1","endEvent","Ryzyka pod kontrolą",koord,{})]
     f = C("s","a1","a2","g1")+[("g1","a4","tak",1),("g1","a3","nie",0),("a3","a4",None,0),("a4","e1",None,0)]
     return L,n,f,[("d1","dataStore","Rejestr ryzyk","a2")]
 
@@ -1507,27 +1512,28 @@ def g_W4(p):
         f = C("s","a1","a2","g1")+[("g1","a3","tak",0),("g1","e1","nie",1),("a3","e1",None,0)]
         return L,n,f,[("d1","dataStore","Logi bezpieczeństwa","a2")]
     if k == "W4.07":
-        L = [DI,"Administrator Bezpieczeństwa","Pełnomocnik ds. SZBI"]
-        n = [("s","startEvent","Alert / zgłoszenie incydentu cyber","Administrator Bezpieczeństwa",{"eventType":"message"}),
-             ("a1","userTask","Zarejestruj i sklasyfikuj incydent","Administrator Bezpieczeństwa",{}),
-             ("a2","businessRuleTask","Oceń wpływ i priorytet","Administrator Bezpieczeństwa",{}),
+        L = [DI,"Zespół reagowania IR","Pełnomocnik ds. SZBI"]
+        n = [("s","startEvent","Alert / zgłoszenie incydentu cyber","Zespół reagowania IR",{"eventType":"message"}),
+             ("a1","userTask","Zarejestruj i sklasyfikuj incydent","Zespół reagowania IR",{}),
+             ("a2","businessRuleTask","Oceń wpływ i priorytet","Zespół reagowania IR",{}),
              ("a3","serviceTask","Ogranicz skutki (izolacja)",DI,{}),
              ("a4","manualTask","Usuń przyczynę i przywróć działanie",DI,{}),
              ("g1","exclusiveGateway","Zgłosić do CSIRT/organu (KSC)?","Pełnomocnik ds. SZBI",{}),
              ("a5","sendTask","Zgłoś incydent (KSC/CSIRT)","Pełnomocnik ds. SZBI",{}),
              ("a6","userTask","Przeprowadź przegląd poincydentalny","Pełnomocnik ds. SZBI",{}),
-             ("e1","endEvent","Incydent cyber zamknięty","Administrator Bezpieczeństwa",{})]
+             ("e1","endEvent","Incydent cyber zamknięty","Zespół reagowania IR",{})]
         f = C("s","a1","a2","a3","a4","g1")+[("g1","a5","tak",0),("g1","a6","nie",1),("a5","a6",None,0),("a6","e1",None,0)]
         return L,n,f,[("d1","dataStore","Rejestr incydentów cyber","a1")]
     if k == "W4.08":
-        L = [DI]
-        n = [("s","startEvent","Zgłoszenie / zmiana infrastruktury",DI,{"eventType":"message"}),
-             ("a1","userTask","Zdiagnozuj i zaplanuj zmianę",DI,{}),
-             ("g1","exclusiveGateway","Wymaga okna serwisowego?",DI,{}),
-             ("a2","sendTask","Zaplanuj okno i powiadom",DI,{}),
-             ("a3","manualTask","Wykonaj zmianę / naprawę",DI,{}),
-             ("a4","userTask","Zweryfikuj działanie",DI,{}),
-             ("e1","endEvent","Infrastruktura sprawna",DI,{})]
+        net = "Administratorzy sieci"   # wg słownika SZBI (sieć i serwery)
+        L = [net]
+        n = [("s","startEvent","Zgłoszenie / zmiana infrastruktury",net,{"eventType":"message"}),
+             ("a1","userTask","Zdiagnozuj i zaplanuj zmianę",net,{}),
+             ("g1","exclusiveGateway","Wymaga okna serwisowego?",net,{}),
+             ("a2","sendTask","Zaplanuj okno i powiadom",net,{}),
+             ("a3","manualTask","Wykonaj zmianę / naprawę",net,{}),
+             ("a4","userTask","Zweryfikuj działanie",net,{}),
+             ("e1","endEvent","Infrastruktura sprawna",net,{})]
         f = C("s","a1","g1")+[("g1","a2","tak",0),("g1","a3","nie",1),("a2","a3",None,0),("a3","a4",None,0),("a4","e1",None,0)]
         return L,n,f,[("d1","dataStore","CMDB / ewidencja infrastruktury","a4")]
     if k == "W4.09":

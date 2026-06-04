@@ -31,21 +31,21 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | Kod | Proces | Tory (role) | Aktywa AI |
 |---|---|---|---|
 | Z2.01 | Utrzymanie Zintegrowanego Systemu Zarządzania (ISO 9001/14001) | Pełnomocnik systemu / Właściciele procesów / Zarząd | - |
-| Z2.02 | Planowanie i prowadzenie audytów wewnętrznych ZSZ | Audytor wewnętrzny / Audytowana komórka / Pełnomocnik systemu | - |
+| Z2.02 | Planowanie i prowadzenie audytów wewnętrznych ZSZ | Audytorzy wewnętrzni / Audytowana komórka / Pełnomocnik systemu | - |
 | Z2.03 | Przeglądy zarządzania ZSZ | Pełnomocnik systemu / Zarząd | - |
 | Z2.04 | Przygotowanie i utrzymanie akredytacji CMJ | Pełnomocnik ds. Akredytacji / Komórki kliniczne / Zarząd | - |
 | Z2.05 | Wdrażanie standardów akredytacyjnych w komórkach klinicznych | Pełnomocnik ds. Akredytacji / Komórki kliniczne / Zarząd | - |
-| Z2.06 | Zarządzanie SZBI (ISO 27001) | Pełnomocnik systemu / Właściciele procesów / Zarząd | - |
-| Z2.07 | Audyty wewnętrzne SZBI | Audytor wewnętrzny / Audytowana komórka / Pełnomocnik systemu | - |
-| Z2.09 | Nadzór nad systemami AI (ISO/IEC 42001) | Pełnomocnik ds. ZSZ / Dział Informatyki / Zarząd | 3 |
+| Z2.06 | Zarządzanie SZBI (ISO 27001) | Pełnomocnik ds. SZBI / Właściciele procesów / Zarząd | - |
+| Z2.07 | Audyty wewnętrzne SZBI | Audytorzy wewnętrzni / Audytowana komórka / Pełnomocnik ds. SZBI | - |
+| Z2.09 | Nadzór nad systemami AI (ISO/IEC 42001) | Pełnomocnik ds. ZSZ / Administratorzy IT / Zarząd | 3 |
 
 ### Z3. Zarządzanie ryzykiem i ciągłością działania
 
 | Kod | Proces | Tory (role) | Aktywa AI |
 |---|---|---|---|
 | Z3.01 | Identyfikacja i ocena ryzyk operacyjnych i strategicznych | Komórki merytoryczne / Koordynator ryzyka / Zarząd | - |
-| Z3.02 | Analiza ryzyk bezpieczeństwa informacji (SZBI) | Komórki merytoryczne / Koordynator ryzyka / Zarząd | - |
-| Z3.03 | Plan Ciągłości Działania (BCP) i Plan Odtwarzania (DRP) | Pełnomocnik ds. SZBI / Dział Informatyki / Zarząd | - |
+| Z3.02 | Analiza ryzyk bezpieczeństwa informacji (SZBI) | Właściciele ryzyka / Pełnomocnik ds. SZBI / Zarząd | - |
+| Z3.03 | Plan Ciągłości Działania (BCP) i Plan Odtwarzania (DRP) | Koordynator BC / Administratorzy IT / Zarząd | - |
 | Z3.04 | Zarządzanie incydentami i kryzysami (operacyjnie) | Zespół reagowania / Zarząd / Komórki merytoryczne | - |
 | Z3.05 | Bezpieczeństwo pacjenta - rejestr zdarzeń niepożądanych i system no-fault (ustawa o jakości w opiece zdrowotnej) | Personel zgłaszający / Pełnomocnik ds. Jakości / Zespół ds. bezpieczeństwa | - |
 
@@ -53,11 +53,11 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 
 | Kod | Proces | Tory (role) | Aktywa AI |
 |---|---|---|---|
-| Z4.01 | Nadzór nad przetwarzaniem danych osobowych (RODO) | Inspektor Ochrony Danych / Komórki przetwarzające / Zarząd | - |
-| Z4.02 | Realizacja praw osób, których dane dotyczą | Wnioskodawca / Sekcja Dokumentacji Medycznej / Inspektor Ochrony Danych | - |
-| Z4.03 | Ocena skutków dla ochrony danych (DPIA) | Komórka przetwarzająca / Inspektor Ochrony Danych / Zarząd | - |
-| Z4.04 | Obsługa naruszeń ochrony danych (notyfikacja UODO) | Zgłaszający / Inspektor Ochrony Danych / Zarząd | - |
-| Z4.05 | Zarządzanie zgodnością KSC (operator usługi kluczowej) | Pełnomocnik ds. SZBI / Dział Informatyki / Organ KSC (CSIRT) | - |
+| Z4.01 | Nadzór nad przetwarzaniem danych osobowych (RODO) | IOD / Komórki przetwarzające / Zarząd | - |
+| Z4.02 | Realizacja praw osób, których dane dotyczą | Wnioskodawca / Sekcja Dokumentacji Medycznej / IOD | - |
+| Z4.03 | Ocena skutków dla ochrony danych (DPIA) | Komórka przetwarzająca / IOD / Zarząd | - |
+| Z4.04 | Obsługa naruszeń ochrony danych (notyfikacja UODO) | Zgłaszający / IOD / Zarząd | - |
+| Z4.05 | Zarządzanie zgodnością KSC (operator usługi kluczowej) | Pełnomocnik ds. SZBI / Administratorzy IT / Organ KSC (CSIRT) | - |
 | Z4.06 | Ochrona informacji niejawnych | Pełnomocnik ds. OIN / Komórki organizacyjne | - |
 | Z4.07 | Zarządzanie prawami pacjenta i obsługa skarg | Pacjent / Skarżący / Pełnomocnik ds. Praw Pacjenta / Komórka merytoryczna | - |
 | Z4.08 | Zapewnianie dostępności osobom ze szczególnymi potrzebami | Pełnomocnik ds. Dostępności / Komórki organizacyjne / Zarząd | - |
@@ -298,8 +298,8 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | G8.02 | Udostępnianie dokumentacji medycznej (pacjent, organy, podmioty) | Wnioskodawca / Sekcja Dokumentacji Medycznej | 2 |
 | G8.03 | Archiwizacja i przechowywanie dokumentacji medycznej | Sekcja Dokumentacji Medycznej | 1 |
 | G8.04 | Brakowanie/niszczenie dokumentacji po okresie przechowywania | Sekcja Dokumentacji Medycznej / Zarząd | 1 |
-| G8.05 | Integracja z platformą P1 (EDM, IKP) | System EDM / Dział Informatyki / Platforma P1 | 3 |
-| G8.06 | Digitalizacja dokumentacji medycznej (skan -> EDM -> P1) | Sekcja Dokumentacji Medycznej / Dział Informatyki | 4 |
+| G8.05 | Integracja z platformą P1 (EDM, IKP) | System EDM / Administratorzy IT / Platforma P1 | 3 |
+| G8.06 | Digitalizacja dokumentacji medycznej (skan -> EDM -> P1) | Sekcja Dokumentacji Medycznej / Administratorzy IT | 4 |
 
 ### G9. Rozliczenia świadczeń (NFZ) i statystyka
 
@@ -335,7 +335,7 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | W2.01 | Planowanie zatrudnienia i etatów | Kierownicy komórek / Dział Personalno-Płacowy / Zarząd | - |
 | W2.02 | Rekrutacja i selekcja | Komórka wnioskująca / Dział Personalno-Płacowy | - |
 | W2.03 | Zatrudnianie - umowy o pracę i kontrakty cywilnoprawne | Kandydat / Pracownik / Dział Personalno-Płacowy | - |
-| W2.04 | Wdrożenie i adaptacja nowego pracownika | Dział Personalno-Płacowy / Kierownik komórki / Dział Informatyki | - |
+| W2.04 | Wdrożenie i adaptacja nowego pracownika | Dział Personalno-Płacowy / Kierownik komórki / Administratorzy IT | - |
 | W2.05 | Naliczanie i wypłata wynagrodzeń (płace, ZUS, PIT) | Dział Personalno-Płacowy / Dział Finansowo-Księgowy | - |
 | W2.06 | Ewidencja czasu pracy i grafiki | Kierownicy komórek / Dział Personalno-Płacowy | - |
 | W2.07 | Urlopy i nieobecności | Pracownik / Przełożony / Dział Personalno-Płacowy | - |
@@ -357,27 +357,27 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | W3.04 | Realizacja zakupów bieżących (zaopatrzenie) | Komórka wnioskująca / Dział Zamówień Publicznych / Dział Finansowo-Księgowy | - |
 | W3.05 | Zarządzanie umowami z dostawcami (CLM) | Komórka wnioskująca / Dział Zamówień Publicznych / Radca prawny | - |
 | W3.06 | Gospodarka magazynowa (jeśli prowadzony magazyn centralny) | Magazyn / Dział Finansowo-Księgowy | - |
-| W3.07 | Obsługa platformy eZamówienia (Platforma e-Zamówienia) | Dział Zamówień Publicznych / Dział Informatyki | - |
+| W3.07 | Obsługa platformy eZamówienia (Platforma e-Zamówienia) | Dział Zamówień Publicznych / Administratorzy IT | - |
 
 ### W4. IT / cyfryzacja / cyberbezp.
 
 | Kod | Proces | Tory (role) | Aktywa AI |
 |---|---|---|---|
-| W4.01 | Wsparcie użytkowników i obsługa zgłoszeń IT | Użytkownik / Dział Informatyki | 1 |
-| W4.02 | Zarządzanie systemami HIS/RIS/PACS/LIS | Dział Informatyki / Dostawca / serwis | - |
-| W4.03 | Integracja z platformą P1 (EDM, e-recepta, e-skierowanie, e-ZLA) | Dział Informatyki / Platforma P1 | - |
-| W4.04 | Zarządzanie tożsamością i dostępem (IAM) | Wnioskujący / Przełożony / Dział Informatyki / Administrator Bezpieczeństwa | - |
-| W4.05 | Tworzenie kopii zapasowych i odtwarzanie danych | Dział Informatyki | - |
-| W4.06 | Bezpieczeństwo operacyjne IT (Cyber Operations) | Dział Informatyki / Administrator Bezpieczeństwa | - |
-| W4.07 | Reagowanie na incydenty cyberbezpieczeństwa (CSIRT) | Dział Informatyki / Administrator Bezpieczeństwa / Pełnomocnik ds. SZBI | - |
-| W4.08 | Zarządzanie infrastrukturą sieciową i serwerami | Dział Informatyki | - |
-| W4.09 | Telefonia i łączność | Użytkownik / Dział Informatyki | - |
-| W4.10 | Telemedycyna i e-rejestracja | Dział Informatyki / Pacjent / Użytkownik | 2 |
-| W4.11 | Zarządzanie zmianą IT i konfiguracją | Wnioskujący / Dział Informatyki / Komitet zmian (CAB) | - |
-| W4.12 | Utrzymanie strony WWW i BIP | Komórka merytoryczna / Dział Informatyki | - |
-| W4.13 | Monitorowanie bezpieczeństwa i obsługa SOC 24/7 | SOC (zewn.) / Administrator Bezpieczeństwa | 2 |
-| W4.14 | Zarządzanie podatnościami i testy bezpieczeństwa | Dział Informatyki / Administrator Bezpieczeństwa | 2 |
-| W4.15 | Monitorowanie środowiska IT i HIS | Dział Informatyki | 1 |
+| W4.01 | Wsparcie użytkowników i obsługa zgłoszeń IT | Użytkownik / Administratorzy IT | 1 |
+| W4.02 | Zarządzanie systemami HIS/RIS/PACS/LIS | Administratorzy IT / Dostawca / serwis | - |
+| W4.03 | Integracja z platformą P1 (EDM, e-recepta, e-skierowanie, e-ZLA) | Administratorzy IT / Platforma P1 | - |
+| W4.04 | Zarządzanie tożsamością i dostępem (IAM) | Wnioskodawcy / Przełożony / Administratorzy IT / Pełnomocnik ds. SZBI | - |
+| W4.05 | Tworzenie kopii zapasowych i odtwarzanie danych | Administratorzy IT | - |
+| W4.06 | Bezpieczeństwo operacyjne IT (Cyber Operations) | Administratorzy IT / Pełnomocnik ds. SZBI | - |
+| W4.07 | Reagowanie na incydenty cyberbezpieczeństwa (CSIRT) | Administratorzy IT / Zespół reagowania IR / Pełnomocnik ds. SZBI | - |
+| W4.08 | Zarządzanie infrastrukturą sieciową i serwerami | Administratorzy sieci | - |
+| W4.09 | Telefonia i łączność | Użytkownik / Administratorzy IT | - |
+| W4.10 | Telemedycyna i e-rejestracja | Administratorzy IT / Pacjent / Użytkownik | 2 |
+| W4.11 | Zarządzanie zmianą IT i konfiguracją | Wnioskodawcy / Administratorzy IT / CAB | - |
+| W4.12 | Utrzymanie strony WWW i BIP | Komórka merytoryczna / Administratorzy IT | - |
+| W4.13 | Monitorowanie bezpieczeństwa i obsługa SOC 24/7 | SOC (zewn.) / Pełnomocnik ds. SZBI | 2 |
+| W4.14 | Zarządzanie podatnościami i testy bezpieczeństwa | Administratorzy IT / Pełnomocnik ds. SZBI | 2 |
+| W4.15 | Monitorowanie środowiska IT i HIS | Administratorzy IT | 1 |
 
 ### W5. Infrastruktura techniczna i media
 
@@ -438,5 +438,5 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | W9.01 | Obsługa skarg, wniosków i reklamacji pacjentów | Pacjent / Pełnomocnik ds. Praw Pacjenta / Komórka merytoryczna | - |
 | W9.02 | Edukacja w zakresie praw pacjenta | Pełnomocnik ds. Praw Pacjenta / Personel / Pacjenci | - |
 | W9.03 | Audyt i poprawa dostępności (architektoniczna / inf.-komun. / cyfrowa) | Pełnomocnik ds. Dostępności / Komórki organizacyjne | - |
-| W9.04 | Komunikacja zewnętrzna (strona WWW, BIP, media) | Zarząd / Dział Organizacyjno-Prawny / Dział Informatyki | - |
+| W9.04 | Komunikacja zewnętrzna (strona WWW, BIP, media) | Zarząd / Dział Organizacyjno-Prawny / Administratorzy IT | - |
 | W9.05 | Ankiety satysfakcji pacjenta | Pełnomocnik ds. Akredytacji / Pacjenci / Pełnomocnik ds. Praw Pacjenta | - |

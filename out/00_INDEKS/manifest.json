@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-04T09:48:28",
+ "generated": "2026-06-04T10:17:41",
  "model": "to-be wielotorowy",
  "liczba_procesow": 203,
  "bledy": [],
@@ -266,7 +266,7 @@
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
    "tory": [
-    "Audytor wewnętrzny",
+    "Audytorzy wewnętrzni",
     "Audytowana komórka",
     "Pełnomocnik systemu"
    ],
@@ -353,7 +353,7 @@
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
    "tory": [
-    "Pełnomocnik systemu",
+    "Pełnomocnik ds. SZBI",
     "Właściciele procesów",
     "Zarząd"
    ],
@@ -375,9 +375,9 @@
    "warstwa": "Zarządczy",
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
    "tory": [
-    "Audytor wewnętrzny",
+    "Audytorzy wewnętrzni",
     "Audytowana komórka",
-    "Pełnomocnik systemu"
+    "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "PBI",
    "komorka": "PBI",
@@ -441,8 +441,8 @@
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
    "tory": [
-    "Komórki merytoryczne",
-    "Koordynator ryzyka",
+    "Właściciele ryzyka",
+    "Pełnomocnik ds. SZBI",
     "Zarząd"
    ],
    "wlasciciel": "PBI",
@@ -463,8 +463,8 @@
    "warstwa": "Zarządczy",
    "grupa": "Z3. Zarządzanie ryzykiem i ciągłością działania",
    "tory": [
-    "Pełnomocnik ds. SZBI",
-    "Dział Informatyki",
+    "Koordynator BC",
+    "Administratorzy IT",
     "Zarząd"
    ],
    "wlasciciel": "PBI / DI.DI / OBR",
@@ -529,7 +529,7 @@
    "warstwa": "Zarządczy",
    "grupa": "Z4. Zgodność regulacyjna",
    "tory": [
-    "Inspektor Ochrony Danych",
+    "IOD",
     "Komórki przetwarzające",
     "Zarząd"
    ],
@@ -553,7 +553,7 @@
    "tory": [
     "Wnioskodawca",
     "Sekcja Dokumentacji Medycznej",
-    "Inspektor Ochrony Danych"
+    "IOD"
    ],
    "wlasciciel": "IOD / DM.SDM",
    "komorka": "IOD, DM.SDM",
@@ -574,7 +574,7 @@
    "grupa": "Z4. Zgodność regulacyjna",
    "tory": [
     "Komórka przetwarzająca",
-    "Inspektor Ochrony Danych",
+    "IOD",
     "Zarząd"
    ],
    "wlasciciel": "IOD",
@@ -596,7 +596,7 @@
    "grupa": "Z4. Zgodność regulacyjna",
    "tory": [
     "Zgłaszający",
-    "Inspektor Ochrony Danych",
+    "IOD",
     "Zarząd"
    ],
    "wlasciciel": "IOD",
@@ -618,7 +618,7 @@
    "grupa": "Z4. Zgodność regulacyjna",
    "tory": [
     "Pełnomocnik ds. SZBI",
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Organ KSC (CSIRT)"
    ],
    "wlasciciel": "PBI / DI.DI",
@@ -2494,7 +2494,7 @@
    "grupa": "G8. Dokumentacja medyczna i archiwum",
    "tory": [
     "System EDM",
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Platforma P1"
    ],
    "wlasciciel": "DI.DI / SDM",
@@ -2968,7 +2968,7 @@
    "tory": [
     "Dział Personalno-Płacowy",
     "Kierownik komórki",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DPP / kierownicy komórek",
    "komorka": "K.DPP",
@@ -3335,7 +3335,7 @@
    "grupa": "W3. Zamówienia publiczne i zakupy",
    "tory": [
     "Dział Zamówień Publicznych",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DZP",
    "komorka": "DZP",
@@ -3356,7 +3356,7 @@
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
     "Użytkownik",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -3378,7 +3378,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Dostawca / serwis"
    ],
    "wlasciciel": "DI",
@@ -3399,7 +3399,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Platforma P1"
    ],
    "wlasciciel": "DI",
@@ -3420,9 +3420,9 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Wnioskujący / Przełożony",
-    "Dział Informatyki",
-    "Administrator Bezpieczeństwa"
+    "Wnioskodawcy / Przełożony",
+    "Administratorzy IT",
+    "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "DI / ABS",
    "komorka": "DI.DI, ABS",
@@ -3442,7 +3442,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -3462,8 +3462,8 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
-    "Administrator Bezpieczeństwa"
+    "Administratorzy IT",
+    "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "DI / ABS",
    "komorka": "DI.DI, ABS",
@@ -3483,8 +3483,8 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
-    "Administrator Bezpieczeństwa",
+    "Administratorzy IT",
+    "Zespół reagowania IR",
     "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "DI / ABS / PBI",
@@ -3505,7 +3505,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki"
+    "Administratorzy sieci"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -3526,7 +3526,7 @@
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
     "Użytkownik",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -3546,7 +3546,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Pacjent / Użytkownik"
    ],
    "wlasciciel": "DI",
@@ -3570,9 +3570,9 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Wnioskujący",
-    "Dział Informatyki",
-    "Komitet zmian (CAB)"
+    "Wnioskodawcy",
+    "Administratorzy IT",
+    "CAB"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -3593,7 +3593,7 @@
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
     "Komórka merytoryczna",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DI",
    "komorka": "DI.DI",
@@ -4359,7 +4359,7 @@
    "tory": [
     "Zarząd",
     "Dział Organizacyjno-Prawny",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "Zarząd / DI / DOP",
    "komorka": "Z, DI.DI, K.DOP",
@@ -4428,7 +4428,7 @@
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
     "SOC (zewn.)",
-    "Administrator Bezpieczeństwa"
+    "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "ABS / DI.DI",
    "komorka": "DI.DI (+ dostawca SOC)",
@@ -4451,8 +4451,8 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki",
-    "Administrator Bezpieczeństwa"
+    "Administratorzy IT",
+    "Pełnomocnik ds. SZBI"
    ],
    "wlasciciel": "ABS / DI.DI",
    "komorka": "DI.DI",
@@ -4475,7 +4475,7 @@
    "warstwa": "Wspierający",
    "grupa": "W4. IT / cyfryzacja / cyberbezp.",
    "tory": [
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "DI.DI",
    "komorka": "DI.DI",
@@ -4498,7 +4498,7 @@
    "grupa": "G8. Dokumentacja medyczna i archiwum",
    "tory": [
     "Sekcja Dokumentacji Medycznej",
-    "Dział Informatyki"
+    "Administratorzy IT"
    ],
    "wlasciciel": "SDM / DI.DI",
    "komorka": "DM.SDM, DI.DI",
@@ -4524,7 +4524,7 @@
    "grupa": "Z2. Systemy zgodności (ZSZ, SZBI, Akredytacja)",
    "tory": [
     "Pełnomocnik ds. ZSZ",
-    "Dział Informatyki",
+    "Administratorzy IT",
     "Zarząd"
    ],
    "wlasciciel": "Pełnomocnik ds. ZSZ / PBI",

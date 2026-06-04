@@ -58,6 +58,15 @@ Każdy z {len(P)} procesów to **odrębny, wielotorowy model to-be** (BPMN 2.0) 
 ## Organizacja
 Foldery: `1_Zarzadczy_Z/`, `2_Glowny_G/`, `3_Wspierajacy_W/` → 25 grup (L1). Plik: `KOD__nazwa.*`.
 
+## Zgodność nazewnictwa ról z SZBI
+Role w torach z domeny **bezpieczeństwa informacji / IT / audytu / ryzyka / zmian** ujednolicono ze
+słownikiem **Mapy dokumentacji SZBI v9.2** (te same nazwy w procesach i w dokumentacji SZBI), m.in.:
+`IOD`, `Pełnomocnik ds. SZBI`, `Kierownik IT`, `Administratorzy IT`, `Administratorzy sieci`,
+`Audytorzy wewnętrzni`, `Zespół reagowania IR`, `CAB`, `Koordynator BC`, `Właściciele ryzyka`,
+`Właściciele procesów`, `Wnioskodawcy`. **Oryginalne nazwy jednostek** (Dział Personalno-Płacowy,
+Dział Zamówień Publicznych, Radca prawny, Dział Organizacyjno-Prawny, Zarząd…) oraz **role
+kliniczne/medyczne pozostają bez zmian**. Pełny słownik i mapowanie: `00_INDEKS/szbi_roles.json`.
+
 ## Aktywa i zgodność
 Aktywa informacyjne z rejestru naniesione dla **{n_ai}/{len(P)}** procesów; **{n_med}** procesów dotyka danych
 medycznych (art. 9 RODO). Pełne nazwy kodów: `00_INDEKS/legenda_aktywow.csv`.
@@ -77,4 +86,9 @@ Dane: prostokąt z zagięciem = obiekt danych; walec = magazyn (rejestr/baza/arc
 {chr(10).join(f"- {r}: {c}×" for r, c in roles.most_common(12))}
 """
 open(os.path.join(IDX, "README.md"), "w", encoding="utf-8").write(README)
+# dołącz słownik ról SZBI do pakietu
+import shutil
+_src = os.path.join(ROOT, "data", "szbi_roles.json")
+if os.path.exists(_src):
+    shutil.copy(_src, os.path.join(IDX, "szbi_roles.json"))
 print("Docs to-be OK:", len(P), "procesów,", n_ai, "z aktywami, śr. torów", round(avg_lanes,2))

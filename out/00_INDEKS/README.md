@@ -17,6 +17,15 @@ Każdy z 203 procesów to **odrębny, wielotorowy model to-be** (BPMN 2.0) z:
 ## Organizacja
 Foldery: `1_Zarzadczy_Z/`, `2_Glowny_G/`, `3_Wspierajacy_W/` → 25 grup (L1). Plik: `KOD__nazwa.*`.
 
+## Zgodność nazewnictwa ról z SZBI
+Role w torach z domeny **bezpieczeństwa informacji / IT / audytu / ryzyka / zmian** ujednolicono ze
+słownikiem **Mapy dokumentacji SZBI v9.2** (te same nazwy w procesach i w dokumentacji SZBI), m.in.:
+`IOD`, `Pełnomocnik ds. SZBI`, `Kierownik IT`, `Administratorzy IT`, `Administratorzy sieci`,
+`Audytorzy wewnętrzni`, `Zespół reagowania IR`, `CAB`, `Koordynator BC`, `Właściciele ryzyka`,
+`Właściciele procesów`, `Wnioskodawcy`. **Oryginalne nazwy jednostek** (Dział Personalno-Płacowy,
+Dział Zamówień Publicznych, Radca prawny, Dział Organizacyjno-Prawny, Zarząd…) oraz **role
+kliniczne/medyczne pozostają bez zmian**. Pełny słownik i mapowanie: `00_INDEKS/szbi_roles.json`.
+
 ## Aktywa i zgodność
 Aktywa informacyjne z rejestru naniesione dla **56/203** procesów; **90** procesów dotyka danych
 medycznych (art. 9 RODO). Pełne nazwy kodów: `00_INDEKS/legenda_aktywow.csv`.
@@ -34,14 +43,14 @@ Dane: prostokąt z zagięciem = obiekt danych; walec = magazyn (rejestr/baza/arc
 
 ## Najczęstsze role w torach
 - Zarząd: 42×
-- Dział Informatyki: 22×
+- Administratorzy IT: 21×
 - Dział Personalno-Płacowy: 17×
 - Dział Finansowo-Księgowy: 17×
 - Dział Techniczny: 16×
 - Pielęgniarka: 15×
 - Dział Organizacyjno-Prawny: 14×
+- Pełnomocnik ds. SZBI: 9×
 - Dział Rozliczeń Świadczeń: 9×
 - Dział Zamówień Publicznych: 9×
 - Lekarz: 9×
 - Sekcja Dokumentacji Medycznej: 8×
-- Rada Nadzorcza: 7×
