@@ -77,10 +77,17 @@ Zdarzenia: **M** komunikat · **T** czas · zdarzenie brzegowe = okrąg na kraw�
 Dane: prostokąt z zagięciem = obiekt danych; walec = magazyn (rejestr/baza/archiwum).
 
 ## Zawartość `00_INDEKS/`
+- `mapa_przegladowa.png` / `.pdf` - jednostronicowa architektura L0→L1→L2 (warstwy → grupy → procesy),
 - `indeks_procesow.csv` / `.md` - {len(P)} procesów (kod, proces, tory/role, aktywa, pliki),
+- `macierz_rol_SZBI.csv` / `.md` + `indeks_rol_pelny.csv` - pokrycie ról (SZBI i pełne) → procesy,
+- `szbi_roles.json` - słownik ról SZBI v9.2 + mapowanie na role w procesach,
 - `legenda_aktywow.csv` - słownik `AI-xx` / `AW-xx`,
+- `RAPORT_QA.md` - wynik kontroli jakości (kompletność, poprawność BPMN, czytelność tekstu),
 - `manifest.json` - metadane generowania (tory, aktywa, walidacja),
 - `BRAKI_mapowania_BPMN.md` + `intake_mapowanie_procesow.csv` - co uzupełnić, by przejść z to-be do zweryfikowanego as-is.
+
+Dodatkowo (poza folderem, w paczce nadrzędnej): **`EUROSOC_BPMN_to-be_katalog_*.pdf`** - zbiorczy
+katalog (okładka + mapa + spis treści + wszystkie diagramy) w wersji pełnej i per-warstwa.
 
 ## Najczęstsze role w torach
 {chr(10).join(f"- {r}: {c}×" for r, c in roles.most_common(12))}

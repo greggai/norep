@@ -1,0 +1,171 @@
+﻿Rola (tor);SZBI?;Liczba procesów;Kody procesów
+Zarząd;tak;42;G8.04, G9.04, W1.01, W1.02, W2.01, W6.01, W6.05, W7.05, W7.08, W8.01, W8.05, W9.04, Z1.01, Z1.02, Z1.04, Z1.06, Z1.07, Z1.08, Z1.09, Z1.10, Z1.11, Z2.01, Z2.03, Z2.04, Z2.05, Z2.06, Z2.08, Z2.09, Z3.01, Z3.02, Z3.03, Z3.04, Z4.01, Z4.03, Z4.04, Z4.08, Z5.01, Z5.02, Z5.03, Z6.01, Z6.02, Z6.03
+Administratorzy IT;tak;21;G8.05, G8.06, W2.04, W3.07, W4.01, W4.02, W4.03, W4.04, W4.05, W4.06, W4.07, W4.09, W4.10, W4.11, W4.12, W4.14, W4.15, W9.04, Z2.09, Z3.03, Z4.05
+Dział Finansowo-Księgowy;;17;G5.01, G5.08, G9.02, G9.05, W1.01, W1.03, W1.04, W1.05, W1.06, W1.07, W1.08, W1.09, W1.10, W2.05, W3.04, W3.06, W8.04
+Dział Personalno-Płacowy;;17;G6.03, W2.01, W2.02, W2.03, W2.04, W2.05, W2.06, W2.07, W2.08, W2.09, W2.10, W2.11, W2.12, W2.13, W2.14, W7.03, Z5.03
+Dział Techniczny;;16;G10.03, G2.06, G7.04, G7.05, W5.01, W5.02, W5.03, W5.04, W5.05, W5.06, W5.07, W5.08, W5.09, W5.10, W5.11, W7.06
+Pielęgniarka;;15;G1.01, G2.04, G3.01, G3.03, G3.04, G3.05, G3.06, G3.11, G3.14, G3.21, G4.01, G4.02, G5.06, G6.01, G6.04
+Dział Organizacyjno-Prawny;;14;W6.01, W6.02, W6.03, W6.04, W6.05, W6.06, W9.04, Z1.03, Z1.05, Z1.09, Z1.10, Z5.01, Z5.02, Z6.03
+Dział Rozliczeń Świadczeń;;9;G1.07, G9.01, G9.02, G9.03, G9.04, G9.05, W1.03, W1.06, Z6.01
+Dział Zamówień Publicznych;;9;G2.05, W3.01, W3.02, W3.03, W3.04, W3.05, W3.07, W7.04, W8.02
+Lekarz;;9;G3.11, G3.14, G3.15, G3.23, G4.02, G4.04, G5.04, G5.06, G7.07
+Pełnomocnik ds. SZBI;tak;9;W4.04, W4.06, W4.07, W4.13, W4.14, Z2.06, Z2.07, Z3.02, Z4.05
+Sekcja Dokumentacji Medycznej;;8;G3.11, G3.12, G4.01, G8.02, G8.03, G8.04, G8.06, Z4.02
+Komórka wnioskująca;;7;W2.02, W3.01, W3.02, W3.03, W3.04, W3.05, Z4.09
+Rada Nadzorcza;;7;Z1.02, Z1.04, Z1.05, Z1.06, Z1.07, Z1.08, Z5.03
+Dyrektor ds. Inwestycji i Rozwoju;;6;W8.01, W8.02, W8.03, W8.04, W8.05, W8.06
+Lekarz rehabilitacji;;6;G1.05, G1.06, G3.07, G3.08, G3.20, G3.22
+Pracownik;;6;W2.07, W2.08, W2.09, W2.10, W2.12, W7.03
+Radca prawny;;6;W1.04, W2.13, W3.02, W3.05, W6.05, Z4.09
+Diagnostyka;;5;G3.01, G3.03, G3.04, G3.05, G3.06
+Lekarz POZ;;5;G1.09, G3.16, G3.17, G3.18, G3.19
+Lekarz prowadzący;;5;G2.04, G3.01, G3.12, G4.01, G4.03
+Lekarz zlecający;;5;G2.01, G2.02, G2.03, G2.07, G3.09
+Pełnomocnik ds. Praw Pacjenta;;5;W9.01, W9.02, W9.05, Z4.07, Z4.10
+Zespół Transportu Medycznego;;5;G1.04, G10.01, G10.02, G10.03, G3.10
+Apteka;;4;G5.02, G5.03, G5.05, G7.03
+Fizjoterapeuta;;4;G3.07, G3.08, G3.20, G3.22
+IOD;tak;4;Z4.01, Z4.02, Z4.03, Z4.04
+Komórka inicjująca;;4;W6.01, Z5.01, Z5.02, Z6.03
+Komórka merytoryczna;;4;W4.12, W6.02, W9.01, Z4.07
+Komórki kliniczne;;4;Z2.04, Z2.05, Z2.08, Z4.10
+Lekarz IP;;4;G1.01, G1.02, G1.03, G1.04
+Lekarz opisujący;;4;G2.01, G2.02, G2.03, G2.07
+Pielęgniarka epidemiologiczna;;4;G7.01, G7.02, G7.06, G7.07
+Pracownia diagnostyczna;;4;G2.01, G2.02, G2.03, G2.07
+Stanowisko BHP;;4;W7.01, W7.02, W7.03, W7.04
+Dyrektor ds. Lecznictwa;;3;G2.05, W8.05, W8.06
+Dyrektorzy pionów;;3;Z1.07, Z1.08, Z1.11
+Główny Księgowy;;3;W1.01, W1.02, W1.07
+Kierownicy komórek;;3;W2.01, W2.06, W7.01
+Kierownik Zamawiającego (Zarząd);;3;W3.01, W3.02, W3.03
+Komórki merytoryczne;;3;Z3.01, Z3.04, Z6.02
+Komórki organizacyjne;;3;W9.03, Z4.06, Z4.08
+Laboratorium;;3;G10.02, G2.04, G7.02
+Personel;;3;G7.06, G7.08, W7.07
+Pełnomocnik ds. Akredytacji;;3;W9.05, Z2.04, Z2.05
+Pełnomocnik ds. Jakości;;3;Z2.08, Z3.05, Z5.04
+Pełnomocnik systemu;;3;Z2.01, Z2.02, Z2.03
+Pielęgniarka POZ;;3;G1.09, G3.17, G3.19
+Przełożona Pielęgniarek;;3;G6.02, G6.03, G6.04
+Stanowisko P-POŻ;;3;W7.05, W7.06, W7.07
+Wnioskodawca;;3;G8.02, W6.06, Z4.02
+Zespół rehabilitacyjny;;3;G1.06, G3.07, G3.08
+Zgromadzenie Wspólników;;3;Z1.01, Z1.02, Z1.03
+Audytorzy wewnętrzni;tak;2;Z2.02, Z2.07
+Audytowana komórka;;2;Z2.02, Z2.07
+Dietetyk;;2;G6.05, W5.08
+Dostawca (zewn.);;2;G5.01, G5.08
+Dział Higieny i Epidemiologii;;2;G7.08, W5.07
+Instytucja finansująca;;2;W8.03, W8.04
+Koordynator PPP;;2;G1.05, G1.07
+Lekarz geriatra;;2;G3.02, G3.03
+NFZ;;2;G9.02, G9.04
+Oddział;;2;G5.03, G5.05
+Pacjent;;2;G1.08, W9.01
+Personel zgłaszający;;2;G5.07, Z3.05
+Pełnomocnik ds. Dostępności;;2;W9.03, Z4.08
+Platforma P1;;2;G8.05, W4.03
+Rejestracja;;2;G1.08, G3.13
+Rejestracja POZ;;2;G1.09, G3.16
+Serwis (zewn.);;2;W5.03, W5.05
+Stanowisko ds. Obronnych;;2;W7.08, W7.09
+Użytkownik;;2;W4.01, W4.09
+Właściciele procesów;tak;2;Z2.01, Z2.06
+Zespół geriatryczny;;2;G3.02, G3.21
+Administratorzy sieci;tak;1;W4.08
+Apteka / Lekarz;;1;G5.07
+CAB;tak;1;W4.11
+Dostawca / serwis;;1;W4.02
+Dostawca cateringu;;1;W5.08
+Dostawca usługi;;1;W5.06
+Dyspozytor;;1;G10.01
+Farmaceuta;;1;G5.04
+Farmaceuta kliniczny;;1;G5.06
+GUS / MZ;;1;G9.03
+Inspektor Ochrony Radiologicznej;;1;G2.06
+Izba Przyjęć;;1;G1.01
+Jednostka medycyny pracy;;1;W2.12
+Kandydat / Pracownik;;1;W2.03
+Kierownicy komórek medycznych;;1;W2.14
+Kierownik Apteki;;1;G5.01
+Kierownik Działu Farmacji;;1;G5.08
+Kierownik komórki;;1;W2.04
+Komisja Socjalna;;1;W2.08
+Komisja inwentaryzacyjna;;1;W1.08
+Komisja przetargowa;;1;W3.02
+Komitet Antybiotykowy;;1;G7.03
+Komitet Terapeutyczny;;1;G5.02
+Komitet ds. Zakażeń;;1;G7.01
+Komórka;;1;W7.04
+Komórka przekazująca;;1;W6.04
+Komórka przetwarzająca;;1;Z4.03
+Komórka zamawiająca;;1;W1.05
+Komórki / Dyrektorzy;;1;W1.02
+Komórki przetwarzające;;1;Z4.01
+Koordynator;;1;G4.04
+Koordynator BC;tak;1;Z3.03
+Koordynator opieki;;1;G4.03
+Koordynator ryzyka;;1;Z3.01
+Laboratorium zewn.;;1;G2.05
+Lekarz konsultujący;;1;G3.09
+Lekarz pediatra-pulmonolog;;1;G3.05
+Lekarz pulmonolog;;1;G3.04
+Lekarz reumatolog;;1;G3.06
+Lekarz specjalista;;1;G3.13
+Lekarze;;1;G7.03
+Magazyn;;1;W3.06
+Medycyna pracy;;1;G7.07
+NFZ (system);;1;G9.01
+NFZ (zewn.);;1;Z6.01
+Odbiorca (zewn.);;1;G7.05
+Odbiorca odpadów (zewn.);;1;W5.09
+Oddział / Kuchnia;;1;G6.05
+Oddział docelowy;;1;G1.03
+Oddział kierujący;;1;G3.10
+Oddział przyjmujący;;1;G3.10
+Oddziały;;1;G7.01
+Organ (zewn.);;1;Z6.02
+Organ KSC (CSIRT);;1;Z4.05
+Organ obronny (zewn.);;1;W7.09
+Pacjenci;;1;W9.05
+Pacjent / RPP;;1;Z4.10
+Pacjent / Skarżący;;1;Z4.07
+Pacjent / Użytkownik;;1;W4.10
+Partner naukowy;;1;W8.06
+Personel / DHiE;;1;G7.05
+Personel / Pacjenci;;1;W9.02
+Personel medyczny;;1;G8.01
+Personel sterylizacji;;1;G7.04
+Pełnomocnik ds. OIN;;1;Z4.06
+Pełnomocnik ds. ZSZ;;1;Z2.09
+Pielęgniarka medycyny szkolnej;;1;G3.18
+Pielęgniarka triażu;;1;G1.02
+Pielęgniarki;;1;G6.02
+Podmiot docelowy;;1;G1.04
+Podmiot przejmujący;;1;G4.03
+Poszkodowany / Kierownik;;1;W7.02
+Pracownia;;1;G2.06
+Pracownicy / Eksperci;;1;Z5.04
+Przełożony;;1;W2.07
+Przełożony / DPP;;1;W2.13
+Punkt Przyjęć Planowych;;1;G1.05
+Punkt pobrań;;1;G10.02
+SOC (zewn.);;1;W4.13
+System EDM;;1;G8.05
+System EDM / P1;;1;G8.01
+System P1 / ZUS;;1;G3.15
+Służba ochrony;;1;W5.11
+US / GUS;;1;W1.07
+Uprawniony specjalista;;1;W5.02
+Wnioskodawcy;tak;1;W4.11
+Wnioskodawcy / Przełożony;tak;1;W4.04
+Wykonawca;;1;W8.02
+Właściciele ryzyka;tak;1;Z3.02
+Zespół ds. bezpieczeństwa;;1;Z3.05
+Zespół interdyscyplinarny;;1;G3.23
+Zespół powypadkowy;;1;W7.02
+Zespół reagowania;;1;Z3.04
+Zespół reagowania IR;tak;1;W4.07
+Zgłaszający;;1;Z4.04
+Zlecający;;1;G10.01

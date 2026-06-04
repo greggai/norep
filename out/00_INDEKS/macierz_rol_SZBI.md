@@ -1,0 +1,19 @@
+# Macierz pokrycia ról SZBI → procesy
+
+Role z domeny SZBI (wg *Mapy dokumentacji SZBI v9.2*) użyte jako tory w modelach to-be. Łącznie ról SZBI w użyciu: **13**.
+
+| Rola (SZBI) | Procesów | Kody procesów |
+|---|---:|---|
+| Zarząd | 42 | G8.04, G9.04, W1.01, W1.02, W2.01, W6.01, W6.05, W7.05, W7.08, W8.01, W8.05, W9.04, Z1.01, Z1.02, Z1.04, Z1.06, Z1.07, Z1.08, Z1.09, Z1.10, Z1.11, Z2.01, Z2.03, Z2.04, Z2.05, Z2.06, Z2.08, Z2.09, Z3.01, Z3.02, Z3.03, Z3.04, Z4.01, Z4.03, Z4.04, Z4.08, Z5.01, Z5.02, Z5.03, Z6.01, Z6.02, Z6.03 |
+| Administratorzy IT | 21 | G8.05, G8.06, W2.04, W3.07, W4.01, W4.02, W4.03, W4.04, W4.05, W4.06, W4.07, W4.09, W4.10, W4.11, W4.12, W4.14, W4.15, W9.04, Z2.09, Z3.03, Z4.05 |
+| Pełnomocnik ds. SZBI | 9 | W4.04, W4.06, W4.07, W4.13, W4.14, Z2.06, Z2.07, Z3.02, Z4.05 |
+| IOD | 4 | Z4.01, Z4.02, Z4.03, Z4.04 |
+| Audytorzy wewnętrzni | 2 | Z2.02, Z2.07 |
+| Właściciele procesów | 2 | Z2.01, Z2.06 |
+| Administratorzy sieci | 1 | W4.08 |
+| CAB | 1 | W4.11 |
+| Koordynator BC | 1 | Z3.03 |
+| Wnioskodawcy | 1 | W4.11 |
+| Wnioskodawcy / Przełożony | 1 | W4.04 |
+| Właściciele ryzyka | 1 | Z3.02 |
+| Zespół reagowania IR | 1 | W4.07 |

@@ -19,3 +19,6 @@ EUROSOC_BPMN_3_Wspierajacy.zip
 # Wszystkie paczki ZIP - duze, odtwarzalne: python pipeline/build_tobe_all.py && make_docs_tobe.py && make_zips/inline
 EUROSOC_*.zip
 out_pilot/
+
+# Zbiorcze katalogi PDF - duze, odtwarzalne (python pipeline/make_catalog.py)
+EUROSOC_*.pdf

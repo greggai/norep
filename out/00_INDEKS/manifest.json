@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-04T10:17:41",
+ "generated": "2026-06-04T10:28:42",
  "model": "to-be wielotorowy",
  "liczba_procesow": 203,
  "bledy": [],
@@ -4227,7 +4227,7 @@
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
    "tory": [
-    "Dyrektor ds. Inwestycji",
+    "Dyrektor ds. Inwestycji i Rozwoju",
     "Dział Finansowo-Księgowy",
     "Instytucja finansująca"
    ],
@@ -4249,7 +4249,7 @@
    "warstwa": "Wspierający",
    "grupa": "W8. Inwestycje i rozwój",
    "tory": [
-    "Dyrektor ds. Inwestycji",
+    "Dyrektor ds. Inwestycji i Rozwoju",
     "Dyrektor ds. Lecznictwa",
     "Zarząd"
    ],
@@ -4272,7 +4272,7 @@
    "grupa": "W8. Inwestycje i rozwój",
    "tory": [
     "Dyrektor ds. Lecznictwa",
-    "Dyrektor ds. Inwestycji",
+    "Dyrektor ds. Inwestycji i Rozwoju",
     "Partner naukowy"
    ],
    "wlasciciel": "DM / DI",

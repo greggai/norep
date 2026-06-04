@@ -33,6 +33,8 @@ ROLE_MAP = {
     "Komitet zmian (CAB)": "CAB",
     "Wnioskujący": "Wnioskodawcy",
     "Wnioskujący / Przełożony": "Wnioskodawcy / Przełożony",
+    # spójność wariantów tej samej roli
+    "Dyrektor ds. Inwestycji": "Dyrektor ds. Inwestycji i Rozwoju",
 }
 
 def _role(r):

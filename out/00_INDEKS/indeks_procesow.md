@@ -427,9 +427,9 @@ Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 | W8.01 | Planowanie i programowanie inwestycji | Dyrektor ds. Inwestycji i Rozwoju / Zarząd | - |
 | W8.02 | Realizacja projektów inwestycyjnych (CapEx) | Dyrektor ds. Inwestycji i Rozwoju / Dział Zamówień Publicznych / Wykonawca | - |
 | W8.03 | Pozyskiwanie środków zewnętrznych (UE, dotacje, MZ) | Dyrektor ds. Inwestycji i Rozwoju / Instytucja finansująca | - |
-| W8.04 | Rozliczanie projektów dotacyjnych | Dyrektor ds. Inwestycji / Dział Finansowo-Księgowy / Instytucja finansująca | - |
-| W8.05 | Rozwój oferty usług medycznych (nowe świadczenia, oddziały) | Dyrektor ds. Inwestycji / Dyrektor ds. Lecznictwa / Zarząd | - |
-| W8.06 | Współpraca naukowo-kliniczna (oddziały kliniczne) | Dyrektor ds. Lecznictwa / Dyrektor ds. Inwestycji / Partner naukowy | - |
+| W8.04 | Rozliczanie projektów dotacyjnych | Dyrektor ds. Inwestycji i Rozwoju / Dział Finansowo-Księgowy / Instytucja finansująca | - |
+| W8.05 | Rozwój oferty usług medycznych (nowe świadczenia, oddziały) | Dyrektor ds. Inwestycji i Rozwoju / Dyrektor ds. Lecznictwa / Zarząd | - |
+| W8.06 | Współpraca naukowo-kliniczna (oddziały kliniczne) | Dyrektor ds. Lecznictwa / Dyrektor ds. Inwestycji i Rozwoju / Partner naukowy | - |
 
 ### W9. Komunikacja i obsługa pacjenta nieklinicznego
 
