@@ -1,6 +1,6 @@
-# Raport QA — pakiet modeli to-be SCM
+# Raport QA — pakiet docelowych modeli procesów SCM
 
-Wygenerowano: 2026-06-04 10:28 · Procesów w rejestrze: **203**
+Wygenerowano: 2026-06-04 14:37 · Procesów w rejestrze: **203**
 
 ## Kompletność
 | Kontrola | Wynik | Status |

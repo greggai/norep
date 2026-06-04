@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""make_docs_tobe.py - indeksy + README + legenda dla pakietu modeli to-be."""
+"""make_docs_tobe.py - indeksy + README + legenda dla pakietu docelowych modeli procesów."""
 import json, os, csv
 from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
@@ -24,7 +24,7 @@ with open(os.path.join(IDX, "legenda_aktywow.csv"), "w", newline="", encoding="u
 
 by = {}
 for m in P: by.setdefault(m["warstwa"], {}).setdefault(m["grupa"], []).append(m)
-lines = ["# Indeks procesów - modele to-be (wielotorowe BPMN)","",
+lines = ["# Indeks procesów - docelowe modele procesów (wielotorowe BPMN)","",
          f"Procesów: **{len(P)}** · Formaty: BPMN + PNG + PDF · Walidacja: {sum(1 for m in P if not m['warnings'])}/{len(P)} bez uwag",""]
 for wars in ["Zarządczy","Główny","Wspierający"]:
     if wars not in by: continue
@@ -39,21 +39,21 @@ open(os.path.join(IDX, "indeks_procesow.md"), "w", encoding="utf-8").write("\n".
 n_ai = sum(1 for m in P if m["aktywa_AI"]); n_med = sum(1 for m in P if str(m.get("dane_medyczne") or "").strip().lower()=="tak")
 avg_lanes = sum(len(m["tory"]) for m in P)/len(P)
 roles = Counter(r for m in P for r in m["tory"])
-README = f"""# EUROSOC · Modele procesów to-be (BPMN 2.0) - SCM
+README = f"""# EUROSOC · Docelowe modele procesów (BPMN 2.0) - SCM
 
 **Podmiot:** Stobrawskie Centrum Medyczne Sp. z o.o. · **Źródło:** Rejestr procesów SCM (L2) + analiza
 **Procesów:** {len(P)} · **Formaty:** `.bpmn` + `.png` + `.pdf` · **Średnio torów/proces:** {avg_lanes:.1f}
 
 ## Charakter modeli
-Każdy z {len(P)} procesów to **odrębny, wielotorowy model to-be** (BPMN 2.0) z:
+Każdy z {len(P)} procesów to **odrębny, wielotorowy model docelowy** (BPMN 2.0) z:
 - **torami = rolami/działami** (basen „SCM Sp. z o.o."), pokazującymi przekazania odpowiedzialności,
 - **bramkami decyzyjnymi**, ścieżkami alternatywnymi, pętlami i **zdarzeniami brzegowymi** (wyjątki),
 - **obiektami/magazynami danych** (artefakty procesu + aktywa informacyjne `AI-xx` z rejestru, w pasmie pod basenem),
 - **stopką** z systemami (`AW`) i kategorią RODO - tylko kluczowe, czytelne informacje.
 
-> **Status:** modele **referencyjne / to-be** - propozycja docelowego przebiegu do **walidacji z właścicielem
+> **Status:** modele **referencyjne (docelowe)** - propozycja docelowego przebiegu do **walidacji z właścicielem
 > procesu**. Opracowane na podstawie metadanych rejestru, otoczenia prawnego i dobrych praktyk; nie są zapisem
-> zweryfikowanego stanu as-is. (Adnotacja prowieniencji - tu, w README, świadomie nie na diagramach.)
+> zweryfikowanego stanu obecnego. (Adnotacja prowieniencji - tu, w README, świadomie nie na diagramach.)
 
 ## Organizacja
 Foldery: `1_Zarzadczy_Z/`, `2_Glowny_G/`, `3_Wspierajacy_W/` → 25 grup (L1). Plik: `KOD__nazwa.*`.
@@ -84,9 +84,9 @@ Dane: prostokąt z zagięciem = obiekt danych; walec = magazyn (rejestr/baza/arc
 - `legenda_aktywow.csv` - słownik `AI-xx` / `AW-xx`,
 - `RAPORT_QA.md` - wynik kontroli jakości (kompletność, poprawność BPMN, czytelność tekstu),
 - `manifest.json` - metadane generowania (tory, aktywa, walidacja),
-- `BRAKI_mapowania_BPMN.md` + `intake_mapowanie_procesow.csv` - co uzupełnić, by przejść z to-be do zweryfikowanego as-is.
+- `BRAKI_mapowania_BPMN.md` + `intake_mapowanie_procesow.csv` - co uzupełnić, by przejść od modelu docelowego do zweryfikowanego stanu obecnego.
 
-Dodatkowo (poza folderem, w paczce nadrzędnej): **`EUROSOC_BPMN_to-be_katalog_*.pdf`** - zbiorczy
+Dodatkowo (poza folderem, w paczce nadrzędnej): **`EUROSOC_BPMN_docelowe_katalog_*.pdf`** - zbiorczy
 katalog (okładka + mapa + spis treści + wszystkie diagramy) w wersji pełnej i per-warstwa.
 
 ## Najczęstsze role w torach
@@ -98,4 +98,4 @@ import shutil
 _src = os.path.join(ROOT, "data", "szbi_roles.json")
 if os.path.exists(_src):
     shutil.copy(_src, os.path.join(IDX, "szbi_roles.json"))
-print("Docs to-be OK:", len(P), "procesów,", n_ai, "z aktywami, śr. torów", round(avg_lanes,2))
+print("Docs OK:", len(P), "procesów,", n_ai, "z aktywami, śr. torów", round(avg_lanes,2))

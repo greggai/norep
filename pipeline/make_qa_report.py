@@ -40,7 +40,7 @@ for m in man["procesy"]:
 
 ok=lambda b:"✅" if b else "❌"
 avg_lanes=sum(lane_n)/len(lane_n)
-R=f"""# Raport QA — pakiet modeli to-be SCM
+R=f"""# Raport QA — pakiet docelowych modeli procesów SCM
 
 Wygenerowano: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')} · Procesów w rejestrze: **{len(kods)}**
 

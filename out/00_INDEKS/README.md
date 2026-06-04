@@ -1,18 +1,18 @@
-# EUROSOC · Modele procesów to-be (BPMN 2.0) - SCM
+# EUROSOC · Docelowe modele procesów (BPMN 2.0) - SCM
 
 **Podmiot:** Stobrawskie Centrum Medyczne Sp. z o.o. · **Źródło:** Rejestr procesów SCM (L2) + analiza
 **Procesów:** 203 · **Formaty:** `.bpmn` + `.png` + `.pdf` · **Średnio torów/proces:** 2.4
 
 ## Charakter modeli
-Każdy z 203 procesów to **odrębny, wielotorowy model to-be** (BPMN 2.0) z:
+Każdy z 203 procesów to **odrębny, wielotorowy model docelowy** (BPMN 2.0) z:
 - **torami = rolami/działami** (basen „SCM Sp. z o.o."), pokazującymi przekazania odpowiedzialności,
 - **bramkami decyzyjnymi**, ścieżkami alternatywnymi, pętlami i **zdarzeniami brzegowymi** (wyjątki),
 - **obiektami/magazynami danych** (artefakty procesu + aktywa informacyjne `AI-xx` z rejestru, w pasmie pod basenem),
 - **stopką** z systemami (`AW`) i kategorią RODO - tylko kluczowe, czytelne informacje.
 
-> **Status:** modele **referencyjne / to-be** - propozycja docelowego przebiegu do **walidacji z właścicielem
+> **Status:** modele **referencyjne (docelowe)** - propozycja docelowego przebiegu do **walidacji z właścicielem
 > procesu**. Opracowane na podstawie metadanych rejestru, otoczenia prawnego i dobrych praktyk; nie są zapisem
-> zweryfikowanego stanu as-is. (Adnotacja prowieniencji - tu, w README, świadomie nie na diagramach.)
+> zweryfikowanego stanu obecnego. (Adnotacja prowieniencji - tu, w README, świadomie nie na diagramach.)
 
 ## Organizacja
 Foldery: `1_Zarzadczy_Z/`, `2_Glowny_G/`, `3_Wspierajacy_W/` → 25 grup (L1). Plik: `KOD__nazwa.*`.
@@ -43,9 +43,9 @@ Dane: prostokąt z zagięciem = obiekt danych; walec = magazyn (rejestr/baza/arc
 - `legenda_aktywow.csv` - słownik `AI-xx` / `AW-xx`,
 - `RAPORT_QA.md` - wynik kontroli jakości (kompletność, poprawność BPMN, czytelność tekstu),
 - `manifest.json` - metadane generowania (tory, aktywa, walidacja),
-- `BRAKI_mapowania_BPMN.md` + `intake_mapowanie_procesow.csv` - co uzupełnić, by przejść z to-be do zweryfikowanego as-is.
+- `BRAKI_mapowania_BPMN.md` + `intake_mapowanie_procesow.csv` - co uzupełnić, by przejść od modelu docelowego do zweryfikowanego stanu obecnego.
 
-Dodatkowo (poza folderem, w paczce nadrzędnej): **`EUROSOC_BPMN_to-be_katalog_*.pdf`** - zbiorczy
+Dodatkowo (poza folderem, w paczce nadrzędnej): **`EUROSOC_BPMN_docelowe_katalog_*.pdf`** - zbiorczy
 katalog (okładka + mapa + spis treści + wszystkie diagramy) w wersji pełnej i per-warstwa.
 
 ## Najczęstsze role w torach

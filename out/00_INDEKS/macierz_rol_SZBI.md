@@ -1,6 +1,6 @@
 # Macierz pokrycia ról SZBI → procesy
 
-Role z domeny SZBI (wg *Mapy dokumentacji SZBI v9.2*) użyte jako tory w modelach to-be. Łącznie ról SZBI w użyciu: **13**.
+Role z domeny SZBI (wg *Mapy dokumentacji SZBI v9.2*) użyte jako tory w modelach docelowych. Łącznie ról SZBI w użyciu: **13**.
 
 | Rola (SZBI) | Procesów | Kody procesów |
 |---|---:|---|

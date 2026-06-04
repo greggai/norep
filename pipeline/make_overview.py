@@ -24,7 +24,7 @@ COL={"Zarządczy":("#3A5B8C","#EDF2FB"),"Główny":("#2E9E6B","#E9F6EF"),"Wspier
 fig,ax=plt.subplots(figsize=(16,9)); ax.set_xlim(0,16); ax.set_ylim(0,9)
 ax.set_aspect("equal"); ax.axis("off")
 ax.text(8,8.62,"Architektura procesów SCM — mapa przeglądowa",ha="center",fontsize=18,fontweight="bold",color="#363D4E")
-ax.text(8,8.24,f"3 warstwy · 25 grup · {len(P)} procesów (modele to-be BPMN)",ha="center",fontsize=11,color="#5B6475")
+ax.text(8,8.24,f"3 warstwy · 25 grup · {len(P)} procesów (docelowe modele BPMN)",ha="center",fontsize=11,color="#5B6475")
 
 MARGIN=0.4; GAP=0.4; COLW=(16-2*MARGIN-2*GAP)/3.0
 TOP=7.8; BOT=0.4; HEADY=7.42; START=7.0; PITCH=0.62; BH=0.50

@@ -18,7 +18,7 @@ for m in P:
 # 1) macierz ról SZBI -> procesy (MD + CSV)
 szbi=sorted([(r,sorted(ks)) for r,ks in role2proc.items() if r in szbi_vocab], key=lambda x:(-len(x[1]),x[0]))
 md=["# Macierz pokrycia ról SZBI → procesy","",
-    f"Role z domeny SZBI (wg *Mapy dokumentacji SZBI v9.2*) użyte jako tory w modelach to-be. "
+    f"Role z domeny SZBI (wg *Mapy dokumentacji SZBI v9.2*) użyte jako tory w modelach docelowych. "
     f"Łącznie ról SZBI w użyciu: **{len(szbi)}**.","",
     "| Rola (SZBI) | Procesów | Kody procesów |","|---|---:|---|"]
 for r,ks in szbi:

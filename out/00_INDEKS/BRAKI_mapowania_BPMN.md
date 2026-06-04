@@ -90,14 +90,14 @@ Jeden wiersz na proces; kolumny „znane" są **prewypełnione** z rejestru, kol
 `Zdarzenia_koncowe`. Reszta podnosi wierność i kompletność.
 
 ## 6. Warianty realizacji pełnego mapowania
-- **A. Uzupełnienie intake** (najwierniejsze as-is) — właściciele procesów wypełniają `intake_*.csv`;
+- **A. Uzupełnienie intake** (najwierniejszy stan obecny) — właściciele procesów wypełniają `intake_*.csv`;
   generuję pełne, wielotorowe, odrębne modele BPMN + PNG + PDF.
 - **B. Istniejące modele L3** — dostarczasz 16 plików `.bpmn` z kolumny „Model BPMN (L3)";
   wkomponowuję realne przepływy zamiast szkieletów.
-- **C. Wzorcowe modele to-be** — przygotowuję odrębne, kompletne propozycje przebiegu per proces
+- **C. Wzorcowe modele docelowe** — przygotowuję odrębne, kompletne propozycje przebiegu per proces
   na bazie metadanych + `Otoczenie prawne` + dobrych praktyk branżowych; jako **propozycja do
-  walidacji** z właścicielem (nie deklaracja stanu as-is). Najszybsze do uzyskania „pełnych i różnych"
+  walidacji** z właścicielem (nie deklaracja stanu obecnego). Najszybsze do uzyskania „pełnych i różnych"
   diagramów bez czekania na warsztaty.
 
 *Uwaga dot. rzetelności: dla podmiotu leczniczego nie „dopowiadam" kroków klinicznych jako stanu
-faktycznego. Wariant C oznacza jawnie modele referencyjne/to-be do zatwierdzenia.*
+faktycznego. Wariant C oznacza jawnie modele referencyjne (docelowe) do zatwierdzenia.*

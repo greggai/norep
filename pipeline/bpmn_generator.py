@@ -42,14 +42,14 @@ DATA_W, DATA_H = 40, 50
 ANNO_W, ANNO_H = 250, 54
 
 COL_W = 170           # odstep miedzy kolumnami (rank)
-ROW_SLOT = 110        # wysokosc slotu wiersza
+ROW_SLOT = 132        # wysokosc slotu wiersza (wieksze tory - tekst rol miesci sie wygodniej)
 MARGIN_X = 70
 MARGIN_Y = 70
-LANE_LABEL_W = 30     # minimalny pasek z nazwa toru/basenu (rosnie dynamicznie)
+LANE_LABEL_W = 42     # minimalny pasek z nazwa toru/basenu (rosnie dynamicznie)
 LANE_PAD = 25         # margines wewnatrz toru
 
 
-def _per_chars(avail_h, char_px=5.7, pad=16):
+def _per_chars(avail_h, char_px=6.6, pad=18):
     """Ile znakow miesci sie w jednej (obroconej o 90 st.) linii etykiety o wysokosci avail_h."""
     return max(6, int((avail_h - pad) / char_px))
 
@@ -356,7 +356,7 @@ def layout(spec):
         # Dynamiczna szerokosc paskow etykiet: nazwa toru/basenu jest zawijana wzdluz
         # wysokosci (tekst obrocony o 90 st.); liczba zawinietych linii wyznacza szerokosc
         # paska. Dzieki temu dlugie nazwy rol nie wychodza poza tor ani na siebie.
-        LINE_PX = 13
+        LINE_PX = 16
         lane_label_lines = 1
         for (_, lid, name) in lanes:
             per = _per_chars(lane_rows[lid] * ROW_SLOT)
@@ -507,6 +507,15 @@ def layout(spec):
         content_bottom = max(content_bottom, extra_y + h)
         geom["width"] = max(geom["width"], extra_x + MARGIN_X)
     geom["height"] = max(geom["height"], content_bottom + MARGIN_Y)
+
+    # metryka procesu (prawy dolny rog) - rezerwacja miejsca i pozycja
+    if spec.get("meta"):
+        MB_W, MB_H = 256, 110
+        base_y = geom["height"] - MARGIN_Y + 8
+        geom["width"] = max(geom["width"], MB_W + 2 * MARGIN_X)
+        mx = geom["width"] - MB_W - MARGIN_X + 24
+        geom["meta_box"] = (mx, base_y, MB_W, MB_H)
+        geom["height"] = base_y + MB_H + MARGIN_Y
 
     return pos, rank, back, geom, (lane_of, lanes, pool_of_lane)
 
@@ -809,9 +818,9 @@ def render_preview(spec, pos, rank, geom, lanes_info, png_path, svg_path):
         lw = gp.get("label_w", LANE_LABEL_W)
         ax.add_patch(Rectangle((gp["x"], gp["y"]), lw, gp["h"],
                                facecolor=PALETTE["lane_strip"], edgecolor=POOL_EDGE, lw=1.4))
-        _pp = _per_chars(gp["h"])
+        _pp = _per_chars(gp["h"], char_px=7.4)
         ax.text(gp["x"] + lw / 2.0, gp["y"] + gp["h"] / 2.0, _wrap(gp["name"], _pp, cap=_pp),
-                rotation=90, va="center", ha="center", fontsize=9.0, linespacing=0.9,
+                rotation=90, va="center", ha="center", fontsize=10.5, linespacing=0.92,
                 fontweight="bold", color=PALETTE["ink"])
     for gl in geom["lanes"]:
         ax.add_patch(Rectangle((gl["x"], gl["y"]), gl["w"], gl["h"],
@@ -821,7 +830,7 @@ def render_preview(spec, pos, rank, geom, lanes_info, png_path, svg_path):
         _lp = _per_chars(gl["h"])
         ax.text(gl["x"] + geom["label_w"] / 2.0, gl["y"] + gl["h"] / 2.0,
                 _wrap(gl["name"], _lp, cap=_lp),
-                rotation=90, va="center", ha="center", fontsize=8.0, linespacing=0.9,
+                rotation=90, va="center", ha="center", fontsize=9.5, linespacing=0.92,
                 color=PALETTE["ink"])
 
     def draw_arrow(wps, style="seq"):
@@ -960,6 +969,35 @@ def render_preview(spec, pos, rank, geom, lanes_info, png_path, svg_path):
                                  closed=False, fill=False, edgecolor=PALETTE["ink_soft"], lw=1.2))
             ax.text(x + 12, cy, wrapped, ha="left", va="center",
                     fontsize=7.5, color=PALETTE["ink"])
+
+    # metryka procesu (prawy dolny rog) - wg wzoru metryki dokumentu SZBI
+    mb = geom.get("meta_box"); meta = spec.get("meta")
+    if mb and meta:
+        mx, my, mw, _ = mb
+        owner_wr = _wrap(str(meta.get("owner", "")), 32)
+        rows = [("Identyfikator", str(meta.get("kod", "")), 1),
+                ("Właściciel procesu", owner_wr, owner_wr.count("\n") + 1),
+                ("Klasyfikacja", str(meta.get("klas", "Wewnętrzna")), 1),
+                ("Wersja / data", str(meta.get("wer", "")), 1)]
+        TH = 17.0; LH = 10.5; PADR = 9.0; keyw = 86.0
+        rhs = [ln * LH + PADR for (_, _, ln) in rows]
+        mh = TH + sum(rhs)
+        ax.add_patch(Rectangle((mx, my), mw, mh, fill=True, facecolor="white",
+                               edgecolor=PALETTE["ink"], lw=1.2, clip_on=False))
+        ax.add_patch(Rectangle((mx, my), mw, TH, fill=True, facecolor=PALETTE["lane_strip"],
+                               edgecolor=PALETTE["ink"], lw=1.2, clip_on=False))
+        ax.text(mx + mw / 2.0, my + TH / 2.0, "METRYKA PROCESU", ha="center", va="center",
+                fontsize=7.6, fontweight="bold", color=PALETTE["ink"], clip_on=False)
+        yy = my + TH
+        for (kk, vv, ln), rh in zip(rows, rhs):
+            if yy > my + TH + 0.1:
+                ax.plot([mx, mx + mw], [yy, yy], color=PALETTE["pool_edge"], lw=0.5, clip_on=False)
+            ax.plot([mx + keyw, mx + keyw], [yy, yy + rh], color=PALETTE["pool_edge"], lw=0.5, clip_on=False)
+            ax.text(mx + 5, yy + rh / 2.0, kk, ha="left", va="center",
+                    fontsize=6.7, color=PALETTE["ink_soft"], clip_on=False)
+            ax.text(mx + keyw + 5, yy + rh / 2.0, vv, ha="left", va="center",
+                    fontsize=6.8, color=PALETTE["ink"], clip_on=False, linespacing=0.95)
+            yy += rh
 
     title = spec.get("name", "")
     if title:

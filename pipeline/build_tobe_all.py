@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""build_tobe_all.py - generuje wielotorowe modele to-be dla wszystkich 203 procesow.
+"""build_tobe_all.py - generuje wielotorowe modele docelowe dla wszystkich 203 procesow.
    --check : tylko walidacja (szybko). bez flagi : pelne generowanie .bpmn/.png/.pdf + foldery.
 """
 import json, os, sys, shutil, datetime, traceback
@@ -54,7 +54,7 @@ def build():
                              "pliki": {k: os.path.relpath(base + e, OUT) for k, e in (("bpmn",".bpmn"),("png",".png"),("pdf",".pdf"))}})
         except Exception as e:
             errors.append({"kod": kod, "error": str(e), "trace": traceback.format_exc()}); print("ERR %s: %s" % (kod, e))
-    json.dump({"generated": datetime.datetime.now().isoformat(timespec="seconds"), "model": "to-be wielotorowy",
+    json.dump({"generated": datetime.datetime.now().isoformat(timespec="seconds"), "model": "docelowy (wielotorowy)",
                "liczba_procesow": len(manifest), "bledy": errors, "procesy": manifest},
               open(os.path.join(idx, "manifest.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("OK: %d modeli, %d błędów, %d z uwagami" % (len(manifest), len(errors), sum(1 for m in manifest if m["warnings"])))

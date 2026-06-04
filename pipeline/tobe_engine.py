@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""tobe_engine.py - silnik składania wielotorowych modeli to-be (BPMN) z opisu deklaratywnego.
+"""tobe_engine.py - silnik składania wielotorowych modeli docelowych (BPMN) z opisu deklaratywnego.
 
 Model procesu = krotka (lanes, nodes, flows, data):
   lanes : lista nazw rol (tory, kolejnosc gora->dol)
@@ -9,9 +9,31 @@ Model procesu = krotka (lanes, nodes, flows, data):
   data  : [(id, dtype, name, host_id)]          # artefakty/aktywa -> obiekty danych
 mk() zamienia to na spec generatora bpmn_generator (basen 'SCM Sp. z o.o.' + tory).
 """
-import os, re, sys
+import os, re, sys, datetime
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 from build_pkg import parse_assets, asset_node_type, short, AI
+
+# Rozwiniecie kodow komorek/rol (rejestr) do czytelnych nazw - na potrzeby metryki.
+OWNER_CODES = {
+    "ABS": "Administrator Bezpieczeństwa Systemów", "DI": "Dział Informatyki", "DI.DI": "Dział Informatyki",
+    "DI.DT": "Dział Informatyki", "DT": "Dział Techniczny", "DFK": "Dział Finansowo-Księgowy",
+    "DPP": "Dział Personalno-Płacowy", "DZP": "Dział Zamówień Publicznych", "DOP": "Dział Organizacyjno-Prawny",
+    "K.DOP": "Kierownik Działu Organizacyjno-Prawnego", "DRZ": "Dział Rozliczeń Świadczeń",
+    "SDM": "Sekcja Dokumentacji Medycznej", "DM": "Pion Medyczny", "DM.DHiE": "Dział Higieny i Epidemiologii",
+    "DM.DRZ": "Dział Rozliczeń Świadczeń", "DM.SDM": "Sekcja Dokumentacji Medycznej",
+    "PBI": "Pełnomocnik ds. SZBI", "IOD": "IOD", "PA": "Pełnomocnik ds. Akredytacji",
+    "PD": "Pełnomocnik ds. Dostępności", "PIN": "Pełnomocnik ds. Ochrony Informacji Niejawnych",
+    "PPP": "Pełnomocnik ds. Praw Pacjenta", "PZSZ": "Pełnomocnik ds. Zintegrowanego Systemu Zarządzania",
+    "OBR": "Stanowisko ds. Obronnych", "RP": "Radca prawny", "ZW": "Zgromadzenie Wspólników",
+    "RN": "Rada Nadzorcza", "BHP": "Stanowisko ds. BHP", "P-POŻ": "Stanowisko ds. P-POŻ",
+}
+
+def expand_owner(raw):
+    """Rozwija kody w polu 'Właściciel (rola)' (także złożone 'A / B') do czytelnych nazw."""
+    raw = " ".join(str(raw or "").split())
+    if not raw:
+        return "—"
+    return " / ".join(OWNER_CODES.get(p.strip(), p.strip()) for p in raw.split("/"))
 
 POOL = "SCM Sp. z o.o."
 
@@ -89,6 +111,8 @@ def mk(kod, name, proc, lanes, nodes, flows, data=()):
         if lab: f["name"] = lab
         if dflt: f["default"] = True
         flow_list.append(f)
+    meta = {"kod": kod, "owner": expand_owner(proc.get("Właściciel (rola)")),
+            "klas": "Wewnętrzna", "wer": "1.0 · %s" % datetime.date.today().isoformat()}
     return {"id": "Proc_%s" % re.sub(r'[^A-Za-z0-9]', '_', kod), "name": "%s  %s" % (kod, name),
-            "pools": [pool], "nodes": out_nodes, "flows": flow_list, "associations": assoc}
+            "pools": [pool], "nodes": out_nodes, "flows": flow_list, "associations": assoc, "meta": meta}
 

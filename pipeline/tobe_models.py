@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""tobe_models.py - wielotorowe modele to-be dla 203 procesow SCM.
+"""tobe_models.py - wielotorowe modele docelowe dla 203 procesow SCM.
 Kazda funkcja g_XX(proc) zwraca (lanes, nodes, flows, data); model_for(proc) dobiera ja po prefiksie.
 """
 import re, sys, os

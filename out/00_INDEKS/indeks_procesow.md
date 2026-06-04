@@ -1,4 +1,4 @@
-# Indeks procesów - modele to-be (wielotorowe BPMN)
+# Indeks procesów - docelowe modele procesów (wielotorowe BPMN)
 
 Procesów: **203** · Formaty: BPMN + PNG + PDF · Walidacja: 203/203 bez uwag
 

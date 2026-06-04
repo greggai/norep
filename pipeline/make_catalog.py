@@ -24,7 +24,7 @@ P=json.load(open(os.path.join(IDX,"manifest.json"),encoding="utf-8"))["procesy"]
 PG=landscape(A4); PW,PH=PG
 INK=(0.21,0.24,0.31); SOFT=(0.36,0.39,0.46); ACC=(0.227,0.357,0.549); LINE=(0.68,0.71,0.76)
 ORG="Stobrawskie Centrum Medyczne Sp. z o.o."; KLAS="Wewnętrzna"
-DOC_ID="SCM-PROC-KAT-001"; DOC_TITLE="Katalog modeli procesów to-be (BPMN 2.0)"
+DOC_ID="SCM-PROC-KAT-001"; DOC_TITLE="Katalog docelowych modeli procesów (BPMN 2.0)"
 LAYER_DIR={"Zarządczy":"1_Zarzadczy_Z","Główny":"2_Glowny_G","Wspierający":"3_Wspierajacy_W"}
 
 def order(procs):
@@ -44,15 +44,15 @@ def deco(c, page, total, scope):
     # stopka: organizacja + klasyfikacja (lewo), strona (prawo) + linia
     c.line(12*mm, 12*mm, PW-12*mm, 12*mm)
     c.setFillColor(SOFT); c.setFont(F,7.5)
-    c.drawString(12*mm, 7.5*mm, f"{ORG} — Klasyfikacja: [{KLAS}]")
+    c.drawString(12*mm, 7.5*mm, f"{ORG} — Klasyfikacja: {KLAS}")
     c.drawRightString(PW-12*mm, 7.5*mm, f"Strona {page} / {total}")
 
 def cover(c, title, sub, n, scope):
     c.setFillColor(ACC); c.rect(0, PH-46*mm, PW, 46*mm, fill=1, stroke=0)
     c.setFillColor((1,1,1)); c.setFont(FB,26); c.drawString(20*mm, PH-28*mm, "EUROSOC")
-    c.setFont(F,13); c.drawString(20*mm, PH-37*mm, "Modele procesów to-be · BPMN 2.0")
+    c.setFont(F,13); c.drawString(20*mm, PH-37*mm, "Docelowe modele procesów · BPMN 2.0")
     # plakietka klasyfikacji (prawy gorny rog pasa)
-    c.setFont(FB,9); c.drawRightString(PW-20*mm, PH-16*mm, f"Klasyfikacja: [{KLAS}]")
+    c.setFont(FB,9); c.drawRightString(PW-20*mm, PH-16*mm, f"Klasyfikacja: {KLAS}")
     c.setFont(F,8.5); c.drawRightString(PW-20*mm, PH-22*mm, DOC_ID)
     c.setFillColor(INK); c.setFont(FB,19); c.drawString(20*mm, PH-66*mm, title)
     c.setFillColor(SOFT); c.setFont(F,12)
@@ -64,7 +64,7 @@ def cover(c, title, sub, n, scope):
         s=min(maxw/iw, maxh/ih); w,h=iw*s, ih*s
         c.drawImage(img, (PW-w)/2, 20*mm, w, h, preserveAspectRatio=True, mask='auto')
     c.setFillColor(SOFT); c.setFont(FO,8.5)
-    c.drawString(20*mm, 11*mm, "Modele referencyjne/to-be do walidacji z właścicielami procesów. Nazwy ról z domeny SZBI wg Mapy dokumentacji SZBI v9.2.")
+    c.drawString(20*mm, 11*mm, "Modele referencyjne (docelowe) do walidacji z właścicielami procesów. Nazwy ról z domeny SZBI wg Mapy dokumentacji SZBI v9.2.")
 
 def toc_entries(procs):
     E=[]; last_l=last_g=None
@@ -113,9 +113,9 @@ def build(procs, outfile, title, sub, scope):
     c.save(); print(f"{os.path.basename(outfile):46} {os.path.getsize(outfile)/1e6:5.1f} MB ({len(procs)} diagr., {total} str.)")
 
 if __name__=="__main__":
-    build(P, os.path.join(ROOT,"EUROSOC_BPMN_to-be_katalog_pelny.pdf"),
+    build(P, os.path.join(ROOT,"EUROSOC_BPMN_docelowe_katalog_pelny.pdf"),
           "Katalog wszystkich procesów", "Warstwy: Zarządcza · Główna · Wspierająca", "Wszystkie warstwy")
     for layer,d in LAYER_DIR.items():
         sub=[m for m in P if m["warstwa"]==layer]
-        build(sub, os.path.join(ROOT,f"EUROSOC_BPMN_to-be_katalog_{d.split('_',1)[1]}.pdf"),
-              f"Katalog — warstwa {layer}", "Modele to-be BPMN 2.0", f"Warstwa: {layer}")
+        build(sub, os.path.join(ROOT,f"EUROSOC_BPMN_docelowe_katalog_{d.split('_',1)[1]}.pdf"),
+              f"Katalog — warstwa {layer}", "Docelowe modele procesów · BPMN 2.0", f"Warstwa: {layer}")
