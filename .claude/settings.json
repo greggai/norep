@@ -1,0 +1,31 @@
+{
+  "extraKnownMarketplaces": {
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "claude-design-skillstack": {
+      "source": {
+        "source": "github",
+        "repo": "freshtechbro/claudedesignskills"
+      }
+    },
+    "dev-browser-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "sawyerhood/dev-browser"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true,
+    "threejs-webgl@claude-design-skillstack": true,
+    "gsap-scrolltrigger@claude-design-skillstack": true,
+    "react-three-fiber@claude-design-skillstack": true,
+    "motion-framer@claude-design-skillstack": true,
+    "modern-web-design@claude-design-skillstack": true,
+    "dev-browser@dev-browser-marketplace": true
+  }
+}

@@ -1,0 +1,21 @@
+# Przykładowy workflow: anthropics/claude-code-security-review (TIER 1)
+# Aby aktywować: skopiuj do .github/workflows/claude-security-review.yml
+# i dodaj sekret ANTHROPIC_API_KEY w Settings -> Secrets and variables -> Actions.
+name: Claude Security Review
+on:
+  pull_request:
+
+jobs:
+  security-review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: anthropics/claude-code-security-review@main
+        with:
+          claude-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          comment-pr: true
