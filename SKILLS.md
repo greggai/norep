@@ -61,6 +61,40 @@ w Claude Code — przy pierwszym otwarciu zaakceptuj prompt zaufania dla plugin�
 | claude-code-security-review (CI/CD) | docs/claude-security-review.example.yml + sekret ANTHROPIC_API_KEY; lokalnie: /security-review | TIER 1 |
 | n8n + Claude / Zapier + Claude | platformy zewnętrzne — patrz install-skills.sh | TIER 1 / Verified |
 
+## 5. Audyt bezpieczeństwa i weryfikacja kodu
+
+| Element | Źródło | Trust |
+|---|---|---|
+| `security-reviewer` (audyt z raportem: severity, remediacja, SAST, dependency audit, secrets) | Jeffallan/claude-skills | TIER 2 |
+| `secure-code-guardian` (OWASP Top 10, auth, walidacja wejścia, CORS/CSP, JWT) | Jeffallan/claude-skills | TIER 2 |
+| `test-master` (testy unit/integration/E2E, security testing OWASP, coverage) | Jeffallan/claude-skills | TIER 2 |
+| `github-security-review` (alerty Code Scanning / Dependabot / Secret Scanning → plan remediacji) | MaTriXy/github-review-skill | Community |
+| `/security-review` | wbudowane w Claude Code | TIER 1 (Anthropic) |
+| claude-code-security-review w CI/CD | docs/claude-security-review.example.yml | TIER 1 (Anthropic) |
+
+Pluginy **Trail of Bits** (TIER 1 — legendarna firma audytorska) w `.claude/settings.json`,
+marketplace `trailofbits`:
+
+| Plugin | Po co |
+|---|---|
+| `audit-context-building` | Budowa głębokiego kontekstu architektury przed polowaniem na podatności |
+| `differential-review` | Security review zmian (diff) z analizą historii git |
+| `static-analysis` | CodeQL + Semgrep + parsowanie SARIF |
+| `semgrep-rule-creator` | Własne reguły Semgrep pod wzorce błędów w Twoim kodzie |
+| `insecure-defaults` | Hardcoded credentials, niebezpieczne konfiguracje domyślne |
+| `sharp-edges` | API i konstrukcje podatne na błędne użycie (footguns) |
+| `variant-analysis` | Szukanie wariantów znalezionej podatności w całym codebase |
+| `fp-check` | Systematyczna weryfikacja false positives przed raportowaniem |
+| `supply-chain-risk-auditor` | Audyt ryzyka łańcucha dostaw zależności |
+| `testing-handbook-skills` | Metodologia z Trail of Bits AppSec Testing Handbook (appsec.guide) |
+
+W marketplace `trailofbits` jest też ~25 dalszych pluginów (m.in. smart contracts,
+property-based testing, mutation testing, C/C++ review) — włączysz je przez `/plugin`.
+
+Sugerowany pipeline weryfikacji przed merge:
+`audit-context-building` → `/security-review` + `differential-review` → `static-analysis` /
+`insecure-defaults` / `sharp-edges` → `fp-check` → `variant-analysis` → `test-master` (testy regresyjne).
+
 ## Licencje
 
 Vendorowane skille zachowują pliki LICENSE/LICENSE.txt w swoich katalogach.
