@@ -61,6 +61,24 @@ w Claude Code — przy pierwszym otwarciu zaakceptuj prompt zaufania dla plugin�
 | claude-code-security-review (CI/CD) | docs/claude-security-review.example.yml + sekret ANTHROPIC_API_KEY; lokalnie: /security-review | TIER 1 |
 | n8n + Claude / Zapier + Claude | platformy zewnętrzne — patrz install-skills.sh | TIER 1 / Verified |
 
+## 4b. Aplikacje biznesowe z AI — RAG, dane, backend
+
+Dobrane krytycznie pod budowę aplikacji biznesowych z funkcjami AI (wszystkie Jeffallan/claude-skills
+TIER 2, chyba że wskazano inaczej):
+
+| Skill | Po co |
+|---|---|
+| `rag-architect` | Produkcyjny RAG: chunking, embeddingi, vector DB, hybrid search, reranking, ewaluacja retrievalu |
+| `prompt-engineer` | Structured outputs, system prompty, frameworki ewaluacji — jakość warstwy LLM w produkcie |
+| `postgres-pro` | PostgreSQL (domyślna baza aplikacji biznesowych i dom dla pgvector): EXPLAIN, JSONB, replikacja |
+| `database-optimizer` | Indeksy, plany zapytań, tuning, partycjonowanie (PostgreSQL + MySQL) |
+| `fastapi-expert` | Standard backendów AI: async Python, Pydantic v2, JWT, async SQLAlchemy, WebSocket |
+| `nextjs-developer` | App Router, Server Components/Actions, route handlers — frontend aplikacji |
+| `planning-with-files` (OthmanAdi, 13,4k★, TIER 2) | Trwały stan długich projektów w plikach — #4 rankingu TOP Dev bazy |
+
+Świadomie pominięte (duplikaty): `sql-pro` (pokryte przez postgres-pro + database-optimizer),
+`typescript-pro`/`python-pro` (generyczna wiedza językowa bez wartości dodanej ponad model).
+
 ## 5. Audyt bezpieczeństwa i weryfikacja kodu
 
 | Element | Źródło | Trust |
